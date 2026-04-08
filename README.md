@@ -9,6 +9,30 @@
 
 <br>
 
+<div align="center">
+<b>Jun Zhang*</b><sup>1,2</sup>,
+<b>Yicheng Ji*</b><sup>1,2</sup>,
+<b>Feiyang Ren*</b><sup>1,2</sup>,
+<b>Yihang Li*</b><sup>1,2</sup>,
+<b>Bowen Zeng*</b><sup>1,2</sup>,
+<b>Zonghao Chen*</b><sup>1,2</sup>,
+<b>Ke Chen</b><sup>1,2</sup>,
+<b>Lidan Shou</b><sup>1,2</sup>,
+<b>Gang Chen</b><sup>1</sup>
+<b>Huan Li</b><sup>1,2</sup>
+</div>
+
+
+
+<div align="center">
+<sup>1</sup>The State Key Laboratory of Blockchain and Data Security, Zhejiang University
+</div>
+<div align="center">
+<sup>2</sup>Hangzhou High-Tech Zone (Binjiang) Institute of Blockchain and Data Security
+</div>
+
+
+
 **A curated list of papers, benchmarks, and resources for efficient inference of Large Vision-Language Models (LVLMs).**
 <br>
 *This repository accompanies our survey paper: "Efficient Inference for Large Vision-Language Models: Bottlenecks, Techniques, and Prospects"*
