@@ -18,7 +18,7 @@
 <b>Zonghao Chen*</b><sup>1,2</sup>,
 <b>Ke Chen</b><sup>1,2</sup>,
 <b>Lidan Shou</b><sup>1,2</sup>,
-<b>Gang Chen</b><sup>1</sup>
+<b>Gang Chen</b><sup>1</sup>,
 <b>Huan Li</b><sup>1,2</sup>
 </div>
 
@@ -30,6 +30,8 @@
 <div align="center">
 <sup>2</sup>Hangzhou High-Tech Zone (Binjiang) Institute of Blockchain and Data Security
 </div>
+
+---
 
 
 
