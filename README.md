@@ -327,10 +327,6 @@ For detailed guidelines, see [CONTRIBUTING.md](https://www.google.com/search?q=C
 
 **Disclaimer**: This is a living document and will be continuously updated. If you notice any missing papers or have suggestions for better categorization, feel free to open an issue or submit a pull request.
 
-*Last Updated: 2026-01-05*
-
-
-
-http://googleusercontent.com/youtube_content/0
+*Last Updated: 2026-04-08*
 
 ```
