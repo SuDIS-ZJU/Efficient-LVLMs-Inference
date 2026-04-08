@@ -19,7 +19,7 @@
 <b>Ke Chen</b><sup>1,2</sup>,
 <b>Lidan Shou</b><sup>1,2</sup>,
 <b>Gang Chen</b><sup>1</sup>,
-<b>Huan Li</b><sup>1,2</sup>
+<b>Huan Li</b><sup>1,2</sup> (* equal contribution)
 </div>
 
 
