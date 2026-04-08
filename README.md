@@ -299,11 +299,14 @@ This repository provides a **systematic taxonomy** of efficiency techniques alon
 If you find this repository useful, please consider citing our survey paper:
 
 ```bibtex
-@article{efficient-lvlm-inference-2025,
-  title={Efficient Inference for Large Vision-Language Models: Bottlenecks, Techniques, and Prospects},
-  author={},
-  journal={arXiv preprint arXiv:XXXX.XXXXX},
-  year={2025}
+@misc{zhang2026efficientinferencelargevisionlanguage,
+      title={Efficient Inference for Large Vision-Language Models: Bottlenecks, Techniques, and Prospects}, 
+      author={Jun Zhang and Yicheng Ji and Feiyang Ren and Yihang Li and Bowen Zeng and Zonghao Chen and Ke Chen and Lidan Shou and Gang Chen and Huan Li},
+      year={2026},
+      eprint={2604.05546},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2604.05546}, 
 }
 
 ```
