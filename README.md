@@ -4,7 +4,7 @@
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-[![Arxiv](https://img.shields.io/badge/arXiv-Survey-b31b1b.svg)](https://arxiv.org/abs/XXXX.XXXXX)
+[![Arxiv](https://img.shields.io/badge/arXiv-Survey-b31b1b.svg)](https://arxiv.org/abs/2604.05546)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 <br>
