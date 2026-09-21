@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Search and explore papers on efficient inference for large vision-language models.">
+  <meta property="og:title" content="Efficient LVLM Inference Research Hub">
+  <meta property="og:description" content="A searchable, stage-wise catalog of efficient LVLM inference research.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#12211b">
+  <title>Efficient LVLM Inference — Research Hub</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#catalog">Skip to catalog</a>
+
+  <header class="hero">
+    <nav class="nav shell" aria-label="Primary navigation">
+      <a class="brand" href="./" aria-label="Efficient LVLM Inference home">
+        <span class="brand-mark" aria-hidden="true">E</span>
+        <span>Efficient LVLM Inference</span>
+      </a>
+      <div class="nav-links">
+        <a href="https://arxiv.org/abs/2604.05546">Survey</a>
+        <a href="https://github.com/SuDIS-ZJU/Efficient-LVLMs-Inference">GitHub</a>
+        <a class="nav-cta" href="https://github.com/SuDIS-ZJU/Efficient-LVLMs-Inference/issues/new?template=add-paper.yml">Submit a paper</a>
+      </div>
+    </nav>
+
+    <div class="hero-content shell">
+      <p class="eyebrow">Living research collection · ACL 2026 Findings</p>
+      <h1>Find the right technique for<br><span>efficient LVLM inference.</span></h1>
+      <p class="hero-copy">Explore methods by inference stage, optimization mechanism, publication year, and code availability.</p>
+      <div class="hero-actions">
+        <a class="primary-button" href="#catalog">Explore the catalog</a>
+        <a class="secondary-button" href="data/papers.bib" download>Download BibTeX</a>
+      </div>
+
+      <dl class="stats" aria-label="Catalog statistics">
+        <div><dt id="paper-count">—</dt><dd>unique papers</dd></div>
+        <div><dt id="code-count">—</dt><dd>with code or project pages</dd></div>
+        <div><dt>3</dt><dd>inference stages</dd></div>
+        <div><dt id="updated-date">—</dt><dd>last updated</dd></div>
+      </dl>
+    </div>
+  </header>
+
+  <main id="catalog" class="shell catalog">
+    <section class="catalog-heading">
+      <div>
+        <p class="section-kicker">Paper explorer</p>
+        <h2>Browse the collection</h2>
+      </div>
+      <div class="download-menu">
+        <span>Export</span>
+        <a href="data/papers.json" download>JSON</a>
+        <a href="data/papers.yaml" download>YAML</a>
+        <a href="data/papers.csv" download>CSV</a>
+        <a href="data/papers.bib" download>BibTeX</a>
+      </div>
+    </section>
+
+    <section class="controls" aria-label="Catalog filters">
+      <label class="search-box" for="search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.35-4.35m2.35-5.15A7.5 7.5 0 1 1 4 11.5a7.5 7.5 0 0 1 15 0Z"/></svg>
+        <input id="search" type="search" placeholder="Search title, contribution, venue…" autocomplete="off">
+        <kbd>/</kbd>
+      </label>
+
+      <div class="filter-row">
+        <div id="stage-filter" class="segmented" aria-label="Filter by inference stage">
+          <button class="active" type="button" data-stage="all">All stages</button>
+          <button type="button" data-stage="Encoding">Encoding</button>
+          <button type="button" data-stage="Prefilling">Prefilling</button>
+          <button type="button" data-stage="Decoding">Decoding</button>
+        </div>
+        <select id="category-filter" aria-label="Filter by category"><option value="all">All categories</option></select>
+        <select id="year-filter" aria-label="Filter by year"><option value="all">All years</option></select>
+        <label class="code-toggle"><input id="code-filter" type="checkbox"><span aria-hidden="true"></span>Code available</label>
+      </div>
+    </section>
+
+    <section class="result-toolbar" aria-live="polite">
+      <p><strong id="result-count">0</strong> papers</p>
+      <label>Sort
+        <select id="sort-order">
+          <option value="newest">Newest first</option>
+          <option value="title">Title A–Z</option>
+        </select>
+      </label>
+    </section>
+
+    <section id="paper-grid" class="paper-grid" aria-label="Paper results"></section>
+    <section id="empty-state" class="empty-state" hidden>
+      <h3>No matching papers</h3>
+      <p>Try a broader query or clear one of the filters.</p>
+      <button id="clear-filters" type="button">Clear filters</button>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell footer-content">
+      <div>
+        <strong>Efficient LVLM Inference</strong>
+        <p>A living companion to the survey on bottlenecks, techniques, and prospects.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/SuDIS-ZJU/Efficient-LVLMs-Inference">Repository</a>
+        <a href="https://arxiv.org/abs/2604.05546">Paper</a>
+        <a href="https://github.com/SuDIS-ZJU/Efficient-LVLMs-Inference/blob/main/CONTRIBUTING.md">Contribute</a>
+      </div>
+    </div>
+  </footer>
+
+  <template id="paper-template">
+    <article class="paper-card">
+      <div class="paper-meta"><span class="stage-badge"></span><span class="venue"></span></div>
+      <h3><a class="paper-title"></a></h3>
+      <p class="contribution"></p>
+      <p class="taxonomy"></p>
+      <div class="paper-actions">
+        <a class="paper-link">Read paper <span aria-hidden="true">↗</span></a>
+        <a class="code-link">Code <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+  </template>
+
+  <script src="assets/app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+name: Add a paper
+description: Suggest a paper for the Efficient LVLM Inference collection
+title: "[Paper] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping us keep the collection current. Please submit one paper per issue and use the paper's official title.
+  - type: input
+    id: title
+    attributes:
+      label: Paper title
+      placeholder: Official paper title
+    validations:
+      required: true
+  - type: input
+    id: paper_url
+    attributes:
+      label: Paper URL
+      description: Prefer the official proceedings page; otherwise use arXiv.
+      placeholder: https://arxiv.org/abs/...
+    validations:
+      required: true
+  - type: input
+    id: code_url
+    attributes:
+      label: Code or project URL
+      description: Leave blank when no official implementation or project page is public.
+      placeholder: https://github.com/...
+  - type: input
+    id: venue
+    attributes:
+      label: Venue and year
+      placeholder: CVPR 2026 or arXiv 2026
+    validations:
+      required: true
+  - type: dropdown
+    id: stage
+    attributes:
+      label: Primary inference stage
+      description: Select where the method primarily removes computation or memory overhead.
+      options:
+        - Encoding
+        - Prefilling
+        - Decoding
+        - Benchmark or dataset
+        - Unsure
+    validations:
+      required: true
+  - type: input
+    id: category
+    attributes:
+      label: Suggested category
+      placeholder: Token Compression, KV Cache Compression, Speculative Decoding, ...
+    validations:
+      required: true
+  - type: textarea
+    id: contribution
+    attributes:
+      label: One-sentence contribution
+      description: Explain the efficiency mechanism rather than copying the abstract.
+      placeholder: Reduces ... by ... while preserving ...
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Submission checklist
+      options:
+        - label: I checked that the paper is not already listed.
+          required: true
+        - label: The links above point to official paper, code, or project pages.
+          required: true
+        - label: The work directly concerns efficient LVLM inference or its evaluation.
+          required: true
