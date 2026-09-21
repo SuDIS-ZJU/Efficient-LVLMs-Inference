@@ -1,97 +1,62 @@
+<div align="center">
+
 # Awesome Efficient Inference for Large Vision-Language Models
 
-<div align="center">
+**A stage-wise map of methods, benchmarks, and open-source resources for faster LVLM inference.**
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-[![Arxiv](https://img.shields.io/badge/arXiv-Survey-b31b1b.svg)](https://arxiv.org/abs/2604.05546)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![arXiv](https://img.shields.io/badge/arXiv-2604.05546-B31B1B.svg)](https://arxiv.org/abs/2604.05546)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-2E9B67.svg)](CONTRIBUTING.md)
+[![License](https://img.shields.io/badge/License-MIT-5864D8.svg)](LICENSE.txt)
 
-<br>
+[**Survey**](https://arxiv.org/abs/2604.05546) ·
+[**Encoding**](#-encoding-stage) ·
+[**Prefilling**](#-prefilling-stage) ·
+[**Decoding**](#-decoding-stage) ·
+[**Benchmarks**](#-benchmarks-and-datasets) ·
+[**Contribute**](CONTRIBUTING.md)
+
+</div>
+
+> **September 2026 update** — Added recent work on adaptive visual-token pruning, hybrid KV-cache compression, attention reuse, multimodal speculative decoding, and dedicated efficiency benchmarks.
+
+## At a Glance
+
+| Stage | Main bottleneck | Representative directions | Jump |
+|:---|:---|:---|:---:|
+| **Encoding** | Vision-encoder FLOPs and redundant visual inputs | Efficient encoders, keyframes, adaptive resolution, encoding-side compression | [Browse](#-encoding-stage) |
+| **Prefilling** | Long visual sequences and quadratic attention | Token compression and sparse attention | [Browse](#-prefilling-stage) |
+| **Decoding** | KV-cache memory traffic and serial generation | KV compression, attention reuse, speculative decoding, efficient reasoning | [Browse](#-decoding-stage) |
 
 <div align="center">
-<b>Jun Zhang*</b><sup>1,2</sup>,
-<b>Yicheng Ji*</b><sup>1,2</sup>,
-<b>Feiyang Ren*</b><sup>1,2</sup>,
-<b>Yihang Li*</b><sup>1,2</sup>,
-<b>Bowen Zeng*</b><sup>1,2</sup>,
-<b>Zonghao Chen*</b><sup>1,2</sup>,
-<b>Ke Chen</b><sup>1,2</sup>,
-<b>Lidan Shou</b><sup>1,2</sup>,
-<b>Gang Chen</b><sup>1</sup>,
-<b>Huan Li</b><sup>1,2</sup> (* equal contribution)
+  <img src="assets/overview.png" alt="LVLM inference pipeline and encoding-stage optimization techniques" width="100%">
 </div>
 
+Large Vision-Language Models process high-resolution images, long videos, and multimodal contexts, making inference expensive in different ways at different stages. This repository organizes methods by **where redundancy is removed** in the inference lifecycle, so readers can move from a deployment bottleneck to the most relevant family of techniques.
 
+## Taxonomy
 
 <div align="center">
-<sup>1</sup>The State Key Laboratory of Blockchain and Data Security, Zhejiang University
-</div>
-<div align="center">
-<sup>2</sup>Hangzhou High-Tech Zone (Binjiang) Institute of Blockchain and Data Security
+  <img src="assets/taxonomy.png" alt="Stage-wise taxonomy of efficient LVLM inference" width="100%">
 </div>
 
----
+The taxonomy organizes representative methods by inference stage and optimization mechanism. Updated paper links, code resources, and concise contributions are maintained in the tables below.
 
+## Browse the Collection
 
+| Encoding | Prefilling | Decoding | Resources |
+|:---|:---|:---|:---|
+| [Vision Encoders](#efficient-vision-encoders) | [Token Compression](#token-compression) | [KV Cache Compression](#kv-cache-compression) | [Benchmarks](#-benchmarks-and-datasets) |
+| [Modality Adapters](#efficient-modality-adapters) | [Sparse Attention](#sparse-attention) | [Attention Reuse](#attention-reuse) | [Related Surveys](#-survey-and-related-work) |
+| [Keyframes](#keyframe-selection) |  | [Speculative Decoding](#speculative-decoding) | [Citation](#-citation) |
+| [Adaptive Resolution](#adaptive-resolution) |  | [Efficient Reasoning](#efficient-reasoning) | [Contributing](#-contributing) |
+| [Encoding-side Compression](#encoding-oriented-token-compression) |  |  |  |
 
-**A curated list of papers, benchmarks, and resources for efficient inference of Large Vision-Language Models (LVLMs).**
-<br>
-*This repository accompanies our survey paper: "Efficient Inference for Large Vision-Language Models: Bottlenecks, Techniques, and Prospects"*
+### Reading Guide
 
-</div>
-
----
-
-## 📖 Introduction
-
-<div align="center">
-  <img src="assets/overview.png" alt="LVLM Inference Pipeline and Encoding Stage Techniques" width="100%">
-  <br>
-  <em>Figure 1: LVLM Inference Pipeline and Encoding Stage Techniques. The figure illustrates the three-stage inference workflow (left) and detailed encoding stage optimization techniques (right), showing how visual information flows from raw input to the language model.</em>
-</div>
-
-<br>
-
-Large Vision-Language Models (LVLMs) enable complex reasoning over fine-grained visual inputs and long videos, yet their inference remains a primary bottleneck. This overhead is shaped not only by compute but by memory traffic, cache locality, and sequence length.
-
-This repository provides a **systematic taxonomy** of efficiency techniques along three execution stages:
-- **👁️ Encoding**: Distilling visual information in compute-bound encoders
-- **⚡ Prefilling**: Mitigating quadratic attention via token compression and structured sparsity
-- **⏩ Decoding**: Overcoming the "visual memory wall" via KV cache compression, retrieval, and speculative execution
-
----
-
-## 🧩 Stage-Wise Taxonomy
-
-<div align="center">
-  <img src="assets/taxonomy.png" alt="Taxonomy of Efficient Inference Techniques for LVLMs" width="100%">
-  <br>
-  <em>Figure 2: Taxonomy of Efficient Inference Techniques for LVLMs. We organize existing methods by the three stages of the inference lifecycle. Within each stage, techniques are further categorized by their specific optimization mechanisms to facilitate a clear understanding of WHERE and HOW computational redundancy is reduced.</em>
-</div>
-
----
-
-## 📑 Table of Contents
-
-- [Encoding Stage](#-encoding-stage)
-  - [Efficient Vision Encoders](#efficient-vision-encoders)
-  - [Efficient Modality Adapters](#efficient-modality-adapters)
-  - [Keyframe Selection](#keyframe-selection)
-  - [Adaptive Resolution](#adaptive-resolution)
-  - [Encoding-Oriented Token Compression](#encoding-oriented-token-compression)
-- [Prefilling Stage](#-prefilling-stage)
-  - [Token Compression](#token-compression)
-  - [Sparse Attention](#sparse-attention)
-- [Decoding Stage](#-decoding-stage)
-  - [KV Cache Compression](#kv-cache-compression)
-  - [Attention Reuse](#attention-reuse)
-  - [Speculative Decoding](#speculative-decoding)
-  - [Efficient Reasoning](#efficient-reasoning)
-- [Benchmarks and Datasets](#-benchmarks-and-datasets)
-  - [Efficient Inference Benchmarks](#efficient-inference-benchmarks)
-- [Survey and Related Work](#-survey-and-related-work)
-- [Citation](#-citation)
+- **Stage** indicates when an optimization acts: before the LLM, during context prefilling, or during autoregressive generation.
+- **Training-free** methods can be applied without updating model parameters; **training-aware** methods learn a selector, compressor, or draft model.
+- Methods spanning multiple stages are listed at their primary intervention point and cross-referenced when useful.
 
 ---
 
@@ -352,7 +317,19 @@ This repository provides a **systematic taxonomy** of efficiency techniques alon
 
 ## 📝 Citation
 
-If you find this repository useful, please consider citing our survey paper:
+This repository accompanies our survey, **Efficient Inference for Large Vision-Language Models: Bottlenecks, Techniques, and Prospects**.
+
+<details>
+<summary><b>Authors and affiliations</b></summary>
+
+Jun Zhang*, Yicheng Ji*, Feiyang Ren*, Yihang Li*, Bowen Zeng*, Zonghao Chen*, Ke Chen, Lidan Shou, Gang Chen, and Huan Li (* equal contribution).
+
+1. The State Key Laboratory of Blockchain and Data Security, Zhejiang University<br>
+2. Hangzhou High-Tech Zone (Binjiang) Institute of Blockchain and Data Security
+
+</details>
+
+If you find the survey or repository useful, please consider citing:
 
 ```bibtex
 @misc{zhang2026efficientinferencelargevisionlanguage,
@@ -377,12 +354,10 @@ We welcome contributions! If you find a relevant paper or resource that should b
 2. Add the paper to the appropriate category
 3. Submit a pull request
 
-For detailed guidelines, see [CONTRIBUTING.md](https://www.google.com/search?q=CONTRIBUTING.md).
+For inclusion criteria and formatting conventions, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ---
 
 **Disclaimer**: This is a living document and will be continuously updated. If you notice any missing papers or have suggestions for better categorization, feel free to open an issue or submit a pull request.
 
 *Last Updated: 2026-09-21*
-
-```
