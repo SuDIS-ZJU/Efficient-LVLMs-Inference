@@ -85,9 +85,11 @@ This repository provides a **systematic taxonomy** of efficiency techniques alon
   - [Sparse Attention](#sparse-attention)
 - [Decoding Stage](#-decoding-stage)
   - [KV Cache Compression](#kv-cache-compression)
+  - [Attention Reuse](#attention-reuse)
   - [Speculative Decoding](#speculative-decoding)
   - [Efficient Reasoning](#efficient-reasoning)
 - [Benchmarks and Datasets](#-benchmarks-and-datasets)
+  - [Efficient Inference Benchmarks](#efficient-inference-benchmarks)
 - [Survey and Related Work](#-survey-and-related-work)
 - [Citation](#-citation)
 
@@ -110,6 +112,7 @@ This repository provides a **systematic taxonomy** of efficiency techniques alon
 #### Video-Related
 | Paper | Venue | Code | Key Contribution |
 |:---|:---:|:---:|:---|
+| [**STC: Accelerating Streaming Video Large Language Models via Hierarchical Token Compression**](https://arxiv.org/abs/2512.00891) | arXiv 2025 | [![GitHub](https://img.shields.io/badge/GitHub-black?logo=github)](https://github.com/OpenBMB/STC) | Jointly accelerates ViT encoding through cross-frame feature caching and LLM prefilling through spatiotemporal token pruning |
 | [**Qwen2-VL: Enhancing vision-language model's perception of the world at any resolution**](https://arxiv.org/abs/2409.12191) | arXiv 2024 | [![GitHub](https://img.shields.io/badge/GitHub-black?logo=github)](https://github.com/QwenLM/Qwen2-VL) | Native Dynamic Resolution framework enabling adaptive visual token generation |
 | [**Video-ChatGPT: Towards detailed video understanding via large vision and language models**](https://doi.org/10.18653/v1/2024.acl-long.679) | ACL 2024 | [![GitHub](https://img.shields.io/badge/GitHub-black?logo=github)](https://github.com/mbzuai-oryx/Video-ChatGPT) | Applies pooling over visual tokens to obtain compact visual representations |
 | [**MovieChat: From dense token to sparse memory for long video understanding**](https://doi.org/10.1109/CVPR52733.2024.01725) | CVPR 2024 | [![GitHub](https://img.shields.io/badge/GitHub-black?logo=github)](https://github.com/Gapry/MovieChat) | Vision encoder explicitly trained for long video scenarios |
@@ -158,6 +161,7 @@ This repository provides a **systematic taxonomy** of efficiency techniques alon
 #### Attention-Free
 | Paper | Venue | Code | Key Contribution |
 |:---|:---:|:---:|:---|
+| [**EvoComp: Learning Visual Token Compression via Semantic-Guided Evolutionary Labeling**](https://arxiv.org/abs/2604.17087) | CVPR 2026 | - | Learns a lightweight visual token compressor from semantic-guided evolutionary token labels |
 | [**LLaVA-PruMerge: Adaptive Token Reduction**](https://arxiv.org/abs/2403.15388) | arXiv 2024 | [![GitHub](https://img.shields.io/badge/GitHub-black?logo=github)](https://github.com/Unicorn-3965/LLaVA-PruMerge) | Reduces visual tokens according to similarities between class and spatial tokens |
 | [**PVC: Progressive Visual Token Compression**](https://arxiv.org/abs/2412.09613) | arXiv 2024 | - | Progressive compression strategy extending images as static videos |
 | [**Less is More: A Simple yet Effective Token Reduction Method**](https://arxiv.org/abs/2409.10994) | arXiv 2024 | - | Token reduction using both CLIP metric and similarity (TRIM) |
@@ -185,6 +189,8 @@ This repository provides a **systematic taxonomy** of efficiency techniques alon
 #### Diversity-Guided
 | Paper | Venue | Code | Key Contribution |
 |:---|:---:|:---:|:---|
+| [**Unified Spatiotemporal Token Compression for Video-LLMs at Ultra-Low Retention**](https://arxiv.org/abs/2603.21957) | CVPR 2026 | - | Globally allocates a unified spatiotemporal token budget using contribution and redundancy signals |
+| [**CoverPruner: Who Speaks for the Pruned? Visual Token Pruning as Coverage Optimization**](https://arxiv.org/abs/2609.03158) | arXiv 2026 | - | Formulates pruning as query-weighted representational coverage maximization |
 | [**FrameFusion: Combining similarity and importance**](https://arxiv.org/abs/2501.01986) | arXiv 2024 | - | Merges tokens in shallow layers and prunes in deep layers |
 | [**G-Prune: Training-free visual token pruning from graph perspective**](https://doi.org/10.1609/aaai.v39i4.32427) | AAAI 2025 | - | Similarity graph and information flow to retain representative tokens |
 | [**DART: Stop looking for important tokens, duplication matters more**](https://arxiv.org/abs/2502.11494) | arXiv 2025 | - | Pivot-based duplication pruning selecting tokens with low duplication |
@@ -204,6 +210,11 @@ This repository provides a **systematic taxonomy** of efficiency techniques alon
 #### Attention-Guided
 | Paper | Venue | Code | Key Contribution |
 |:---|:---:|:---:|:---|
+| [**SwiftVLM: Efficient Vision-Language Model Inference via Cross-Layer Token Bypass**](https://arxiv.org/abs/2602.03134) | arXiv 2026 | - | Bypasses rather than permanently discards unselected tokens, enabling later-layer re-evaluation |
+| [**ICCTP: Instruction-Guided Cross-Modal Clustering for Training-Free Visual Token Pruning**](https://doi.org/10.1609/aaai.v40i14.38212) | AAAI 2026 | - | Uses instruction noun anchors for cross-modal clustering and high-ratio token pruning |
+| [**OccamToken: Efficient VLM Inference with Training-Free and Budget-Adaptive Token Pruning**](https://arxiv.org/abs/2605.29657) | arXiv 2026 | - | Uses register-anchored relative evidence tests for image- and query-adaptive pruning |
+| [**SIEVE: When Vision Becomes Text**](https://arxiv.org/abs/2608.10489) | arXiv 2026 | - | Retains visual information unexplained by the text subspace using cross-modal residual guidance |
+| [**AVTP: Multi-Image Visual Token Pruning in Large Visual Language Models**](https://arxiv.org/abs/2608.26806) | EMNLP Findings 2026 | [![GitHub](https://img.shields.io/badge/GitHub-black?logo=github)](https://github.com/zry13/AVTP) | Adaptively assigns token budgets across images and supports diverse VLM architectures |
 | [**FastV: An image is worth 1/2 tokens after layer 2**](https://doi.org/10.1007/978-3-031-73004-7_2) | ECCV 2024 | [![GitHub](https://img.shields.io/badge/GitHub-black?logo=github)](https://github.com/pkunlp-icler/FastV) | Learns attention patterns in early layers to prune visual tokens in deeper layers |
 | [**PyramidDrop: Accelerating via pyramid visual redundancy reduction**](https://arxiv.org/abs/2410.17247) | arXiv 2024 | [![GitHub](https://img.shields.io/badge/GitHub-black?logo=github)](https://github.com/Cooperx521/PyramidDrop) | Multi-stage pruning using attention score ranking |
 | [**FrameFusion: Combining similarity and importance**](https://arxiv.org/abs/2501.01986) | arXiv 2024 | - | Merges tokens in shallow layers and prunes in deep layers |
@@ -234,6 +245,7 @@ This repository provides a **systematic taxonomy** of efficiency techniques alon
 #### Token-Level
 | Paper | Venue | Code | Key Contribution |
 |:---|:---:|:---:|:---|
+| [**DSTP: Why and When Visual Token Pruning Fails?**](https://arxiv.org/abs/2604.12358) | arXiv 2026 | - | Tracks decoding-stage relevant visual information shift to adapt token pruning during complex reasoning |
 | [**LOOK-M: Look-once optimization in KV cache**](https://arxiv.org/abs/2406.18139) | arXiv 2024 | - | Text-prior compression policy prioritizing textual KVs while evicting visual tokens |
 | [**Elastic Cache: Efficient inference of vision instruction-following models**](https://doi.org/10.1007/978-3-031-72643-9_4) | ECCV 2024 | - | Cache merging strategy fusing less important KVs guided by distinct metrics |
 | [**ReKV: Streaming video QA with in-context video KV-cache retrieval**](https://arxiv.org/abs/2503.00540) | arXiv 2025 | - | Retrieval-based framework offloading video chunks to external memory |
@@ -243,6 +255,7 @@ This repository provides a **systematic taxonomy** of efficiency techniques alon
 #### Layer-Level
 | Paper | Venue | Code | Key Contribution |
 |:---|:---:|:---:|:---|
+| [**AirCache: Activating Inter-modal Relevancy KV Cache Compression**](https://arxiv.org/abs/2503.23956) | arXiv 2025 | - | Models stable inter-modal relevance and adaptively allocates visual KV budgets across layers |
 | [**VL-Cache: Sparsity and modality-aware KV cache compression**](https://arxiv.org/abs/2410.23317) | arXiv 2024 | - | Dynamically sets each layer's cache size according to measured attention sparsity |
 | [**Meda: Dynamic KV cache allocation for efficient multimodal inference**](https://arxiv.org/abs/2502.17599) | arXiv 2025 | - | Cross-modal attention entropy guiding cache allocation to layers with complex interactions |
 | [**ST3: Accelerating MLLM by spatial-temporal visual token trimming**](https://doi.org/10.1609/aaai.v39i10.33201) | AAAI 2025 | - | Progressive pruning of visual tokens in deeper layers based on decreasing visual importance |
@@ -252,6 +265,7 @@ This repository provides a **systematic taxonomy** of efficiency techniques alon
 #### Head-Level
 | Paper | Venue | Code | Key Contribution |
 |:---|:---:|:---:|:---|
+| [**HybridKV: Hybrid KV Cache Compression for Efficient Multimodal Large Language Model Inference**](https://arxiv.org/abs/2604.05887) | arXiv 2026 | - | Classifies attention heads as static or dynamic and applies head-specific pruning or chunk retrieval |
 | [**SparseMM: Head Sparsity Emerges from Visual Concept Responses**](https://arxiv.org/abs/2506.05344) | arXiv 2025 | - | Identifies vital visual heads and allocates asymmetric budgets based on visual relevance |
 
 #### Bit-Level
@@ -261,16 +275,24 @@ This repository provides a **systematic taxonomy** of efficiency techniques alon
 | [**CalibQuant: 1-Bit KV Cache Quantization for Multimodal LLMs**](https://arxiv.org/abs/2502.14882) | arXiv 2025 | - | Channel-wise 1-bit quantization with post-calibration for extreme values |
 | [**VidKV: Plug-and-Play 1.x-Bit KV Cache Quantization**](https://arxiv.org/abs/2503.16257) | arXiv 2025 | - | Sub-2-bit quantization with differential treatment for K and V |
 
+### Attention Reuse
+
+| Paper | Venue | Code | Key Contribution |
+|:---|:---:|:---:|:---|
+| [**Q Cache: Visual Attention is Valuable in Less than Half of Decode Layers for Multimodal Large Language Model**](https://arxiv.org/abs/2602.01901) | arXiv 2026 | - | Reuses similar attention queries across adjacent layers through a lightweight layer-shared cache |
+
 ### Speculative Decoding
 
 #### Training-Free
 | Paper | Venue | Code | Key Contribution |
 |:---|:---:|:---:|:---|
+| [**MMSpec: Benchmarking Speculative Decoding for Vision-Language Models**](https://arxiv.org/abs/2603.14989) | arXiv 2026 | [![Page](https://img.shields.io/badge/Project-Page-blue)](https://mmspec-bench.github.io/) | Benchmarks ten speculative decoding methods and introduces vision-adaptive ViSkip |
 | [**SpecVLM: Enhancing speculative decoding via verifier-guided token pruning**](https://doi.org/10.48550/arXiv.2508.16201) | EMNLP 2025 | - | Verifier-guided staged pruning removing up to 90% of vision tokens from draft model input |
 
 #### Training-Aware
 | Paper | Venue | Code | Key Contribution |
 |:---|:---:|:---:|:---|
+| [**MASSV: Multimodal Adaptation and Self-Data Distillation for Speculative Decoding of VLMs**](https://arxiv.org/abs/2505.10526) | arXiv 2025 | - | Converts small language models into multimodal drafters using a vision projector and self-distillation |
 | [**Spec-LLaVA: Accelerating VLMs with Dynamic Tree-Based Speculative Decoding**](https://arxiv.org/abs/2509.11961) | arXiv 2025 | - | Compact distilled draft model paired with tree-based verification algorithm |
 | [**MSD: Speculative Decoding Reimagined for Multimodal Large Language Models**](https://arxiv.org/abs/2505.14260) | arXiv 2025 | - | Two-stage training enabling draft model to acquire language modeling and visual perception |
 | [**ViSpec: Accelerating VLMs with Vision-Aware Speculative Decoding**](https://arxiv.org/abs/2509.15235) | arXiv 2025 | - | Lightweight vision adaptor to compress image tokens for draft model |
@@ -306,6 +328,13 @@ This repository provides a **systematic taxonomy** of efficiency techniques alon
 | **Video-MME** | First comprehensive video analysis benchmark | [[Paper]](https://arxiv.org/abs/2405.21075) [[Website]](https://video-mme.github.io/) |
 | **LongVideoBench** | Long-context interleaved video-language understanding | [[Paper]](https://arxiv.org/abs/2407.15754) [[Code]](https://github.com/longvideobench/LongVideoBench) |
 | **MVBench** | Comprehensive multi-modal video understanding | [[Paper]](https://arxiv.org/abs/2311.17005) [[Code]](https://github.com/OpenGVLab/Ask-Anything) |
+
+### Efficient Inference Benchmarks
+
+| Benchmark | Description | Resources |
+|:---|:---|:---:|
+| **VTC-Bench** | Compression-sensitive evaluation framework that denoises existing benchmarks using image downsampling | [[Paper]](https://aclanthology.org/2026.acl-long.195/) |
+| **MMSpec** | Unified benchmark of ten speculative decoding algorithms across six multimodal task categories | [[Paper]](https://arxiv.org/abs/2603.14989) [[Website]](https://mmspec-bench.github.io/) |
 
 ---
 
@@ -354,6 +383,6 @@ For detailed guidelines, see [CONTRIBUTING.md](https://www.google.com/search?q=C
 
 **Disclaimer**: This is a living document and will be continuously updated. If you notice any missing papers or have suggestions for better categorization, feel free to open an issue or submit a pull request.
 
-*Last Updated: 2026-04-08*
+*Last Updated: 2026-09-21*
 
 ```
