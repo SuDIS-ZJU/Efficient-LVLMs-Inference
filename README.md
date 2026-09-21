@@ -168,6 +168,7 @@ This repository provides a **systematic taxonomy** of efficiency techniques alon
 #### Attention-Aware
 | Paper | Venue | Code | Key Contribution |
 |:---|:---:|:---:|:---|
+| [**Semantic-Guided Slow-Fast Pruning of Visual Tokens for Vision-Language Models**](https://ieeexplore.ieee.org/abstract/document/11460400) | ICASSP 2026 | - | Semantic-guided slow-fast pruning of visual tokens for VLMs |
 | [**VisionZip: Longer is Better but Not Necessary**](https://arxiv.org/abs/2412.04467) | arXiv 2024 | [![GitHub](https://img.shields.io/badge/GitHub-black?logo=github)](https://github.com/VILA-Lab/VisionZip) | Selects informative tokens using visual attention from encoder |
 | [**HIVTP: Hierarchical Visual Token Pruning**](https://arxiv.org/abs/2509.23663) | arXiv 2025 | - | Attention maps from middle encoder layers to estimate visual token importance |
 | [**ToSA: Token Merging with Spatial Awareness**](https://arxiv.org/abs/2506.20066) | arXiv 2025 | - | Token merging combining semantic and spatial awareness |
