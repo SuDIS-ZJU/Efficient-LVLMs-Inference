@@ -6,10 +6,12 @@
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![arXiv](https://img.shields.io/badge/arXiv-2604.05546-B31B1B.svg)](https://arxiv.org/abs/2604.05546)
+[![Research Hub](https://img.shields.io/badge/Explore-Research_Hub-0F7650.svg)](https://sudis-zju.github.io/Efficient-LVLMs-Inference/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-2E9B67.svg)](CONTRIBUTING.md)
 [![License](https://img.shields.io/badge/License-MIT-5864D8.svg)](LICENSE.txt)
 
 [**Survey**](https://arxiv.org/abs/2604.05546) ·
+[**Research Hub**](https://sudis-zju.github.io/Efficient-LVLMs-Inference/) ·
 [**Encoding**](#-encoding-stage) ·
 [**Prefilling**](#-prefilling-stage) ·
 [**Decoding**](#-decoding-stage) ·
@@ -52,6 +54,8 @@ The taxonomy organizes representative methods by inference stage and optimizatio
 | [Adaptive Resolution](#adaptive-resolution) |  | [Efficient Reasoning](#efficient-reasoning) | [Contributing](#-contributing) |
 | [Encoding-side Compression](#encoding-oriented-token-compression) |  |  |  |
 
+> **Need faster lookup?** Use the [interactive Research Hub](https://sudis-zju.github.io/Efficient-LVLMs-Inference/) to search and filter the catalog, or download the machine-readable [JSON](docs/data/papers.json), [YAML](docs/data/papers.yaml), [CSV](docs/data/papers.csv), and [BibTeX](docs/data/papers.bib) exports.
+
 ### Reading Guide
 
 - **Stage** indicates when an optimization acts: before the LLM, during context prefilling, or during autoregressive generation.
@@ -70,17 +74,17 @@ The taxonomy organizes representative methods by inference stage and optimizatio
 | Paper | Venue | Code | Key Contribution |
 |:---|:---:|:---:|:---|
 | [**FastViT: A fast hybrid vision transformer using structural reparameterization**](https://doi.org/10.1109/ICCV51070.2023.00532) | ICCV 2023 | [![GitHub](https://img.shields.io/badge/GitHub-black?logo=github)](https://github.com/apple/ml-fastvit) | Novel token mixing operators and structural reparameterization |
-| [**ConvLLaVA: Hierarchical backbones as visual encoder for large multimodal models**](https://arxiv.org/abs/2405.15738) | arXiv 2024 | [![GitHub](https://img.shields.io/badge/GitHub-black?logo=github)](https://github.com/ConvLLaVA/ConvLLaVA) | Compresses high-resolution images into information-rich visual features |
+| [**ConvLLaVA: Hierarchical backbones as visual encoder for large multimodal models**](https://arxiv.org/abs/2405.15738) | arXiv 2024 | [![GitHub](https://img.shields.io/badge/GitHub-black?logo=github)](https://github.com/alibaba/conv-llava) | Compresses high-resolution images into information-rich visual features |
 | [**FastVLM: Efficient vision encoding for vision language models**](https://openaccess.thecvf.com/content/CVPR2025/html/Vasu_FastVLM_Efficient_Vision_Encoding_for_Vision_Language_Models_CVPR_2025_paper.html) | CVPR 2025 | [![Page](https://img.shields.io/badge/Project-Page-blue)](https://machinelearning.apple.com/research/fastvlm-efficient-vision-encoding) | Hybrid vision encoder outputting fewer tokens and reducing encoding time |
 | [**Glyph: Scaling Context Windows via Visual-Text Compression**](https://arxiv.org/abs/2510.17800) | arXiv 2025 | [![GitHub](https://img.shields.io/badge/GitHub-black?logo=github)](https://github.com/thu-coai/Glyph) | DeepEncoder maintaining low activations under high-resolution input |
 
 #### Video-Related
 | Paper | Venue | Code | Key Contribution |
 |:---|:---:|:---:|:---|
-| [**STC: Accelerating Streaming Video Large Language Models via Hierarchical Token Compression**](https://arxiv.org/abs/2512.00891) | arXiv 2025 | [![GitHub](https://img.shields.io/badge/GitHub-black?logo=github)](https://github.com/OpenBMB/STC) | Jointly accelerates ViT encoding through cross-frame feature caching and LLM prefilling through spatiotemporal token pruning |
+| [**STC: Accelerating Streaming Video Large Language Models via Hierarchical Token Compression**](https://arxiv.org/abs/2512.00891) | CVPR 2026 | [![GitHub](https://img.shields.io/badge/GitHub-black?logo=github)](https://github.com/lern-to-write/STC) | Jointly accelerates ViT encoding through cross-frame feature caching and LLM prefilling through spatiotemporal token pruning |
 | [**Qwen2-VL: Enhancing vision-language model's perception of the world at any resolution**](https://arxiv.org/abs/2409.12191) | arXiv 2024 | [![GitHub](https://img.shields.io/badge/GitHub-black?logo=github)](https://github.com/QwenLM/Qwen2-VL) | Native Dynamic Resolution framework enabling adaptive visual token generation |
 | [**Video-ChatGPT: Towards detailed video understanding via large vision and language models**](https://doi.org/10.18653/v1/2024.acl-long.679) | ACL 2024 | [![GitHub](https://img.shields.io/badge/GitHub-black?logo=github)](https://github.com/mbzuai-oryx/Video-ChatGPT) | Applies pooling over visual tokens to obtain compact visual representations |
-| [**MovieChat: From dense token to sparse memory for long video understanding**](https://doi.org/10.1109/CVPR52733.2024.01725) | CVPR 2024 | [![GitHub](https://img.shields.io/badge/GitHub-black?logo=github)](https://github.com/Gapry/MovieChat) | Vision encoder explicitly trained for long video scenarios |
+| [**MovieChat: From dense token to sparse memory for long video understanding**](https://doi.org/10.1109/CVPR52733.2024.01725) | CVPR 2024 | [![GitHub](https://img.shields.io/badge/GitHub-black?logo=github)](https://github.com/wenhaochai/MovieChat) | Vision encoder explicitly trained for long video scenarios |
 | [**Long context transfer from language to vision**](https://arxiv.org/abs/2406.16852) | arXiv 2024 | - | Vision encoder explicitly trained for long video scenarios |
 | [**LongVLM: Efficient long video understanding via large language models**](https://doi.org/10.1007/978-3-031-73414-4_26) | ECCV 2024 | [![GitHub](https://img.shields.io/badge/GitHub-black?logo=github)](https://github.com/ziplab/LongVLM) | Vision encoder explicitly trained for long video scenarios |
 | [**LongVU: Spatiotemporal Adaptive Compression for Long Video-Language Understanding**](https://openreview.net/forum?id=XzZC4gs1mf) | ICML 2025 | [![Page](https://img.shields.io/badge/Project-Page-blue)](https://vision-cair.github.io/LongVU/) | Preserves full features for query-relevant frames while applying spatial pooling |
@@ -127,7 +131,7 @@ The taxonomy organizes representative methods by inference stage and optimizatio
 | Paper | Venue | Code | Key Contribution |
 |:---|:---:|:---:|:---|
 | [**EvoComp: Learning Visual Token Compression via Semantic-Guided Evolutionary Labeling**](https://arxiv.org/abs/2604.17087) | CVPR 2026 | - | Learns a lightweight visual token compressor from semantic-guided evolutionary token labels |
-| [**LLaVA-PruMerge: Adaptive Token Reduction**](https://arxiv.org/abs/2403.15388) | arXiv 2024 | [![GitHub](https://img.shields.io/badge/GitHub-black?logo=github)](https://github.com/Unicorn-3965/LLaVA-PruMerge) | Reduces visual tokens according to similarities between class and spatial tokens |
+| [**LLaVA-PruMerge: Adaptive Token Reduction**](https://arxiv.org/abs/2403.15388) | ICCV 2025 | [![GitHub](https://img.shields.io/badge/GitHub-black?logo=github)](https://github.com/42Shawn/LLaVA-PruMerge) | Reduces visual tokens according to similarities between class and spatial tokens |
 | [**PVC: Progressive Visual Token Compression**](https://arxiv.org/abs/2412.09613) | arXiv 2024 | - | Progressive compression strategy extending images as static videos |
 | [**Less is More: A Simple yet Effective Token Reduction Method**](https://arxiv.org/abs/2409.10994) | arXiv 2024 | - | Token reduction using both CLIP metric and similarity (TRIM) |
 | [**FOLDER: Accelerating Multi-modal Large Language Models**](https://arxiv.org/abs/2501.02430) | arXiv 2025 | - | Plug-and-play module in final vision backbone blocks for merging operations |
@@ -138,7 +142,7 @@ The taxonomy organizes representative methods by inference stage and optimizatio
 | Paper | Venue | Code | Key Contribution |
 |:---|:---:|:---:|:---|
 | [**Semantic-Guided Slow-Fast Pruning of Visual Tokens for Vision-Language Models**](https://ieeexplore.ieee.org/abstract/document/11460400) | ICASSP 2026 | - | Semantic-guided slow-fast pruning of visual tokens for VLMs |
-| [**VisionZip: Longer is Better but Not Necessary**](https://arxiv.org/abs/2412.04467) | arXiv 2024 | [![GitHub](https://img.shields.io/badge/GitHub-black?logo=github)](https://github.com/VILA-Lab/VisionZip) | Selects informative tokens using visual attention from encoder |
+| [**VisionZip: Longer is Better but Not Necessary**](https://arxiv.org/abs/2412.04467) | CVPR 2025 | [![GitHub](https://img.shields.io/badge/GitHub-black?logo=github)](https://github.com/dvlab-research/VisionZip) | Selects informative tokens using visual attention from encoder |
 | [**HIVTP: Hierarchical Visual Token Pruning**](https://arxiv.org/abs/2509.23663) | arXiv 2025 | - | Attention maps from middle encoder layers to estimate visual token importance |
 | [**ToSA: Token Merging with Spatial Awareness**](https://arxiv.org/abs/2506.20066) | arXiv 2025 | - | Token merging combining semantic and spatial awareness |
 | [**SparseVILA: Decoupling Visual Sparsity for Efficient VLM Inference**](https://arxiv.org/abs/2510.17777) | ICCV 2025 | - | Estimates token importance from visual encoder's self-attention maps |
@@ -348,7 +352,7 @@ If you find the survey or repository useful, please consider citing:
 
 ## 🤝 Contributing
 
-We welcome contributions! If you find a relevant paper or resource that should be included, please:
+We welcome contributions! If you find a relevant paper or resource, use the [paper submission form](https://github.com/SuDIS-ZJU/Efficient-LVLMs-Inference/issues/new?template=add-paper.yml) or:
 
 1. Fork this repository
 2. Add the paper to the appropriate category

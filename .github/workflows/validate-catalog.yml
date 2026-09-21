@@ -1,0 +1,31 @@
+name: Validate catalog
+
+on:
+  pull_request:
+    paths:
+      - README.md
+      - docs/data/**
+      - scripts/**
+  push:
+    branches: [main]
+    paths:
+      - README.md
+      - docs/data/**
+      - scripts/**
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate catalog and generated exports
+        run: python scripts/build_catalog.py --check

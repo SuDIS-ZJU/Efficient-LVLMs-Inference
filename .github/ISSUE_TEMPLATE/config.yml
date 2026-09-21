@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Read the contribution guide
+    url: https://github.com/SuDIS-ZJU/Efficient-LVLMs-Inference/blob/main/CONTRIBUTING.md
+    about: Review the scope and formatting conventions before submitting a pull request.

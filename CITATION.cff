@@ -1,0 +1,62 @@
+cff-version: 1.2.0
+message: If you use this survey or catalog, please cite the paper below.
+title: Efficient Inference for Large Vision-Language Models
+type: dataset
+authors:
+  - family-names: Zhang
+    given-names: Jun
+  - family-names: Ji
+    given-names: Yicheng
+  - family-names: Ren
+    given-names: Feiyang
+  - family-names: Li
+    given-names: Yihang
+  - family-names: Zeng
+    given-names: Bowen
+  - family-names: Chen
+    given-names: Zonghao
+  - family-names: Chen
+    given-names: Ke
+  - family-names: Shou
+    given-names: Lidan
+  - family-names: Chen
+    given-names: Gang
+  - family-names: Li
+    given-names: Huan
+repository-code: https://github.com/SuDIS-ZJU/Efficient-LVLMs-Inference
+url: https://arxiv.org/abs/2604.05546
+license: MIT
+date-released: 2026-04-08
+keywords:
+  - large vision-language models
+  - efficient inference
+  - visual token compression
+  - KV cache compression
+  - speculative decoding
+preferred-citation:
+  type: article
+  title: "Efficient Inference for Large Vision-Language Models: Bottlenecks, Techniques, and Prospects"
+  authors:
+    - family-names: Zhang
+      given-names: Jun
+    - family-names: Ji
+      given-names: Yicheng
+    - family-names: Ren
+      given-names: Feiyang
+    - family-names: Li
+      given-names: Yihang
+    - family-names: Zeng
+      given-names: Bowen
+    - family-names: Chen
+      given-names: Zonghao
+    - family-names: Chen
+      given-names: Ke
+    - family-names: Shou
+      given-names: Lidan
+    - family-names: Chen
+      given-names: Gang
+    - family-names: Li
+      given-names: Huan
+  journal: Findings of the Association for Computational Linguistics (ACL 2026)
+  year: 2026
+  url: https://arxiv.org/abs/2604.05546

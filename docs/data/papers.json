@@ -1,0 +1,2365 @@
+{
+  "schema_version": 1,
+  "last_updated": "2026-09-21",
+  "source": "README.md",
+  "repository": "https://github.com/SuDIS-ZJU/Efficient-LVLMs-Inference",
+  "stats": {
+    "papers": 101,
+    "with_code": 21,
+    "stages": {
+      "Decoding": 31,
+      "Encoding": 38,
+      "Prefilling": 34
+    }
+  },
+  "papers": [
+    {
+      "title": "AVTP: Multi-Image Visual Token Pruning in Large Visual Language Models",
+      "paper_url": "https://arxiv.org/abs/2608.26806",
+      "venue": "EMNLP Findings 2026",
+      "year": 2026,
+      "code_url": "https://github.com/zry13/AVTP",
+      "code_type": "Code",
+      "contribution": "Adaptively assigns token budgets across images and supports diverse VLM architectures",
+      "placements": [
+        {
+          "stage": "Prefilling",
+          "category": "Token Compression",
+          "subcategory": "Attention-Guided"
+        }
+      ],
+      "id": "avtp-multi-image-visual-token-pruning-in-large-visual-language-models",
+      "stages": [
+        "Prefilling"
+      ],
+      "categories": [
+        "Token Compression"
+      ]
+    },
+    {
+      "title": "CoverPruner: Who Speaks for the Pruned? Visual Token Pruning as Coverage Optimization",
+      "paper_url": "https://arxiv.org/abs/2609.03158",
+      "venue": "arXiv 2026",
+      "year": 2026,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Formulates pruning as query-weighted representational coverage maximization",
+      "placements": [
+        {
+          "stage": "Prefilling",
+          "category": "Token Compression",
+          "subcategory": "Diversity-Guided"
+        }
+      ],
+      "id": "coverpruner-who-speaks-for-the-pruned-visual-token-pruning-as-coverage-optimization",
+      "stages": [
+        "Prefilling"
+      ],
+      "categories": [
+        "Token Compression"
+      ]
+    },
+    {
+      "title": "DSTP: Why and When Visual Token Pruning Fails?",
+      "paper_url": "https://arxiv.org/abs/2604.12358",
+      "venue": "arXiv 2026",
+      "year": 2026,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Tracks decoding-stage relevant visual information shift to adapt token pruning during complex reasoning",
+      "placements": [
+        {
+          "stage": "Decoding",
+          "category": "KV Cache Compression",
+          "subcategory": "Token-Level"
+        }
+      ],
+      "id": "dstp-why-and-when-visual-token-pruning-fails",
+      "stages": [
+        "Decoding"
+      ],
+      "categories": [
+        "KV Cache Compression"
+      ]
+    },
+    {
+      "title": "EvoComp: Learning Visual Token Compression via Semantic-Guided Evolutionary Labeling",
+      "paper_url": "https://arxiv.org/abs/2604.17087",
+      "venue": "CVPR 2026",
+      "year": 2026,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Learns a lightweight visual token compressor from semantic-guided evolutionary token labels",
+      "placements": [
+        {
+          "stage": "Encoding",
+          "category": "Encoding-Oriented Token Compression",
+          "subcategory": "Attention-Free"
+        }
+      ],
+      "id": "evocomp-learning-visual-token-compression-via-semantic-guided-evolutionary-labeling",
+      "stages": [
+        "Encoding"
+      ],
+      "categories": [
+        "Encoding-Oriented Token Compression"
+      ]
+    },
+    {
+      "title": "HybridKV: Hybrid KV Cache Compression for Efficient Multimodal Large Language Model Inference",
+      "paper_url": "https://arxiv.org/abs/2604.05887",
+      "venue": "arXiv 2026",
+      "year": 2026,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Classifies attention heads as static or dynamic and applies head-specific pruning or chunk retrieval",
+      "placements": [
+        {
+          "stage": "Decoding",
+          "category": "KV Cache Compression",
+          "subcategory": "Head-Level"
+        }
+      ],
+      "id": "hybridkv-hybrid-kv-cache-compression-for-efficient-multimodal-large-language-model-inference",
+      "stages": [
+        "Decoding"
+      ],
+      "categories": [
+        "KV Cache Compression"
+      ]
+    },
+    {
+      "title": "ICCTP: Instruction-Guided Cross-Modal Clustering for Training-Free Visual Token Pruning",
+      "paper_url": "https://doi.org/10.1609/aaai.v40i14.38212",
+      "venue": "AAAI 2026",
+      "year": 2026,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Uses instruction noun anchors for cross-modal clustering and high-ratio token pruning",
+      "placements": [
+        {
+          "stage": "Prefilling",
+          "category": "Token Compression",
+          "subcategory": "Attention-Guided"
+        }
+      ],
+      "id": "icctp-instruction-guided-cross-modal-clustering-for-training-free-visual-token-pruning",
+      "stages": [
+        "Prefilling"
+      ],
+      "categories": [
+        "Token Compression"
+      ]
+    },
+    {
+      "title": "MMSpec: Benchmarking Speculative Decoding for Vision-Language Models",
+      "paper_url": "https://arxiv.org/abs/2603.14989",
+      "venue": "arXiv 2026",
+      "year": 2026,
+      "code_url": "https://mmspec-bench.github.io/",
+      "code_type": "Project page",
+      "contribution": "Benchmarks ten speculative decoding methods and introduces vision-adaptive ViSkip",
+      "placements": [
+        {
+          "stage": "Decoding",
+          "category": "Speculative Decoding",
+          "subcategory": "Training-Free"
+        }
+      ],
+      "id": "mmspec-benchmarking-speculative-decoding-for-vision-language-models",
+      "stages": [
+        "Decoding"
+      ],
+      "categories": [
+        "Speculative Decoding"
+      ]
+    },
+    {
+      "title": "OccamToken: Efficient VLM Inference with Training-Free and Budget-Adaptive Token Pruning",
+      "paper_url": "https://arxiv.org/abs/2605.29657",
+      "venue": "arXiv 2026",
+      "year": 2026,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Uses register-anchored relative evidence tests for image- and query-adaptive pruning",
+      "placements": [
+        {
+          "stage": "Prefilling",
+          "category": "Token Compression",
+          "subcategory": "Attention-Guided"
+        }
+      ],
+      "id": "occamtoken-efficient-vlm-inference-with-training-free-and-budget-adaptive-token-pruning",
+      "stages": [
+        "Prefilling"
+      ],
+      "categories": [
+        "Token Compression"
+      ]
+    },
+    {
+      "title": "Q Cache: Visual Attention is Valuable in Less than Half of Decode Layers for Multimodal Large Language Model",
+      "paper_url": "https://arxiv.org/abs/2602.01901",
+      "venue": "arXiv 2026",
+      "year": 2026,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Reuses similar attention queries across adjacent layers through a lightweight layer-shared cache",
+      "placements": [
+        {
+          "stage": "Decoding",
+          "category": "Attention Reuse",
+          "subcategory": null
+        }
+      ],
+      "id": "q-cache-visual-attention-is-valuable-in-less-than-half-of-decode-layers-for-multimodal-large-language-model",
+      "stages": [
+        "Decoding"
+      ],
+      "categories": [
+        "Attention Reuse"
+      ]
+    },
+    {
+      "title": "Semantic-Guided Slow-Fast Pruning of Visual Tokens for Vision-Language Models",
+      "paper_url": "https://ieeexplore.ieee.org/abstract/document/11460400",
+      "venue": "ICASSP 2026",
+      "year": 2026,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Semantic-guided slow-fast pruning of visual tokens for VLMs",
+      "placements": [
+        {
+          "stage": "Encoding",
+          "category": "Encoding-Oriented Token Compression",
+          "subcategory": "Attention-Aware"
+        }
+      ],
+      "id": "semantic-guided-slow-fast-pruning-of-visual-tokens-for-vision-language-models",
+      "stages": [
+        "Encoding"
+      ],
+      "categories": [
+        "Encoding-Oriented Token Compression"
+      ]
+    },
+    {
+      "title": "SIEVE: When Vision Becomes Text",
+      "paper_url": "https://arxiv.org/abs/2608.10489",
+      "venue": "arXiv 2026",
+      "year": 2026,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Retains visual information unexplained by the text subspace using cross-modal residual guidance",
+      "placements": [
+        {
+          "stage": "Prefilling",
+          "category": "Token Compression",
+          "subcategory": "Attention-Guided"
+        }
+      ],
+      "id": "sieve-when-vision-becomes-text",
+      "stages": [
+        "Prefilling"
+      ],
+      "categories": [
+        "Token Compression"
+      ]
+    },
+    {
+      "title": "STC: Accelerating Streaming Video Large Language Models via Hierarchical Token Compression",
+      "paper_url": "https://arxiv.org/abs/2512.00891",
+      "venue": "CVPR 2026",
+      "year": 2026,
+      "code_url": "https://github.com/lern-to-write/STC",
+      "code_type": "Code",
+      "contribution": "Jointly accelerates ViT encoding through cross-frame feature caching and LLM prefilling through spatiotemporal token pruning",
+      "placements": [
+        {
+          "stage": "Encoding",
+          "category": "Efficient Vision Encoders",
+          "subcategory": "Video-Related"
+        }
+      ],
+      "id": "stc-accelerating-streaming-video-large-language-models-via-hierarchical-token-compression",
+      "stages": [
+        "Encoding"
+      ],
+      "categories": [
+        "Efficient Vision Encoders"
+      ]
+    },
+    {
+      "title": "SwiftVLM: Efficient Vision-Language Model Inference via Cross-Layer Token Bypass",
+      "paper_url": "https://arxiv.org/abs/2602.03134",
+      "venue": "arXiv 2026",
+      "year": 2026,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Bypasses rather than permanently discards unselected tokens, enabling later-layer re-evaluation",
+      "placements": [
+        {
+          "stage": "Prefilling",
+          "category": "Token Compression",
+          "subcategory": "Attention-Guided"
+        }
+      ],
+      "id": "swiftvlm-efficient-vision-language-model-inference-via-cross-layer-token-bypass",
+      "stages": [
+        "Prefilling"
+      ],
+      "categories": [
+        "Token Compression"
+      ]
+    },
+    {
+      "title": "Unified Spatiotemporal Token Compression for Video-LLMs at Ultra-Low Retention",
+      "paper_url": "https://arxiv.org/abs/2603.21957",
+      "venue": "CVPR 2026",
+      "year": 2026,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Globally allocates a unified spatiotemporal token budget using contribution and redundancy signals",
+      "placements": [
+        {
+          "stage": "Prefilling",
+          "category": "Token Compression",
+          "subcategory": "Diversity-Guided"
+        }
+      ],
+      "id": "unified-spatiotemporal-token-compression-for-video-llms-at-ultra-low-retention",
+      "stages": [
+        "Prefilling"
+      ],
+      "categories": [
+        "Token Compression"
+      ]
+    },
+    {
+      "title": "Adaptive Fast-and-Slow Visual Program Reasoning for Long-Form VideoQA",
+      "paper_url": "https://arxiv.org/abs/2509.17743",
+      "venue": "arXiv 2025",
+      "year": 2025,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Fast-slow reasoning framework routing simple queries to VideoLLM and complex ones to visual program workflow",
+      "placements": [
+        {
+          "stage": "Decoding",
+          "category": "Efficient Reasoning",
+          "subcategory": null
+        }
+      ],
+      "id": "adaptive-fast-and-slow-visual-program-reasoning-for-long-form-videoqa",
+      "stages": [
+        "Decoding"
+      ],
+      "categories": [
+        "Efficient Reasoning"
+      ]
+    },
+    {
+      "title": "AirCache: Activating Inter-modal Relevancy KV Cache Compression",
+      "paper_url": "https://arxiv.org/abs/2503.23956",
+      "venue": "arXiv 2025",
+      "year": 2025,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Models stable inter-modal relevance and adaptively allocates visual KV budgets across layers",
+      "placements": [
+        {
+          "stage": "Decoding",
+          "category": "KV Cache Compression",
+          "subcategory": "Layer-Level"
+        }
+      ],
+      "id": "aircache-activating-inter-modal-relevancy-kv-cache-compression",
+      "stages": [
+        "Decoding"
+      ],
+      "categories": [
+        "KV Cache Compression"
+      ]
+    },
+    {
+      "title": "AKVQ-VL: Attention-Aware KV Cache Adaptive 2-Bit Quantization",
+      "paper_url": "https://arxiv.org/abs/2501.15021",
+      "venue": "arXiv 2025",
+      "year": 2025,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Adaptive mixed-precision quantization with high bit-width for critical tokens and 2-bit for others",
+      "placements": [
+        {
+          "stage": "Decoding",
+          "category": "KV Cache Compression",
+          "subcategory": "Bit-Level"
+        }
+      ],
+      "id": "akvq-vl-attention-aware-kv-cache-adaptive-2-bit-quantization",
+      "stages": [
+        "Decoding"
+      ],
+      "categories": [
+        "KV Cache Compression"
+      ]
+    },
+    {
+      "title": "ATP-LLaVA: Adaptive token pruning for LVLMs",
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2025/html/Ye_ATP-LLaVA_Adaptive_Token_Pruning_for_Large_Vision_Language_Models_CVPR_2025_paper.html",
+      "venue": "CVPR 2025",
+      "year": 2025,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Learnable adaptive token pruning module computing importance score",
+      "placements": [
+        {
+          "stage": "Prefilling",
+          "category": "Token Compression",
+          "subcategory": "Attention-Guided"
+        }
+      ],
+      "id": "atp-llava-adaptive-token-pruning-for-lvlms",
+      "stages": [
+        "Prefilling"
+      ],
+      "categories": [
+        "Token Compression"
+      ]
+    },
+    {
+      "title": "Beyond Text-Visual Attention: Exploiting Visual Cues for Effective Token Pruning",
+      "paper_url": "https://arxiv.org/abs/2412.01818",
+      "venue": "arXiv 2025",
+      "year": 2025,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Selects informative tokens using visual attention (VisPruner)",
+      "placements": [
+        {
+          "stage": "Encoding",
+          "category": "Encoding-Oriented Token Compression",
+          "subcategory": "Attention-Free"
+        }
+      ],
+      "id": "beyond-text-visual-attention-exploiting-visual-cues-for-effective-token-pruning",
+      "stages": [
+        "Encoding"
+      ],
+      "categories": [
+        "Encoding-Oriented Token Compression"
+      ]
+    },
+    {
+      "title": "BTP: Balanced Token Pruning",
+      "paper_url": "https://arxiv.org/abs/2505.22038",
+      "venue": "arXiv 2025",
+      "year": 2025,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Multi-stage pruning with diversity and attention ranking objectives",
+      "placements": [
+        {
+          "stage": "Prefilling",
+          "category": "Token Compression",
+          "subcategory": "Attention-Guided"
+        }
+      ],
+      "id": "btp-balanced-token-pruning",
+      "stages": [
+        "Prefilling"
+      ],
+      "categories": [
+        "Token Compression"
+      ]
+    },
+    {
+      "title": "CalibQuant: 1-Bit KV Cache Quantization for Multimodal LLMs",
+      "paper_url": "https://arxiv.org/abs/2502.14882",
+      "venue": "arXiv 2025",
+      "year": 2025,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Channel-wise 1-bit quantization with post-calibration for extreme values",
+      "placements": [
+        {
+          "stage": "Decoding",
+          "category": "KV Cache Compression",
+          "subcategory": "Bit-Level"
+        }
+      ],
+      "id": "calibquant-1-bit-kv-cache-quantization-for-multimodal-llms",
+      "stages": [
+        "Decoding"
+      ],
+      "categories": [
+        "KV Cache Compression"
+      ]
+    },
+    {
+      "title": "CDPruner: Maximizing Conditional Diversity for Token Pruning",
+      "paper_url": "https://arxiv.org/abs/2506.10967",
+      "venue": "arXiv 2025",
+      "year": 2025,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Determinantal Point Processes (DPP) maximizing conditional diversity",
+      "placements": [
+        {
+          "stage": "Prefilling",
+          "category": "Token Compression",
+          "subcategory": "Diversity-Guided"
+        }
+      ],
+      "id": "cdpruner-maximizing-conditional-diversity-for-token-pruning",
+      "stages": [
+        "Prefilling"
+      ],
+      "categories": [
+        "Token Compression"
+      ]
+    },
+    {
+      "title": "DART: Stop looking for important tokens, duplication matters more",
+      "paper_url": "https://arxiv.org/abs/2502.11494",
+      "venue": "arXiv 2025",
+      "year": 2025,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Pivot-based duplication pruning selecting tokens with low duplication",
+      "placements": [
+        {
+          "stage": "Prefilling",
+          "category": "Token Compression",
+          "subcategory": "Diversity-Guided"
+        }
+      ],
+      "id": "dart-stop-looking-for-important-tokens-duplication-matters-more",
+      "stages": [
+        "Prefilling"
+      ],
+      "categories": [
+        "Token Compression"
+      ]
+    },
+    {
+      "title": "DivPrune: Diversity-based visual token pruning",
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2025/html/Alvar_DivPrune_Diversity-based_Visual_Token_Pruning_for_Large_Multimodal_Models_CVPR_2025_paper.html",
+      "venue": "CVPR 2025",
+      "year": 2025,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Max-Min diversity optimization for token subset selection",
+      "placements": [
+        {
+          "stage": "Prefilling",
+          "category": "Token Compression",
+          "subcategory": "Diversity-Guided"
+        }
+      ],
+      "id": "divprune-diversity-based-visual-token-pruning",
+      "stages": [
+        "Prefilling"
+      ],
+      "categories": [
+        "Token Compression"
+      ]
+    },
+    {
+      "title": "DyCoke: Dynamic Compression of Tokens for Fast Video LLMs",
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2025/html/Tao_DyCoke_Dynamic_Compression_of_Tokens_for_Fast_Video_Large_Language_CVPR_2025_paper.html",
+      "venue": "CVPR 2025",
+      "year": 2025,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Plug-and-play temporal compression module minimizing temporal redundancy",
+      "placements": [
+        {
+          "stage": "Prefilling",
+          "category": "Token Compression",
+          "subcategory": "Diversity-Guided"
+        }
+      ],
+      "id": "dycoke-dynamic-compression-of-tokens-for-fast-video-llms",
+      "stages": [
+        "Prefilling"
+      ],
+      "categories": [
+        "Token Compression"
+      ]
+    },
+    {
+      "title": "FastCache: Optimizing multimodal LLM serving",
+      "paper_url": "https://arxiv.org/abs/2503.08461",
+      "venue": "arXiv 2025",
+      "year": 2025,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Lightweight modality-specific compressor learning compression patterns",
+      "placements": [
+        {
+          "stage": "Decoding",
+          "category": "KV Cache Compression",
+          "subcategory": "Token-Level"
+        }
+      ],
+      "id": "fastcache-optimizing-multimodal-llm-serving",
+      "stages": [
+        "Decoding"
+      ],
+      "categories": [
+        "KV Cache Compression"
+      ]
+    },
+    {
+      "title": "FastVID: Dynamic density pruning for fast video LLMs",
+      "paper_url": "https://arxiv.org/abs/2503.11187",
+      "venue": "arXiv 2025",
+      "year": 2025,
+      "code_url": "https://github.com/LunarShen/FastVID",
+      "code_type": "Code",
+      "contribution": "Temporal segmentation and density spatiotemporal pruning",
+      "placements": [
+        {
+          "stage": "Prefilling",
+          "category": "Token Compression",
+          "subcategory": "Diversity-Guided"
+        }
+      ],
+      "id": "fastvid-dynamic-density-pruning-for-fast-video-llms",
+      "stages": [
+        "Prefilling"
+      ],
+      "categories": [
+        "Token Compression"
+      ]
+    },
+    {
+      "title": "FastVLM: Efficient vision encoding for vision language models",
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2025/html/Vasu_FastVLM_Efficient_Vision_Encoding_for_Vision_Language_Models_CVPR_2025_paper.html",
+      "venue": "CVPR 2025",
+      "year": 2025,
+      "code_url": "https://machinelearning.apple.com/research/fastvlm-efficient-vision-encoding",
+      "code_type": "Project page",
+      "contribution": "Hybrid vision encoder outputting fewer tokens and reducing encoding time",
+      "placements": [
+        {
+          "stage": "Encoding",
+          "category": "Efficient Vision Encoders",
+          "subcategory": "Image-Related"
+        }
+      ],
+      "id": "fastvlm-efficient-vision-encoding-for-vision-language-models",
+      "stages": [
+        "Encoding"
+      ],
+      "categories": [
+        "Efficient Vision Encoders"
+      ]
+    },
+    {
+      "title": "FastVLM: Self-Speculative Decoding for Fast Vision-Language Model Inference",
+      "paper_url": "https://arxiv.org/abs/2510.22641",
+      "venue": "arXiv 2025",
+      "year": 2025,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Imitation-based draft model learning from deeper representations (self-speculative decoding)",
+      "placements": [
+        {
+          "stage": "Decoding",
+          "category": "Speculative Decoding",
+          "subcategory": "Training-Aware"
+        }
+      ],
+      "id": "fastvlm-self-speculative-decoding-for-fast-vision-language-model-inference",
+      "stages": [
+        "Decoding"
+      ],
+      "categories": [
+        "Speculative Decoding"
+      ]
+    },
+    {
+      "title": "Fit and Prune: Fast and training-free visual token pruning",
+      "paper_url": "https://doi.org/10.1609/aaai.v39i21.34366",
+      "venue": "AAAI 2025",
+      "year": 2025,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Minimizes divergence of attention distributions before and after pruning",
+      "placements": [
+        {
+          "stage": "Prefilling",
+          "category": "Token Compression",
+          "subcategory": "Attention-Guided"
+        }
+      ],
+      "id": "fit-and-prune-fast-and-training-free-visual-token-pruning",
+      "stages": [
+        "Prefilling"
+      ],
+      "categories": [
+        "Token Compression"
+      ]
+    },
+    {
+      "title": "FLASH: Latent-Aware Semi-Autoregressive Speculative Decoding",
+      "paper_url": "https://arxiv.org/abs/2505.12728",
+      "venue": "arXiv 2025",
+      "year": 2025,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Visual token compression mechanism and semi-autoregressive head for draft model optimization",
+      "placements": [
+        {
+          "stage": "Decoding",
+          "category": "Speculative Decoding",
+          "subcategory": "Training-Aware"
+        }
+      ],
+      "id": "flash-latent-aware-semi-autoregressive-speculative-decoding",
+      "stages": [
+        "Decoding"
+      ],
+      "categories": [
+        "Speculative Decoding"
+      ]
+    },
+    {
+      "title": "FOCUS: Efficient Keyframe Selection for Long Video Understanding",
+      "paper_url": "https://arxiv.org/abs/2510.27280",
+      "venue": "arXiv 2025",
+      "year": 2025,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Formulates keyframe selection as combinatorial pure-exploration",
+      "placements": [
+        {
+          "stage": "Encoding",
+          "category": "Keyframe Selection",
+          "subcategory": "Training-Free"
+        }
+      ],
+      "id": "focus-efficient-keyframe-selection-for-long-video-understanding",
+      "stages": [
+        "Encoding"
+      ],
+      "categories": [
+        "Keyframe Selection"
+      ]
+    },
+    {
+      "title": "FOLDER: Accelerating Multi-modal Large Language Models",
+      "paper_url": "https://arxiv.org/abs/2501.02430",
+      "venue": "arXiv 2025",
+      "year": 2025,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Plug-and-play module in final vision backbone blocks for merging operations",
+      "placements": [
+        {
+          "stage": "Encoding",
+          "category": "Encoding-Oriented Token Compression",
+          "subcategory": "Attention-Free"
+        }
+      ],
+      "id": "folder-accelerating-multi-modal-large-language-models",
+      "stages": [
+        "Encoding"
+      ],
+      "categories": [
+        "Encoding-Oriented Token Compression"
+      ]
+    },
+    {
+      "title": "G-Prune: Training-free visual token pruning from graph perspective",
+      "paper_url": "https://doi.org/10.1609/aaai.v39i4.32427",
+      "venue": "AAAI 2025",
+      "year": 2025,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Similarity graph and information flow to retain representative tokens",
+      "placements": [
+        {
+          "stage": "Prefilling",
+          "category": "Token Compression",
+          "subcategory": "Diversity-Guided"
+        }
+      ],
+      "id": "g-prune-training-free-visual-token-pruning-from-graph-perspective",
+      "stages": [
+        "Prefilling"
+      ],
+      "categories": [
+        "Token Compression"
+      ]
+    },
+    {
+      "title": "Glyph: Scaling Context Windows via Visual-Text Compression",
+      "paper_url": "https://arxiv.org/abs/2510.17800",
+      "venue": "arXiv 2025",
+      "year": 2025,
+      "code_url": "https://github.com/thu-coai/Glyph",
+      "code_type": "Code",
+      "contribution": "DeepEncoder maintaining low activations under high-resolution input",
+      "placements": [
+        {
+          "stage": "Encoding",
+          "category": "Efficient Vision Encoders",
+          "subcategory": "Image-Related"
+        },
+        {
+          "stage": "Decoding",
+          "category": "Speculative Decoding",
+          "subcategory": "Training-Aware"
+        }
+      ],
+      "id": "glyph-scaling-context-windows-via-visual-text-compression",
+      "stages": [
+        "Decoding",
+        "Encoding"
+      ],
+      "categories": [
+        "Efficient Vision Encoders",
+        "Speculative Decoding"
+      ]
+    },
+    {
+      "title": "HIVTP: Hierarchical Visual Token Pruning",
+      "paper_url": "https://arxiv.org/abs/2509.23663",
+      "venue": "arXiv 2025",
+      "year": 2025,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Attention maps from middle encoder layers to estimate visual token importance",
+      "placements": [
+        {
+          "stage": "Encoding",
+          "category": "Encoding-Oriented Token Compression",
+          "subcategory": "Attention-Aware"
+        }
+      ],
+      "id": "hivtp-hierarchical-visual-token-pruning",
+      "stages": [
+        "Encoding"
+      ],
+      "categories": [
+        "Encoding-Oriented Token Compression"
+      ]
+    },
+    {
+      "title": "HoliTom: Holistic Token Merging for Fast Video LLMs",
+      "paper_url": "https://arxiv.org/abs/2505.21334",
+      "venue": "arXiv 2025",
+      "year": 2025,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Global redundancy-aware segmentation followed by spatiotemporal merging",
+      "placements": [
+        {
+          "stage": "Prefilling",
+          "category": "Token Compression",
+          "subcategory": "Diversity-Guided"
+        }
+      ],
+      "id": "holitom-holistic-token-merging-for-fast-video-llms",
+      "stages": [
+        "Prefilling"
+      ],
+      "categories": [
+        "Token Compression"
+      ]
+    },
+    {
+      "title": "InfiniPot-V: Memory-Constrained KV Cache Compression",
+      "paper_url": "https://arxiv.org/abs/2506.15745",
+      "venue": "arXiv 2025",
+      "year": 2025,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Layer-wise adaptive pooling with varying kernel sizes to balance abstraction and detail",
+      "placements": [
+        {
+          "stage": "Decoding",
+          "category": "KV Cache Compression",
+          "subcategory": "Layer-Level"
+        }
+      ],
+      "id": "infinipot-v-memory-constrained-kv-cache-compression",
+      "stages": [
+        "Decoding"
+      ],
+      "categories": [
+        "KV Cache Compression"
+      ]
+    },
+    {
+      "title": "LiveVLM: Efficient Online Video Understanding via Streaming-Oriented KV Cache",
+      "paper_url": "https://arxiv.org/abs/2505.15269",
+      "venue": "arXiv 2025",
+      "year": 2025,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Dual-memory approach with short-term sliding window and compressed long-term memory",
+      "placements": [
+        {
+          "stage": "Decoding",
+          "category": "KV Cache Compression",
+          "subcategory": "Token-Level"
+        }
+      ],
+      "id": "livevlm-efficient-online-video-understanding-via-streaming-oriented-kv-cache",
+      "stages": [
+        "Decoding"
+      ],
+      "categories": [
+        "KV Cache Compression"
+      ]
+    },
+    {
+      "title": "LLaVA-PruMerge: Adaptive Token Reduction",
+      "paper_url": "https://arxiv.org/abs/2403.15388",
+      "venue": "ICCV 2025",
+      "year": 2025,
+      "code_url": "https://github.com/42Shawn/LLaVA-PruMerge",
+      "code_type": "Code",
+      "contribution": "Reduces visual tokens according to similarities between class and spatial tokens",
+      "placements": [
+        {
+          "stage": "Encoding",
+          "category": "Encoding-Oriented Token Compression",
+          "subcategory": "Attention-Free"
+        }
+      ],
+      "id": "llava-prumerge-adaptive-token-reduction",
+      "stages": [
+        "Encoding"
+      ],
+      "categories": [
+        "Encoding-Oriented Token Compression"
+      ]
+    },
+    {
+      "title": "LongVU: Spatiotemporal Adaptive Compression",
+      "paper_url": "https://openreview.net/forum?id=XzZC4gs1mf",
+      "venue": "ICML 2025",
+      "year": 2025,
+      "code_url": "https://vision-cair.github.io/LongVU/",
+      "code_type": "Project page",
+      "contribution": "Preserves full features for query-relevant frames",
+      "placements": [
+        {
+          "stage": "Encoding",
+          "category": "Adaptive Resolution",
+          "subcategory": null
+        }
+      ],
+      "id": "longvu-spatiotemporal-adaptive-compression",
+      "stages": [
+        "Encoding"
+      ],
+      "categories": [
+        "Adaptive Resolution"
+      ]
+    },
+    {
+      "title": "LongVU: Spatiotemporal Adaptive Compression for Long Video-Language Understanding",
+      "paper_url": "https://openreview.net/forum?id=XzZC4gs1mf",
+      "venue": "ICML 2025",
+      "year": 2025,
+      "code_url": "https://vision-cair.github.io/LongVU/",
+      "code_type": "Project page",
+      "contribution": "Preserves full features for query-relevant frames while applying spatial pooling",
+      "placements": [
+        {
+          "stage": "Encoding",
+          "category": "Efficient Vision Encoders",
+          "subcategory": "Video-Related"
+        }
+      ],
+      "id": "longvu-spatiotemporal-adaptive-compression-for-long-video-language-understanding",
+      "stages": [
+        "Encoding"
+      ],
+      "categories": [
+        "Efficient Vision Encoders"
+      ]
+    },
+    {
+      "title": "M-LLM based video frame selection for efficient video understanding",
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2025/html/Hu_M-LLM_Based_Video_Frame_Selection_for_Efficient_Video_Understanding_CVPR_2025_paper.html",
+      "venue": "CVPR 2025",
+      "year": 2025,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Uses spatial and temporal signals as supervision to train frame selector",
+      "placements": [
+        {
+          "stage": "Encoding",
+          "category": "Keyframe Selection",
+          "subcategory": "Training-Aware"
+        }
+      ],
+      "id": "m-llm-based-video-frame-selection-for-efficient-video-understanding",
+      "stages": [
+        "Encoding"
+      ],
+      "categories": [
+        "Keyframe Selection"
+      ]
+    },
+    {
+      "title": "MadaKV: Adaptive Modality-Perception KV Cache Eviction",
+      "paper_url": "https://aclanthology.org/2025.acl-long.652/",
+      "venue": "ACL 2025",
+      "year": 2025,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Inter-layer compensation mechanism dynamically adjusting budgets",
+      "placements": [
+        {
+          "stage": "Decoding",
+          "category": "KV Cache Compression",
+          "subcategory": "Layer-Level"
+        }
+      ],
+      "id": "madakv-adaptive-modality-perception-kv-cache-eviction",
+      "stages": [
+        "Decoding"
+      ],
+      "categories": [
+        "KV Cache Compression"
+      ]
+    },
+    {
+      "title": "MASSV: Multimodal Adaptation and Self-Data Distillation for Speculative Decoding of VLMs",
+      "paper_url": "https://arxiv.org/abs/2505.10526",
+      "venue": "arXiv 2025",
+      "year": 2025,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Converts small language models into multimodal drafters using a vision projector and self-distillation",
+      "placements": [
+        {
+          "stage": "Decoding",
+          "category": "Speculative Decoding",
+          "subcategory": "Training-Aware"
+        }
+      ],
+      "id": "massv-multimodal-adaptation-and-self-data-distillation-for-speculative-decoding-of-vlms",
+      "stages": [
+        "Decoding"
+      ],
+      "categories": [
+        "Speculative Decoding"
+      ]
+    },
+    {
+      "title": "Meda: Dynamic KV cache allocation for efficient multimodal inference",
+      "paper_url": "https://arxiv.org/abs/2502.17599",
+      "venue": "arXiv 2025",
+      "year": 2025,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Cross-modal attention entropy guiding cache allocation to layers with complex interactions",
+      "placements": [
+        {
+          "stage": "Decoding",
+          "category": "KV Cache Compression",
+          "subcategory": "Layer-Level"
+        }
+      ],
+      "id": "meda-dynamic-kv-cache-allocation-for-efficient-multimodal-inference",
+      "stages": [
+        "Decoding"
+      ],
+      "categories": [
+        "KV Cache Compression"
+      ]
+    },
+    {
+      "title": "MMInference: Modality-Aware Permutation Sparse Attention",
+      "paper_url": "https://arxiv.org/abs/2504.16083",
+      "venue": "arXiv 2025",
+      "year": 2025,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Identifies three distinct attention patterns in LVLMs with modality-aware permutation",
+      "placements": [
+        {
+          "stage": "Prefilling",
+          "category": "Sparse Attention",
+          "subcategory": null
+        }
+      ],
+      "id": "mminference-modality-aware-permutation-sparse-attention",
+      "stages": [
+        "Prefilling"
+      ],
+      "categories": [
+        "Sparse Attention"
+      ]
+    },
+    {
+      "title": "MSD: Speculative Decoding Reimagined for Multimodal Large Language Models",
+      "paper_url": "https://arxiv.org/abs/2505.14260",
+      "venue": "arXiv 2025",
+      "year": 2025,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Two-stage training enabling draft model to acquire language modeling and visual perception",
+      "placements": [
+        {
+          "stage": "Decoding",
+          "category": "Speculative Decoding",
+          "subcategory": "Training-Aware"
+        }
+      ],
+      "id": "msd-speculative-decoding-reimagined-for-multimodal-large-language-models",
+      "stages": [
+        "Decoding"
+      ],
+      "categories": [
+        "Speculative Decoding"
+      ]
+    },
+    {
+      "title": "PixelThink: Towards Efficient Chain-of-Pixel Reasoning",
+      "paper_url": "https://arxiv.org/abs/2505.23727",
+      "venue": "arXiv 2025",
+      "year": 2025,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Reinforcement learning to regulate reasoning chain length based on task difficulty and model confidence",
+      "placements": [
+        {
+          "stage": "Decoding",
+          "category": "Efficient Reasoning",
+          "subcategory": null
+        }
+      ],
+      "id": "pixelthink-towards-efficient-chain-of-pixel-reasoning",
+      "stages": [
+        "Decoding"
+      ],
+      "categories": [
+        "Efficient Reasoning"
+      ]
+    },
+    {
+      "title": "Prolonged reasoning is not all you need: Certainty-based adaptive routing",
+      "paper_url": "https://arxiv.org/abs/2505.15154",
+      "venue": "arXiv 2025",
+      "year": 2025,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Certainty-based routing triggering long thought chains only when initial answer exhibits high uncertainty",
+      "placements": [
+        {
+          "stage": "Decoding",
+          "category": "Efficient Reasoning",
+          "subcategory": null
+        }
+      ],
+      "id": "prolonged-reasoning-is-not-all-you-need-certainty-based-adaptive-routing",
+      "stages": [
+        "Decoding"
+      ],
+      "categories": [
+        "Efficient Reasoning"
+      ]
+    },
+    {
+      "title": "PruneVid: Visual token pruning for efficient video LLMs",
+      "paper_url": "https://aclanthology.org/2025.findings-acl.1024/",
+      "venue": "ACL 2025",
+      "year": 2025,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Spatiotemporal token merging before LLMs",
+      "placements": [
+        {
+          "stage": "Prefilling",
+          "category": "Token Compression",
+          "subcategory": "Diversity-Guided"
+        }
+      ],
+      "id": "prunevid-visual-token-pruning-for-efficient-video-llms",
+      "stages": [
+        "Prefilling"
+      ],
+      "categories": [
+        "Token Compression"
+      ]
+    },
+    {
+      "title": "Q-Frame: Query-aware Frame Selection and Multi-Resolution Adaptation",
+      "paper_url": "https://arxiv.org/abs/2506.22139",
+      "venue": "arXiv 2025",
+      "year": 2025,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Text-image matching network with Gumbel-Max trick",
+      "placements": [
+        {
+          "stage": "Encoding",
+          "category": "Keyframe Selection",
+          "subcategory": "Training-Free"
+        },
+        {
+          "stage": "Encoding",
+          "category": "Adaptive Resolution",
+          "subcategory": null
+        }
+      ],
+      "id": "q-frame-query-aware-frame-selection-and-multi-resolution-adaptation",
+      "stages": [
+        "Encoding"
+      ],
+      "categories": [
+        "Adaptive Resolution",
+        "Keyframe Selection"
+      ]
+    },
+    {
+      "title": "ReKV: Streaming video QA with in-context video KV-cache retrieval",
+      "paper_url": "https://arxiv.org/abs/2503.00540",
+      "venue": "arXiv 2025",
+      "year": 2025,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Retrieval-based framework offloading video chunks to external memory",
+      "placements": [
+        {
+          "stage": "Decoding",
+          "category": "KV Cache Compression",
+          "subcategory": "Token-Level"
+        }
+      ],
+      "id": "rekv-streaming-video-qa-with-in-context-video-kv-cache-retrieval",
+      "stages": [
+        "Decoding"
+      ],
+      "categories": [
+        "KV Cache Compression"
+      ]
+    },
+    {
+      "title": "SpargeAttn: Accurate sparse attention accelerating any model inference",
+      "paper_url": "https://arxiv.org/abs/2502.18137",
+      "venue": "arXiv 2025",
+      "year": 2025,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Two-stage online filter to skip unimportant regions in sparse attention",
+      "placements": [
+        {
+          "stage": "Prefilling",
+          "category": "Sparse Attention",
+          "subcategory": null
+        }
+      ],
+      "id": "spargeattn-accurate-sparse-attention-accelerating-any-model-inference",
+      "stages": [
+        "Prefilling"
+      ],
+      "categories": [
+        "Sparse Attention"
+      ]
+    },
+    {
+      "title": "SparseMM: Head Sparsity Emerges from Visual Concept Responses",
+      "paper_url": "https://arxiv.org/abs/2506.05344",
+      "venue": "arXiv 2025",
+      "year": 2025,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Identifies vital visual heads and allocates asymmetric budgets based on visual relevance",
+      "placements": [
+        {
+          "stage": "Decoding",
+          "category": "KV Cache Compression",
+          "subcategory": "Head-Level"
+        }
+      ],
+      "id": "sparsemm-head-sparsity-emerges-from-visual-concept-responses",
+      "stages": [
+        "Decoding"
+      ],
+      "categories": [
+        "KV Cache Compression"
+      ]
+    },
+    {
+      "title": "SparseVILA: Decoupling Visual Sparsity for Efficient VLM Inference",
+      "paper_url": "https://arxiv.org/abs/2510.17777",
+      "venue": "ICCV 2025",
+      "year": 2025,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Estimates token importance from visual encoder's self-attention maps",
+      "placements": [
+        {
+          "stage": "Encoding",
+          "category": "Encoding-Oriented Token Compression",
+          "subcategory": "Attention-Aware"
+        }
+      ],
+      "id": "sparsevila-decoupling-visual-sparsity-for-efficient-vlm-inference",
+      "stages": [
+        "Encoding"
+      ],
+      "categories": [
+        "Encoding-Oriented Token Compression"
+      ]
+    },
+    {
+      "title": "Spec-LLaVA: Accelerating VLMs with Dynamic Tree-Based Speculative Decoding",
+      "paper_url": "https://arxiv.org/abs/2509.11961",
+      "venue": "arXiv 2025",
+      "year": 2025,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Compact distilled draft model paired with tree-based verification algorithm",
+      "placements": [
+        {
+          "stage": "Decoding",
+          "category": "Speculative Decoding",
+          "subcategory": "Training-Aware"
+        }
+      ],
+      "id": "spec-llava-accelerating-vlms-with-dynamic-tree-based-speculative-decoding",
+      "stages": [
+        "Decoding"
+      ],
+      "categories": [
+        "Speculative Decoding"
+      ]
+    },
+    {
+      "title": "SpecVLM: Enhancing speculative decoding via verifier-guided token pruning",
+      "paper_url": "https://doi.org/10.48550/arXiv.2508.16201",
+      "venue": "EMNLP 2025",
+      "year": 2025,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Verifier-guided staged pruning removing up to 90% of vision tokens from draft model input",
+      "placements": [
+        {
+          "stage": "Decoding",
+          "category": "Speculative Decoding",
+          "subcategory": "Training-Free"
+        }
+      ],
+      "id": "specvlm-enhancing-speculative-decoding-via-verifier-guided-token-pruning",
+      "stages": [
+        "Decoding"
+      ],
+      "categories": [
+        "Speculative Decoding"
+      ]
+    },
+    {
+      "title": "SpecVLM: Fast Speculative Decoding in Vision-Language Models",
+      "paper_url": "https://arxiv.org/abs/2509.11815",
+      "venue": "arXiv 2025",
+      "year": 2025,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Elastic visual compressor adaptively selecting from multiple compression primitives",
+      "placements": [
+        {
+          "stage": "Decoding",
+          "category": "Speculative Decoding",
+          "subcategory": "Training-Aware"
+        }
+      ],
+      "id": "specvlm-fast-speculative-decoding-in-vision-language-models",
+      "stages": [
+        "Decoding"
+      ],
+      "categories": [
+        "Speculative Decoding"
+      ]
+    },
+    {
+      "title": "ST3: Accelerating MLLM by spatial-temporal visual token trimming",
+      "paper_url": "https://doi.org/10.1609/aaai.v39i10.33201",
+      "venue": "AAAI 2025",
+      "year": 2025,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Progressive pruning of visual tokens in deeper layers based on decreasing visual importance",
+      "placements": [
+        {
+          "stage": "Decoding",
+          "category": "KV Cache Compression",
+          "subcategory": "Layer-Level"
+        }
+      ],
+      "id": "st3-accelerating-mllm-by-spatial-temporal-visual-token-trimming",
+      "stages": [
+        "Decoding"
+      ],
+      "categories": [
+        "KV Cache Compression"
+      ]
+    },
+    {
+      "title": "StreamingTOM: Streaming Token Compression",
+      "paper_url": "https://arxiv.org/abs/2510.18269",
+      "venue": "arXiv 2025",
+      "year": 2025,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Causal temporal reduction with fixed per-frame budget",
+      "placements": [
+        {
+          "stage": "Prefilling",
+          "category": "Token Compression",
+          "subcategory": "Diversity-Guided"
+        }
+      ],
+      "id": "streamingtom-streaming-token-compression",
+      "stages": [
+        "Prefilling"
+      ],
+      "categories": [
+        "Token Compression"
+      ]
+    },
+    {
+      "title": "StreamingVLM: Real-time understanding for infinite video streams",
+      "paper_url": "https://arxiv.org/abs/2510.09608",
+      "venue": "arXiv 2025",
+      "year": 2025,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Maintains compact token subset by reusing attention sinks and recent token windows",
+      "placements": [
+        {
+          "stage": "Prefilling",
+          "category": "Token Compression",
+          "subcategory": "Attention-Guided"
+        }
+      ],
+      "id": "streamingvlm-real-time-understanding-for-infinite-video-streams",
+      "stages": [
+        "Prefilling"
+      ],
+      "categories": [
+        "Token Compression"
+      ]
+    },
+    {
+      "title": "STTM: Multi-granular spatio-temporal token merging",
+      "paper_url": "https://doi.org/10.48550/arXiv.2507.07990",
+      "venue": "ICCV 2025",
+      "year": 2025,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Quadtree spatial transformation with directed pairwise merging",
+      "placements": [
+        {
+          "stage": "Prefilling",
+          "category": "Token Compression",
+          "subcategory": "Diversity-Guided"
+        }
+      ],
+      "id": "sttm-multi-granular-spatio-temporal-token-merging",
+      "stages": [
+        "Prefilling"
+      ],
+      "categories": [
+        "Token Compression"
+      ]
+    },
+    {
+      "title": "TimeChat-Online: 80% Visual Tokens are Naturally Redundant",
+      "paper_url": "https://doi.org/10.48550/ARXIV.2504.17343",
+      "venue": "arXiv 2025",
+      "year": 2025,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Differential token drop module filtering redundant content in streaming videos",
+      "placements": [
+        {
+          "stage": "Prefilling",
+          "category": "Token Compression",
+          "subcategory": "Diversity-Guided"
+        }
+      ],
+      "id": "timechat-online-80-visual-tokens-are-naturally-redundant",
+      "stages": [
+        "Prefilling"
+      ],
+      "categories": [
+        "Token Compression"
+      ]
+    },
+    {
+      "title": "TokenPacker: Efficient Visual Projector for Multimodal LLM",
+      "paper_url": "https://doi.org/10.1007/S11263-025-02491-7",
+      "venue": "IJCV 2025",
+      "year": 2025,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Coarse-to-fine scheme injecting enriched characteristics",
+      "placements": [
+        {
+          "stage": "Encoding",
+          "category": "Efficient Modality Adapters",
+          "subcategory": null
+        }
+      ],
+      "id": "tokenpacker-efficient-visual-projector-for-multimodal-llm",
+      "stages": [
+        "Encoding"
+      ],
+      "categories": [
+        "Efficient Modality Adapters"
+      ]
+    },
+    {
+      "title": "ToSA: Token Merging with Spatial Awareness",
+      "paper_url": "https://arxiv.org/abs/2506.20066",
+      "venue": "arXiv 2025",
+      "year": 2025,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Token merging combining semantic and spatial awareness",
+      "placements": [
+        {
+          "stage": "Encoding",
+          "category": "Encoding-Oriented Token Compression",
+          "subcategory": "Attention-Aware"
+        }
+      ],
+      "id": "tosa-token-merging-with-spatial-awareness",
+      "stages": [
+        "Encoding"
+      ],
+      "categories": [
+        "Encoding-Oriented Token Compression"
+      ]
+    },
+    {
+      "title": "ViCO: A Training Strategy towards Semantic Aware Dynamic High-Resolution",
+      "paper_url": "https://arxiv.org/abs/2510.12793",
+      "venue": "arXiv 2025",
+      "year": 2025,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Multiple MLP connectors with different compression ratios",
+      "placements": [
+        {
+          "stage": "Encoding",
+          "category": "Adaptive Resolution",
+          "subcategory": null
+        }
+      ],
+      "id": "vico-a-training-strategy-towards-semantic-aware-dynamic-high-resolution",
+      "stages": [
+        "Encoding"
+      ],
+      "categories": [
+        "Adaptive Resolution"
+      ]
+    },
+    {
+      "title": "VidCom2: Video Compression Commander",
+      "paper_url": "https://arxiv.org/abs/2505.14454",
+      "venue": "arXiv 2025",
+      "year": 2025,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Dynamic compression based on frame uniqueness",
+      "placements": [
+        {
+          "stage": "Prefilling",
+          "category": "Token Compression",
+          "subcategory": "Diversity-Guided"
+        }
+      ],
+      "id": "vidcom2-video-compression-commander",
+      "stages": [
+        "Prefilling"
+      ],
+      "categories": [
+        "Token Compression"
+      ]
+    },
+    {
+      "title": "Video-XL-2: Towards Very Long-Video Understanding Through Task-Aware KV Sparsification",
+      "paper_url": "https://arxiv.org/abs/2506.19225",
+      "venue": "arXiv 2025",
+      "year": 2025,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Chunk-based attention with historical context for video processing",
+      "placements": [
+        {
+          "stage": "Prefilling",
+          "category": "Token Compression",
+          "subcategory": "Attention-Guided"
+        }
+      ],
+      "id": "video-xl-2-towards-very-long-video-understanding-through-task-aware-kv-sparsification",
+      "stages": [
+        "Prefilling"
+      ],
+      "categories": [
+        "Token Compression"
+      ]
+    },
+    {
+      "title": "VideoNSA: Native Sparse Attention Scales Video Understanding",
+      "paper_url": "https://arxiv.org/abs/2510.02295",
+      "venue": "arXiv 2025",
+      "year": 2025,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "End-to-end training with sparse attention preserving dense attention for text",
+      "placements": [
+        {
+          "stage": "Prefilling",
+          "category": "Sparse Attention",
+          "subcategory": null
+        }
+      ],
+      "id": "videonsa-native-sparse-attention-scales-video-understanding",
+      "stages": [
+        "Prefilling"
+      ],
+      "categories": [
+        "Sparse Attention"
+      ]
+    },
+    {
+      "title": "VideoTree: Adaptive tree-based video representation",
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2025/html/Wang_VideoTree_Adaptive_Tree-based_Video_Representation_for_LLM_Reasoning_on_Long_CVPR_2025_paper.html",
+      "venue": "CVPR 2025",
+      "year": 2025,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Multi-granularity tree-based representation extracting query-relevant details",
+      "placements": [
+        {
+          "stage": "Encoding",
+          "category": "Keyframe Selection",
+          "subcategory": "Training-Free"
+        }
+      ],
+      "id": "videotree-adaptive-tree-based-video-representation",
+      "stages": [
+        "Encoding"
+      ],
+      "categories": [
+        "Keyframe Selection"
+      ]
+    },
+    {
+      "title": "VidKV: Plug-and-Play 1.x-Bit KV Cache Quantization",
+      "paper_url": "https://arxiv.org/abs/2503.16257",
+      "venue": "arXiv 2025",
+      "year": 2025,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Sub-2-bit quantization with differential treatment for K and V",
+      "placements": [
+        {
+          "stage": "Decoding",
+          "category": "KV Cache Compression",
+          "subcategory": "Bit-Level"
+        }
+      ],
+      "id": "vidkv-plug-and-play-1-x-bit-kv-cache-quantization",
+      "stages": [
+        "Decoding"
+      ],
+      "categories": [
+        "KV Cache Compression"
+      ]
+    },
+    {
+      "title": "VisionThink: Smart and efficient vision language model via reinforcement learning",
+      "paper_url": "https://doi.org/10.48550/arXiv.2507.13348",
+      "venue": "arXiv 2025",
+      "year": 2025,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Dynamically processes distinct samples with different resolutions",
+      "placements": [
+        {
+          "stage": "Encoding",
+          "category": "Adaptive Resolution",
+          "subcategory": null
+        }
+      ],
+      "id": "visionthink-smart-and-efficient-vision-language-model-via-reinforcement-learning",
+      "stages": [
+        "Encoding"
+      ],
+      "categories": [
+        "Adaptive Resolution"
+      ]
+    },
+    {
+      "title": "VisionZip: Longer is Better but Not Necessary",
+      "paper_url": "https://arxiv.org/abs/2412.04467",
+      "venue": "CVPR 2025",
+      "year": 2025,
+      "code_url": "https://github.com/dvlab-research/VisionZip",
+      "code_type": "Code",
+      "contribution": "Selects informative tokens using visual attention from encoder",
+      "placements": [
+        {
+          "stage": "Encoding",
+          "category": "Encoding-Oriented Token Compression",
+          "subcategory": "Attention-Aware"
+        }
+      ],
+      "id": "visionzip-longer-is-better-but-not-necessary",
+      "stages": [
+        "Encoding"
+      ],
+      "categories": [
+        "Encoding-Oriented Token Compression"
+      ]
+    },
+    {
+      "title": "ViSpec: Accelerating VLMs with Vision-Aware Speculative Decoding",
+      "paper_url": "https://arxiv.org/abs/2509.15235",
+      "venue": "arXiv 2025",
+      "year": 2025,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Lightweight vision adaptor to compress image tokens for draft model",
+      "placements": [
+        {
+          "stage": "Decoding",
+          "category": "Speculative Decoding",
+          "subcategory": "Training-Aware"
+        }
+      ],
+      "id": "vispec-accelerating-vlms-with-vision-aware-speculative-decoding",
+      "stages": [
+        "Decoding"
+      ],
+      "categories": [
+        "Speculative Decoding"
+      ]
+    },
+    {
+      "title": "XAttention: Block sparse attention with antidiagonal scoring",
+      "paper_url": "https://arxiv.org/abs/2503.16428",
+      "venue": "arXiv 2025",
+      "year": 2025,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Block sparse attention with antidiagonal scoring for efficient block estimation",
+      "placements": [
+        {
+          "stage": "Prefilling",
+          "category": "Sparse Attention",
+          "subcategory": null
+        }
+      ],
+      "id": "xattention-block-sparse-attention-with-antidiagonal-scoring",
+      "stages": [
+        "Prefilling"
+      ],
+      "categories": [
+        "Sparse Attention"
+      ]
+    },
+    {
+      "title": "AIM: Adaptive Inference of Multi-Modal LLMs",
+      "paper_url": "https://doi.org/10.48550/ARXIV.2412.03248",
+      "venue": "arXiv 2024",
+      "year": 2024,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Spatiotemporal token merging to reduce video redundancy",
+      "placements": [
+        {
+          "stage": "Prefilling",
+          "category": "Token Compression",
+          "subcategory": "Diversity-Guided"
+        }
+      ],
+      "id": "aim-adaptive-inference-of-multi-modal-llms",
+      "stages": [
+        "Prefilling"
+      ],
+      "categories": [
+        "Token Compression"
+      ]
+    },
+    {
+      "title": "ConvLLaVA: Hierarchical backbones as visual encoder for large multimodal models",
+      "paper_url": "https://arxiv.org/abs/2405.15738",
+      "venue": "arXiv 2024",
+      "year": 2024,
+      "code_url": "https://github.com/alibaba/conv-llava",
+      "code_type": "Code",
+      "contribution": "Compresses high-resolution images into information-rich visual features",
+      "placements": [
+        {
+          "stage": "Encoding",
+          "category": "Efficient Vision Encoders",
+          "subcategory": "Image-Related"
+        }
+      ],
+      "id": "convllava-hierarchical-backbones-as-visual-encoder-for-large-multimodal-models",
+      "stages": [
+        "Encoding"
+      ],
+      "categories": [
+        "Efficient Vision Encoders"
+      ]
+    },
+    {
+      "title": "Dynamic-VLM: Simple Dynamic Visual Token Compression",
+      "paper_url": "https://doi.org/10.48550/ARXIV.2412.09530",
+      "venue": "arXiv 2024",
+      "year": 2024,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Dynamic visual token compression architecture adapting to different lengths",
+      "placements": [
+        {
+          "stage": "Encoding",
+          "category": "Encoding-Oriented Token Compression",
+          "subcategory": "Attention-Free"
+        },
+        {
+          "stage": "Prefilling",
+          "category": "Token Compression",
+          "subcategory": "Diversity-Guided"
+        }
+      ],
+      "id": "dynamic-vlm-simple-dynamic-visual-token-compression",
+      "stages": [
+        "Encoding",
+        "Prefilling"
+      ],
+      "categories": [
+        "Encoding-Oriented Token Compression",
+        "Token Compression"
+      ]
+    },
+    {
+      "title": "Dynamic-VLM: Simple Dynamic Visual Token Compression for VideoLLM",
+      "paper_url": "https://doi.org/10.48550/ARXIV.2412.09530",
+      "venue": "arXiv 2024",
+      "year": 2024,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Dynamic visual token compression architecture adapting to different lengths",
+      "placements": [
+        {
+          "stage": "Encoding",
+          "category": "Efficient Modality Adapters",
+          "subcategory": null
+        }
+      ],
+      "id": "dynamic-vlm-simple-dynamic-visual-token-compression-for-videollm",
+      "stages": [
+        "Encoding"
+      ],
+      "categories": [
+        "Efficient Modality Adapters"
+      ]
+    },
+    {
+      "title": "Elastic Cache: Efficient inference of vision instruction-following models",
+      "paper_url": "https://doi.org/10.1007/978-3-031-72643-9_4",
+      "venue": "ECCV 2024",
+      "year": 2024,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Cache merging strategy fusing less important KVs guided by distinct metrics",
+      "placements": [
+        {
+          "stage": "Decoding",
+          "category": "KV Cache Compression",
+          "subcategory": "Token-Level"
+        }
+      ],
+      "id": "elastic-cache-efficient-inference-of-vision-instruction-following-models",
+      "stages": [
+        "Decoding"
+      ],
+      "categories": [
+        "KV Cache Compression"
+      ]
+    },
+    {
+      "title": "FastV: An image is worth 1/2 tokens after layer 2",
+      "paper_url": "https://doi.org/10.1007/978-3-031-73004-7_2",
+      "venue": "ECCV 2024",
+      "year": 2024,
+      "code_url": "https://github.com/pkunlp-icler/FastV",
+      "code_type": "Code",
+      "contribution": "Learns attention patterns in early layers to prune visual tokens in deeper layers",
+      "placements": [
+        {
+          "stage": "Prefilling",
+          "category": "Token Compression",
+          "subcategory": "Attention-Guided"
+        }
+      ],
+      "id": "fastv-an-image-is-worth-1-2-tokens-after-layer-2",
+      "stages": [
+        "Prefilling"
+      ],
+      "categories": [
+        "Token Compression"
+      ]
+    },
+    {
+      "title": "Frame-Voyager: Learning to query frames for video LLMs",
+      "paper_url": "https://arxiv.org/abs/2410.03226",
+      "venue": "arXiv 2024",
+      "year": 2024,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Learns to query informative frame combinations",
+      "placements": [
+        {
+          "stage": "Encoding",
+          "category": "Keyframe Selection",
+          "subcategory": "Training-Aware"
+        }
+      ],
+      "id": "frame-voyager-learning-to-query-frames-for-video-llms",
+      "stages": [
+        "Encoding"
+      ],
+      "categories": [
+        "Keyframe Selection"
+      ]
+    },
+    {
+      "title": "FrameFusion: Combining similarity and importance",
+      "paper_url": "https://arxiv.org/abs/2501.01986",
+      "venue": "arXiv 2024",
+      "year": 2024,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Merges tokens in shallow layers and prunes in deep layers",
+      "placements": [
+        {
+          "stage": "Prefilling",
+          "category": "Token Compression",
+          "subcategory": "Diversity-Guided"
+        },
+        {
+          "stage": "Prefilling",
+          "category": "Token Compression",
+          "subcategory": "Attention-Guided"
+        }
+      ],
+      "id": "framefusion-combining-similarity-and-importance",
+      "stages": [
+        "Prefilling"
+      ],
+      "categories": [
+        "Token Compression"
+      ]
+    },
+    {
+      "title": "KeyVideoLLM: Towards large-scale video keyframe selection",
+      "paper_url": "https://arxiv.org/abs/2407.03104",
+      "venue": "arXiv 2024",
+      "year": 2024,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Employs frozen models as plug-and-play selectors for keyframe localization",
+      "placements": [
+        {
+          "stage": "Encoding",
+          "category": "Keyframe Selection",
+          "subcategory": "Training-Free"
+        }
+      ],
+      "id": "keyvideollm-towards-large-scale-video-keyframe-selection",
+      "stages": [
+        "Encoding"
+      ],
+      "categories": [
+        "Keyframe Selection"
+      ]
+    },
+    {
+      "title": "Less is More: A Simple yet Effective Token Reduction Method",
+      "paper_url": "https://arxiv.org/abs/2409.10994",
+      "venue": "arXiv 2024",
+      "year": 2024,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Token reduction using both CLIP metric and similarity (TRIM)",
+      "placements": [
+        {
+          "stage": "Encoding",
+          "category": "Encoding-Oriented Token Compression",
+          "subcategory": "Attention-Free"
+        }
+      ],
+      "id": "less-is-more-a-simple-yet-effective-token-reduction-method",
+      "stages": [
+        "Encoding"
+      ],
+      "categories": [
+        "Encoding-Oriented Token Compression"
+      ]
+    },
+    {
+      "title": "Long context transfer from language to vision",
+      "paper_url": "https://arxiv.org/abs/2406.16852",
+      "venue": "arXiv 2024",
+      "year": 2024,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Vision encoder explicitly trained for long video scenarios",
+      "placements": [
+        {
+          "stage": "Encoding",
+          "category": "Efficient Vision Encoders",
+          "subcategory": "Video-Related"
+        }
+      ],
+      "id": "long-context-transfer-from-language-to-vision",
+      "stages": [
+        "Encoding"
+      ],
+      "categories": [
+        "Efficient Vision Encoders"
+      ]
+    },
+    {
+      "title": "LongVLM: Efficient long video understanding via large language models",
+      "paper_url": "https://doi.org/10.1007/978-3-031-73414-4_26",
+      "venue": "ECCV 2024",
+      "year": 2024,
+      "code_url": "https://github.com/ziplab/LongVLM",
+      "code_type": "Code",
+      "contribution": "Vision encoder explicitly trained for long video scenarios",
+      "placements": [
+        {
+          "stage": "Encoding",
+          "category": "Efficient Vision Encoders",
+          "subcategory": "Video-Related"
+        }
+      ],
+      "id": "longvlm-efficient-long-video-understanding-via-large-language-models",
+      "stages": [
+        "Encoding"
+      ],
+      "categories": [
+        "Efficient Vision Encoders"
+      ]
+    },
+    {
+      "title": "LOOK-M: Look-once optimization in KV cache",
+      "paper_url": "https://arxiv.org/abs/2406.18139",
+      "venue": "arXiv 2024",
+      "year": 2024,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Text-prior compression policy prioritizing textual KVs while evicting visual tokens",
+      "placements": [
+        {
+          "stage": "Decoding",
+          "category": "KV Cache Compression",
+          "subcategory": "Token-Level"
+        }
+      ],
+      "id": "look-m-look-once-optimization-in-kv-cache",
+      "stages": [
+        "Decoding"
+      ],
+      "categories": [
+        "KV Cache Compression"
+      ]
+    },
+    {
+      "title": "MovieChat: From dense token to sparse memory for long video understanding",
+      "paper_url": "https://doi.org/10.1109/CVPR52733.2024.01725",
+      "venue": "CVPR 2024",
+      "year": 2024,
+      "code_url": "https://github.com/wenhaochai/MovieChat",
+      "code_type": "Code",
+      "contribution": "Vision encoder explicitly trained for long video scenarios",
+      "placements": [
+        {
+          "stage": "Encoding",
+          "category": "Efficient Vision Encoders",
+          "subcategory": "Video-Related"
+        }
+      ],
+      "id": "moviechat-from-dense-token-to-sparse-memory-for-long-video-understanding",
+      "stages": [
+        "Encoding"
+      ],
+      "categories": [
+        "Efficient Vision Encoders"
+      ]
+    },
+    {
+      "title": "PVC: Progressive Visual Token Compression",
+      "paper_url": "https://arxiv.org/abs/2412.09613",
+      "venue": "arXiv 2024",
+      "year": 2024,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Progressive compression strategy extending images as static videos",
+      "placements": [
+        {
+          "stage": "Encoding",
+          "category": "Encoding-Oriented Token Compression",
+          "subcategory": "Attention-Free"
+        }
+      ],
+      "id": "pvc-progressive-visual-token-compression",
+      "stages": [
+        "Encoding"
+      ],
+      "categories": [
+        "Encoding-Oriented Token Compression"
+      ]
+    },
+    {
+      "title": "PyramidDrop: Accelerating via pyramid visual redundancy reduction",
+      "paper_url": "https://arxiv.org/abs/2410.17247",
+      "venue": "arXiv 2024",
+      "year": 2024,
+      "code_url": "https://github.com/Cooperx521/PyramidDrop",
+      "code_type": "Code",
+      "contribution": "Multi-stage pruning using attention score ranking",
+      "placements": [
+        {
+          "stage": "Prefilling",
+          "category": "Token Compression",
+          "subcategory": "Attention-Guided"
+        }
+      ],
+      "id": "pyramiddrop-accelerating-via-pyramid-visual-redundancy-reduction",
+      "stages": [
+        "Prefilling"
+      ],
+      "categories": [
+        "Token Compression"
+      ]
+    },
+    {
+      "title": "Qwen2-VL: Enhancing vision-language model's perception of the world at any resolution",
+      "paper_url": "https://arxiv.org/abs/2409.12191",
+      "venue": "arXiv 2024",
+      "year": 2024,
+      "code_url": "https://github.com/QwenLM/Qwen2-VL",
+      "code_type": "Code",
+      "contribution": "Native Dynamic Resolution framework enabling adaptive visual token generation",
+      "placements": [
+        {
+          "stage": "Encoding",
+          "category": "Efficient Vision Encoders",
+          "subcategory": "Video-Related"
+        }
+      ],
+      "id": "qwen2-vl-enhancing-vision-language-model-s-perception-of-the-world-at-any-resolution",
+      "stages": [
+        "Encoding"
+      ],
+      "categories": [
+        "Efficient Vision Encoders"
+      ]
+    },
+    {
+      "title": "SparseVLM: Visual token sparsification for efficient inference",
+      "paper_url": "https://arxiv.org/abs/2410.04417",
+      "venue": "arXiv 2024",
+      "year": 2024,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Sparsifies visual tokens based on question prompt through text-visual attention scores",
+      "placements": [
+        {
+          "stage": "Prefilling",
+          "category": "Token Compression",
+          "subcategory": "Attention-Guided"
+        }
+      ],
+      "id": "sparsevlm-visual-token-sparsification-for-efficient-inference",
+      "stages": [
+        "Prefilling"
+      ],
+      "categories": [
+        "Token Compression"
+      ]
+    },
+    {
+      "title": "Video-ChatGPT: Towards detailed video understanding via large vision and language models",
+      "paper_url": "https://doi.org/10.18653/v1/2024.acl-long.679",
+      "venue": "ACL 2024",
+      "year": 2024,
+      "code_url": "https://github.com/mbzuai-oryx/Video-ChatGPT",
+      "code_type": "Code",
+      "contribution": "Applies pooling over visual tokens to obtain compact visual representations",
+      "placements": [
+        {
+          "stage": "Encoding",
+          "category": "Efficient Vision Encoders",
+          "subcategory": "Video-Related"
+        }
+      ],
+      "id": "video-chatgpt-towards-detailed-video-understanding-via-large-vision-and-language-models",
+      "stages": [
+        "Encoding"
+      ],
+      "categories": [
+        "Efficient Vision Encoders"
+      ]
+    },
+    {
+      "title": "VILA: Efficient video-language alignment for video question answering",
+      "paper_url": "https://doi.org/10.1007/978-3-031-73033-7_11",
+      "venue": "ECCV 2024",
+      "year": 2024,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Text-guided Frame-Prompter learning to extract question-related frames",
+      "placements": [
+        {
+          "stage": "Encoding",
+          "category": "Keyframe Selection",
+          "subcategory": "Training-Aware"
+        }
+      ],
+      "id": "vila-efficient-video-language-alignment-for-video-question-answering",
+      "stages": [
+        "Encoding"
+      ],
+      "categories": [
+        "Keyframe Selection"
+      ]
+    },
+    {
+      "title": "VL-Cache: Sparsity and modality-aware KV cache compression",
+      "paper_url": "https://arxiv.org/abs/2410.23317",
+      "venue": "arXiv 2024",
+      "year": 2024,
+      "code_url": null,
+      "code_type": null,
+      "contribution": "Dynamically sets each layer's cache size according to measured attention sparsity",
+      "placements": [
+        {
+          "stage": "Decoding",
+          "category": "KV Cache Compression",
+          "subcategory": "Layer-Level"
+        }
+      ],
+      "id": "vl-cache-sparsity-and-modality-aware-kv-cache-compression",
+      "stages": [
+        "Decoding"
+      ],
+      "categories": [
+        "KV Cache Compression"
+      ]
+    },
+    {
+      "title": "BLIP-2: Bootstrapping Language-Image Pre-training",
+      "paper_url": "https://proceedings.mlr.press/v202/li23q.html",
+      "venue": "ICML 2023",
+      "year": 2023,
+      "code_url": "https://github.com/salesforce/LAVIS",
+      "code_type": "Code",
+      "contribution": "Bridges modality gap with lightweight Querying Transformer (Q-Former)",
+      "placements": [
+        {
+          "stage": "Encoding",
+          "category": "Efficient Modality Adapters",
+          "subcategory": null
+        }
+      ],
+      "id": "blip-2-bootstrapping-language-image-pre-training",
+      "stages": [
+        "Encoding"
+      ],
+      "categories": [
+        "Efficient Modality Adapters"
+      ]
+    },
+    {
+      "title": "FastViT: A fast hybrid vision transformer using structural reparameterization",
+      "paper_url": "https://doi.org/10.1109/ICCV51070.2023.00532",
+      "venue": "ICCV 2023",
+      "year": 2023,
+      "code_url": "https://github.com/apple/ml-fastvit",
+      "code_type": "Code",
+      "contribution": "Novel token mixing operators and structural reparameterization",
+      "placements": [
+        {
+          "stage": "Encoding",
+          "category": "Efficient Vision Encoders",
+          "subcategory": "Image-Related"
+        }
+      ],
+      "id": "fastvit-a-fast-hybrid-vision-transformer-using-structural-reparameterization",
+      "stages": [
+        "Encoding"
+      ],
+      "categories": [
+        "Efficient Vision Encoders"
+      ]
+    },
+    {
+      "title": "SeViLA: Self-chained image-language model for video localization",
+      "paper_url": "http://papers.nips.cc/paper_files/paper/2023/hash/f22a9af8dbb348952b08bd58d4734b50-Abstract-Conference.html",
+      "venue": "NeurIPS 2023",
+      "year": 2023,
+      "code_url": "https://github.com/Yui010206/SeViLA",
+      "code_type": "Code",
+      "contribution": "Uses frozen models as plug-and-play selectors for frame localization",
+      "placements": [
+        {
+          "stage": "Encoding",
+          "category": "Keyframe Selection",
+          "subcategory": "Training-Free"
+        }
+      ],
+      "id": "sevila-self-chained-image-language-model-for-video-localization",
+      "stages": [
+        "Encoding"
+      ],
+      "categories": [
+        "Keyframe Selection"
+      ]
+    },
+    {
+      "title": "Video-LLaMA: An instruction-tuned audio-visual language model",
+      "paper_url": "https://arxiv.org/abs/2306.02858",
+      "venue": "arXiv 2023",
+      "year": 2023,
+      "code_url": "https://github.com/DAMO-NLP-SG/Video-LLaMA",
+      "code_type": "Code",
+      "contribution": "Proposes Video Q-Former for multi-modality video comprehension",
+      "placements": [
+        {
+          "stage": "Encoding",
+          "category": "Efficient Modality Adapters",
+          "subcategory": null
+        }
+      ],
+      "id": "video-llama-an-instruction-tuned-audio-visual-language-model",
+      "stages": [
+        "Encoding"
+      ],
+      "categories": [
+        "Efficient Modality Adapters"
+      ]
+    }
+  ]
+}

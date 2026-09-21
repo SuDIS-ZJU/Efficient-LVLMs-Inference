@@ -15,6 +15,8 @@ A contribution should directly improve the inference efficiency of a large visio
 
 ## Adding a paper
 
+For a lightweight submission, open the [paper submission form](https://github.com/SuDIS-ZJU/Efficient-LVLMs-Inference/issues/new?template=add-paper.yml). To add a paper directly:
+
 1. Place the paper at its primary intervention stage: Encoding, Prefilling, or Decoding.
 2. Use the official paper or proceedings URL when available; otherwise use arXiv.
 3. Link the official code repository or project page only when it is publicly available.
@@ -33,3 +35,10 @@ Use this row format:
 - Check that the paper is not already listed under another stage.
 - Explain why the selected category is the paper's primary intervention point.
 - Verify that every new link resolves before submitting.
+- Run `python scripts/build_catalog.py` to refresh the JSON, YAML, CSV, and BibTeX exports.
+- Run `python scripts/build_catalog.py --check` before opening the pull request.
+- Optionally run `python scripts/check_links.py` to inspect external link health.
+
+## Generated catalog
+
+The README is the human-edited catalog. `scripts/build_catalog.py` parses its paper tables, validates required fields and URLs, merges cross-listed papers, and updates the machine-readable files in `docs/data/`. Please do not edit generated files by hand.
