@@ -234,7 +234,7 @@ The taxonomy organizes representative methods by inference stage and optimizatio
 #### Head-Level
 | Paper | Venue | Code | Key Contribution |
 |:---|:---:|:---:|:---|
-| [**HybridKV: Hybrid KV Cache Compression for Efficient Multimodal Large Language Model Inference**](https://arxiv.org/abs/2604.05887) | arXiv 2026 | - | Classifies attention heads as static or dynamic and applies head-specific pruning or chunk retrieval |
+| [**HybridKV: Hybrid KV Cache Compression for Efficient Multimodal Large Language Model Inference**](https://arxiv.org/abs/2604.05887) | ACL 2026 | - | Classifies attention heads as static or dynamic and applies head-specific pruning or chunk retrieval |
 | [**SparseMM: Head Sparsity Emerges from Visual Concept Responses**](https://arxiv.org/abs/2506.05344) | arXiv 2025 | - | Identifies vital visual heads and allocates asymmetric budgets based on visual relevance |
 
 #### Bit-Level
