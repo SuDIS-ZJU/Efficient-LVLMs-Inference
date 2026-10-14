@@ -5,7 +5,7 @@
   "repository": "https://github.com/SuDIS-ZJU/Efficient-LVLMs-Inference",
   "stats": {
     "papers": 102,
-    "with_code": 21,
+    "with_code": 22,
     "stages": {
       "Decoding": 31,
       "Encoding": 38,
@@ -110,8 +110,8 @@
       "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Sun_Hi-Lo_Prune_Look_at_What_Youll_Lose_before_Pruning_with_CVPR_2026_paper.html",
       "venue": "CVPR 2026",
       "year": 2026,
-      "code_url": null,
-      "code_type": null,
+      "code_url": "https://github.com/sealost/Hi-Lo_Prune",
+      "code_type": "Code",
       "contribution": "Hierarchically selects pruning candidates and transfers their information to retained tokens before early-layer removal",
       "placements": [
         {
