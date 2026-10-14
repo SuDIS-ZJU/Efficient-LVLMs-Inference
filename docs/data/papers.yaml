@@ -51,10 +51,22 @@ papers:
       - stage: "Encoding"
         category: "Encoding-Oriented Token Compression"
         subcategory: "Attention-Free"
+  - id: "hi-lo-prune-look-at-what-you-ll-lose-before-pruning-with-hierarchical-token-selection"
+    title: "Hi-Lo Prune: Look at What You'll Lose before Pruning with Hierarchical Token Selection"
+    paper_url: "https://openaccess.thecvf.com/content/CVPR2026/html/Sun_Hi-Lo_Prune_Look_at_What_Youll_Lose_before_Pruning_with_CVPR_2026_paper.html"
+    venue: "CVPR 2026"
+    year: 2026
+    code_url: null
+    code_type: null
+    contribution: "Hierarchically selects pruning candidates and transfers their information to retained tokens before early-layer removal"
+    placements:
+      - stage: "Prefilling"
+        category: "Token Compression"
+        subcategory: "Attention-Guided"
   - id: "hybridkv-hybrid-kv-cache-compression-for-efficient-multimodal-large-language-model-inference"
     title: "HybridKV: Hybrid KV Cache Compression for Efficient Multimodal Large Language Model Inference"
     paper_url: "https://arxiv.org/abs/2604.05887"
-    venue: "arXiv 2026"
+    venue: "ACL 2026"
     year: 2026
     code_url: null
     code_type: null
