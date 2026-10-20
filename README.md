@@ -6,7 +6,7 @@
 
 In Douglas Adams’s *The Hitchhiker’s Guide to the Galaxy*, a traveller reaches for a guide in the midst of a bewildering universe. In Jorge Luis Borges’s *On Exactitude in Science*, a map as large as an empire is eventually left to the wind and rain. Between the guide that can accompany us and the map that cannot, a question takes shape: how much of the world must we carry to find our way through it?
 
-For vision-language models, the world arrives in images, in pages, in the passing frames of a video. On the other side of the screen, someone is waiting to understand. Their time is finite. So are the memory of a device and the energy it can spare. We hope to make room for that encounter: to keep the detail on which an answer depends, and to bring the answer within reach.
+For Large Vision-Language Models (LVLMs), the world arrives in images, in pages, in the passing frames of a video. On the other side of the screen, someone is waiting to understand. Their time is finite. So are the memory of a device and the energy it can spare. We hope to make room for that encounter: to keep the detail on which an answer depends, and to bring the answer within reach.
 
 <p align="center"><em>May the tools we build be light enough to travel with us, and attentive enough to help us see.</em></p>
 
