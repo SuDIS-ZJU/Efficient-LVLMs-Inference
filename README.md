@@ -2,13 +2,25 @@
   <img src="assets/guide-grand-tour.png" width="100%" alt="The universe is vast. Our pockets are small. A retro space-travel composition adapted from The Grand Tour.">
 </p>
 
+<p align="center">
+  <picture>
+    <source media="(max-width: 640px)" srcset="assets/prologue-mobile.svg">
+    <img src="assets/prologue-desktop.svg" width="100%" alt="A literary prologue connecting The Hitchhiker’s Guide to the Galaxy and Borges to Large Vision-Language Models (LVLMs). Expand Read the prologue below for the complete text.">
+  </picture>
+</p>
+
 <p align="center"><sub>Artwork adapted with AI from <a href="https://www.jpl.nasa.gov/images/the-grand-tour-jpl-travel-poster/">The Grand Tour</a>, NASA/JPL; original poster design by <a href="https://invisiblecreature.com/products/nasa-the-grand-tour">Invisible Creature</a>.</sub></p>
+
+<details>
+<summary>Read the prologue · Text version</summary>
 
 In Douglas Adams’s *The Hitchhiker’s Guide to the Galaxy*, a traveller reaches for a guide in the midst of a bewildering universe. In Jorge Luis Borges’s *On Exactitude in Science*, a map as large as an empire is eventually left to the wind and rain. Between the guide that can accompany us and the map that cannot, a question takes shape: how much of the world must we carry to find our way through it?
 
 For Large Vision-Language Models (LVLMs), the world arrives in images, in pages, in the passing frames of a video. On the other side of the screen, someone is waiting to understand. Their time is finite. So are the memory of a device and the energy it can spare. We hope to make room for that encounter: to keep the detail on which an answer depends, and to bring the answer within reach.
 
-<p align="center"><em>May the tools we build be light enough to travel with us, and attentive enough to help us see.</em></p>
+*May the tools we build be light enough to travel with us, and attentive enough to help us see.*
+
+</details>
 
 ---
 
