@@ -6,13 +6,27 @@
 </p>
 
 <details>
-<summary>Read the prologue · Text version</summary>
+<summary>Read the prologue · Text version / 阅读序言 · 文字版</summary>
+
+**English**
+
+**The universe is vast. Our pockets are small.**
 
 In Douglas Adams’s *The Hitchhiker’s Guide to the Galaxy*, a traveller reaches for a guide in the midst of a bewildering universe. In Jorge Luis Borges’s *On Exactitude in Science*, a map as large as an empire is eventually left to the wind and rain. Between the guide that can accompany us and the map that cannot, a question takes shape: how much of the world must we carry to find our way through it?
 
 For Large Vision-Language Models (LVLMs), the world arrives in images, in pages, in the passing frames of a video. On the other side of the screen, someone is waiting to understand. Their time is finite. So are the memory of a device and the energy it can spare. We hope to make room for that encounter: to keep the detail on which an answer depends, and to bring the answer within reach.
 
 *May the tools we build be light enough to travel with us, and attentive enough to help us see.*
+
+**中文**
+
+**宇宙很大，旅人的口袋很小。**
+
+在《银河系漫游指南》里，面对一个令人困惑的宇宙，旅人仍可以伸手取出一本指南。博尔赫斯则在《论科学的精确性》中写过一张与帝国同样辽阔的地图：它一寸寸贴合大地，最终却被留在风雨之中。在可以随身带走的指南与无法携带的地图之间，一个问题渐渐浮现：我们究竟需要带上多少世界，才能找到自己的路？
+
+对大型视觉语言模型（LVLMs）而言，世界从图像、书页和不断流逝的视频画面中抵达。而在屏幕的另一端，有一个人正在等待理解。他的时间有限，手边设备的记忆与电量也有限。我们希望为这场相遇留出空间：保存一个回答赖以成立的细节，让理解来得及抵达。
+
+*愿我们造出的工具，轻得足以随人远行，也细致得足以帮助人看见。*
 
 Artwork adapted with AI from [The Grand Tour](https://www.jpl.nasa.gov/images/the-grand-tour-jpl-travel-poster/), NASA/JPL; original poster design by [Invisible Creature](https://invisiblecreature.com/products/nasa-the-grand-tour).
 
