@@ -52,7 +52,7 @@ The taxonomy organizes representative methods by inference stage and optimizatio
 | [Modality Adapters](#efficient-modality-adapters) | [Sparse Attention](#sparse-attention) | [Attention Reuse](#attention-reuse) | [Related Surveys](#-survey-and-related-work) |
 | [Keyframes](#keyframe-selection) |  | [Speculative Decoding](#speculative-decoding) | [Citation](#-citation) |
 | [Adaptive Resolution](#adaptive-resolution) |  | [Efficient Reasoning](#efficient-reasoning) | [Contributing](#-contributing) |
-| [Encoding-side Compression](#encoding-oriented-token-compression) |  |  |  |
+| [Encoding-side Compression](#encoding-oriented-token-compression) |  | [Direct Prediction](#direct-prediction) |  |
 
 > **Need faster lookup?** Use the [interactive Research Hub](https://sudis-zju.github.io/Efficient-LVLMs-Inference/) to search and filter the catalog, or download the machine-readable [JSON](docs/data/papers.json), [YAML](docs/data/papers.yaml), [CSV](docs/data/papers.csv), and [BibTeX](docs/data/papers.bib) exports.
 
@@ -269,6 +269,12 @@ The taxonomy organizes representative methods by inference stage and optimizatio
 | [**Glyph: Scaling Context Windows via Visual-Text Compression**](https://arxiv.org/abs/2510.17800) | arXiv 2025 | [![GitHub](https://img.shields.io/badge/GitHub-black?logo=github)](https://github.com/thu-coai/Glyph) | Introduces DeepEncoder maintaining low activations under high-resolution input |
 | [**SpecVLM: Fast Speculative Decoding in Vision-Language Models**](https://arxiv.org/abs/2509.11815) | arXiv 2025 | - | Elastic visual compressor adaptively selecting from multiple compression primitives |
 | [**FLASH: Latent-Aware Semi-Autoregressive Speculative Decoding**](https://arxiv.org/abs/2505.12728) | arXiv 2025 | - | Visual token compression mechanism and semi-autoregressive head for draft model optimization |
+
+### Direct Prediction
+
+| Paper | Venue | Code | Key Contribution |
+|:---|:---:|:---:|:---|
+| [**Jag: Direct Box Prediction for Efficient Visual Grounding**](https://arxiv.org/abs/2610.13239) | arXiv 2026 | [![GitHub](https://img.shields.io/badge/GitHub-black?logo=github)](https://github.com/xyzzzh/Jag) | Adapts a compact multimodal model to predict a continuous bounding box from an existing input-token state in one forward pass, avoiding autoregressive coordinate generation. |
 
 ### Efficient Reasoning
 

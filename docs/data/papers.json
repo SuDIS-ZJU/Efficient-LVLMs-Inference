@@ -4,10 +4,10 @@
   "source": "README.md",
   "repository": "https://github.com/SuDIS-ZJU/Efficient-LVLMs-Inference",
   "stats": {
-    "papers": 101,
-    "with_code": 21,
+    "papers": 102,
+    "with_code": 22,
     "stages": {
-      "Decoding": 31,
+      "Decoding": 32,
       "Encoding": 38,
       "Prefilling": 34
     }
@@ -108,7 +108,7 @@
     {
       "title": "HybridKV: Hybrid KV Cache Compression for Efficient Multimodal Large Language Model Inference",
       "paper_url": "https://arxiv.org/abs/2604.05887",
-      "venue": "arXiv 2026",
+      "venue": "ACL 2026",
       "year": 2026,
       "code_url": null,
       "code_type": null,
@@ -149,6 +149,29 @@
       ],
       "categories": [
         "Token Compression"
+      ]
+    },
+    {
+      "title": "Jag: Direct Box Prediction for Efficient Visual Grounding",
+      "paper_url": "https://arxiv.org/abs/2610.13239",
+      "venue": "arXiv 2026",
+      "year": 2026,
+      "code_url": "https://github.com/xyzzzh/Jag",
+      "code_type": "Code",
+      "contribution": "Adapts a compact multimodal model to predict a continuous bounding box from an existing input-token state in one forward pass, avoiding autoregressive coordinate generation.",
+      "placements": [
+        {
+          "stage": "Decoding",
+          "category": "Direct Prediction",
+          "subcategory": null
+        }
+      ],
+      "id": "jag-direct-box-prediction-for-efficient-visual-grounding",
+      "stages": [
+        "Decoding"
+      ],
+      "categories": [
+        "Direct Prediction"
       ]
     },
     {
