@@ -1,7 +1,7 @@
 <p align="center">
   <picture>
-    <source media="(max-width: 640px)" srcset="assets/guide-prologue-mobile.svg?v=92b121d">
-    <img src="assets/guide-prologue-desktop.svg?v=92b121d" width="100%" alt="The universe is vast. Our pockets are small. A literary prologue connecting The Hitchhiker’s Guide to the Galaxy and Borges to Large Vision-Language Models (LVLMs). Expand Read the prologue below for the complete text.">
+    <source media="(max-width: 640px)" srcset="https://raw.githubusercontent.com/SuDIS-ZJU/Efficient-LVLMs-Inference/92b121db93ed2009a0c96879492bc5e4d5b66b28/assets/guide-prologue-mobile.svg">
+    <img src="https://raw.githubusercontent.com/SuDIS-ZJU/Efficient-LVLMs-Inference/92b121db93ed2009a0c96879492bc5e4d5b66b28/assets/guide-prologue-desktop.svg" width="100%" alt="The universe is vast. Our pockets are small. A literary prologue connecting The Hitchhiker’s Guide to the Galaxy and Borges to Large Vision-Language Models (LVLMs). Expand Read the prologue below for the complete text.">
   </picture>
 </p>
 
