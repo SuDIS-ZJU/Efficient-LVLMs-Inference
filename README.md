@@ -5,8 +5,6 @@
   </picture>
 </p>
 
-<p align="center"><sub>Artwork adapted with AI from <a href="https://www.jpl.nasa.gov/images/the-grand-tour-jpl-travel-poster/">The Grand Tour</a>, NASA/JPL; original poster design by <a href="https://invisiblecreature.com/products/nasa-the-grand-tour">Invisible Creature</a>.</sub></p>
-
 <details>
 <summary>Read the prologue · Text version</summary>
 
@@ -15,6 +13,8 @@ In Douglas Adams’s *The Hitchhiker’s Guide to the Galaxy*, a traveller reach
 For Large Vision-Language Models (LVLMs), the world arrives in images, in pages, in the passing frames of a video. On the other side of the screen, someone is waiting to understand. Their time is finite. So are the memory of a device and the energy it can spare. We hope to make room for that encounter: to keep the detail on which an answer depends, and to bring the answer within reach.
 
 *May the tools we build be light enough to travel with us, and attentive enough to help us see.*
+
+Artwork adapted with AI from [The Grand Tour](https://www.jpl.nasa.gov/images/the-grand-tour-jpl-travel-poster/), NASA/JPL; original poster design by [Invisible Creature](https://invisiblecreature.com/products/nasa-the-grand-tour).
 
 </details>
 
