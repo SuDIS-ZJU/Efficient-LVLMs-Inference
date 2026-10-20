@@ -1,8 +1,32 @@
 schema_version: 1
-last_updated: "2026-09-21"
+last_updated: "2026-10-20"
 source: "README.md"
 repository: "https://github.com/SuDIS-ZJU/Efficient-LVLMs-Inference"
 papers:
+  - id: "3dzip-spatial-aware-feature-diversity-guided-token-compression-for-3d-question-answering"
+    title: "3DZip: Spatial-Aware Feature Diversity-Guided Token Compression for 3D Question Answering"
+    paper_url: "https://arxiv.org/abs/2608.01185"
+    venue: "ECCV 2026"
+    year: 2026
+    code_url: "https://github.com/cvsp-lab/3DZip"
+    code_type: "Code"
+    contribution: "Combines coarse voxelization, DPP-based feature-diverse anchor selection, and spatially constrained merging for 3D VLM tokens"
+    placements:
+      - stage: "Prefilling"
+        category: "Token Compression"
+        subcategory: "Diversity-Guided"
+  - id: "agilepruner-an-empirical-study-of-attention-and-diversity-for-adaptive-visual-token-pruning-in-large-vision-language-models"
+    title: "AgilePruner: An Empirical Study of Attention and Diversity for Adaptive Visual Token Pruning in Large Vision-Language Models"
+    paper_url: "https://arxiv.org/abs/2603.01236"
+    venue: "ICLR 2026"
+    year: 2026
+    code_url: "https://github.com/cvsp-lab/AgilePruner"
+    code_type: "Code"
+    contribution: "Combines CLS-attention selection with erank-based diversity pruning, adapting the balance to image complexity"
+    placements:
+      - stage: "Encoding"
+        category: "Encoding-Oriented Token Compression"
+        subcategory: "Attention-Aware"
   - id: "avtp-multi-image-visual-token-pruning-in-large-visual-language-models"
     title: "AVTP: Multi-Image Visual Token Pruning in Large Visual Language Models"
     paper_url: "https://arxiv.org/abs/2608.26806"
