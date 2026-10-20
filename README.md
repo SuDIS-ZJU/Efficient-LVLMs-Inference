@@ -179,6 +179,7 @@ The taxonomy organizes representative methods by inference stage and optimizatio
 #### Attention-Guided
 | Paper | Venue | Code | Key Contribution |
 |:---|:---:|:---:|:---|
+| [**Hi-Lo Prune: Look at What You'll Lose before Pruning with Hierarchical Token Selection**](https://openaccess.thecvf.com/content/CVPR2026/html/Sun_Hi-Lo_Prune_Look_at_What_Youll_Lose_before_Pruning_with_CVPR_2026_paper.html) | CVPR 2026 | [![GitHub](https://img.shields.io/badge/GitHub-black?logo=github)](https://github.com/sealost/Hi-Lo_Prune) | Hierarchically selects pruning candidates and transfers their information to retained tokens before early-layer removal |
 | [**SwiftVLM: Efficient Vision-Language Model Inference via Cross-Layer Token Bypass**](https://arxiv.org/abs/2602.03134) | arXiv 2026 | - | Bypasses rather than permanently discards unselected tokens, enabling later-layer re-evaluation |
 | [**ICCTP: Instruction-Guided Cross-Modal Clustering for Training-Free Visual Token Pruning**](https://doi.org/10.1609/aaai.v40i14.38212) | AAAI 2026 | - | Uses instruction noun anchors for cross-modal clustering and high-ratio token pruning |
 | [**OccamToken: Efficient VLM Inference with Training-Free and Budget-Adaptive Token Pruning**](https://arxiv.org/abs/2605.29657) | arXiv 2026 | - | Uses register-anchored relative evidence tests for image- and query-adaptive pruning |
