@@ -6,11 +6,14 @@
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![arXiv](https://img.shields.io/badge/arXiv-2604.05546-B31B1B.svg)](https://arxiv.org/abs/2604.05546)
+[![ACL 2026 Findings](https://img.shields.io/badge/ACL_2026-Findings-2457A7.svg)](https://aclanthology.org/2026.findings-acl.1057/)
 [![Research Hub](https://img.shields.io/badge/Explore-Research_Hub-0F7650.svg)](https://sudis-zju.github.io/Efficient-LVLMs-Inference/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-2E9B67.svg)](CONTRIBUTING.md)
 [![License](https://img.shields.io/badge/License-MIT-5864D8.svg)](LICENSE.txt)
 
 [**Survey**](https://arxiv.org/abs/2604.05546) ·
+[**Proceedings**](https://aclanthology.org/2026.findings-acl.1057/) ·
+[**News**](#-news) ·
 [**Research Hub**](https://sudis-zju.github.io/Efficient-LVLMs-Inference/) ·
 [**Encoding**](#-encoding-stage) ·
 [**Prefilling**](#-prefilling-stage) ·
@@ -20,11 +23,21 @@
 
 </div>
 
-## ✨ October 2026 Highlights
+## 📰 News
+
+### ✨ October 2026 Highlights
 
 - 🧩 **New papers:** [3DZip](https://arxiv.org/abs/2608.01185) ([code](https://github.com/cvsp-lab/3DZip), [merged in #10](https://github.com/SuDIS-ZJU/Efficient-LVLMs-Inference/pull/10)) and [AgilePruner](https://arxiv.org/abs/2603.01236) ([code](https://github.com/cvsp-lab/AgilePruner), [merged in #10](https://github.com/SuDIS-ZJU/Efficient-LVLMs-Inference/pull/10)).
 - 🤝 **Community contributions:** [Hi-Lo Prune](https://openaccess.thecvf.com/content/CVPR2026/html/Sun_Hi-Lo_Prune_Look_at_What_Youll_Lose_before_Pruning_with_CVPR_2026_paper.html) ([PR #7](https://github.com/SuDIS-ZJU/Efficient-LVLMs-Inference/pull/7)) and [Jag](https://arxiv.org/abs/2610.13239) ([original PR #8](https://github.com/SuDIS-ZJU/Efficient-LVLMs-Inference/pull/8), [catalog update #9](https://github.com/SuDIS-ZJU/Efficient-LVLMs-Inference/pull/9)).
 - 📚 **Fresh catalog exports:** [JSON](docs/data/papers.json) · [YAML](docs/data/papers.yaml) · [CSV](docs/data/papers.csv) · [BibTeX](docs/data/papers.bib) · [searchable Research Hub](https://sudis-zju.github.io/Efficient-LVLMs-Inference/).
+
+
+### 🗓️ Earlier Milestones
+
+- **2026-09-21** · 🚀 Introduced the [interactive Research Hub](https://sudis-zju.github.io/Efficient-LVLMs-Inference/) with searchable paper filters and downloadable [JSON](docs/data/papers.json), [YAML](docs/data/papers.yaml), [CSV](docs/data/papers.csv), and [BibTeX](docs/data/papers.bib) catalogs.
+- **2026-07** · 📖 Our survey is published in **Findings of ACL 2026**! Read the [ACL Anthology paper](https://aclanthology.org/2026.findings-acl.1057/) or download the [proceedings PDF](https://aclanthology.org/2026.findings-acl.1057.pdf).
+- **2026-04** · 🎉 Our survey, [Efficient Inference for Large Vision-Language Models: Bottlenecks, Techniques, and Prospects](https://arxiv.org/abs/2604.05546), was accepted to **ACL 2026 Findings**!
+- **2026-04-07** · 📝 Released the [survey preprint on arXiv](https://arxiv.org/abs/2604.05546v1), presenting a taxonomy across encoding, prefilling, and decoding.
 
 ## At a Glance
 
