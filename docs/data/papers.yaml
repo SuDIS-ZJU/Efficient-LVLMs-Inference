@@ -10,6 +10,8 @@ papers:
     year: 2026
     code_url: "https://github.com/cvsp-lab/3DZip"
     code_type: "Code"
+    added_on: "2026-10-20"
+    added_in: "162519ad40579f9814e2a0f52443728ea11d6298"
     contribution: "Combines coarse voxelization, DPP-based feature-diverse anchor selection, and spatially constrained merging for 3D VLM tokens"
     placements:
       - stage: "Prefilling"
@@ -22,6 +24,8 @@ papers:
     year: 2026
     code_url: "https://github.com/cvsp-lab/AgilePruner"
     code_type: "Code"
+    added_on: "2026-10-20"
+    added_in: "162519ad40579f9814e2a0f52443728ea11d6298"
     contribution: "Combines CLS-attention selection with erank-based diversity pruning, adapting the balance to image complexity"
     placements:
       - stage: "Encoding"
@@ -34,6 +38,8 @@ papers:
     year: 2026
     code_url: "https://github.com/zry13/AVTP"
     code_type: "Code"
+    added_on: "2026-09-21"
+    added_in: "fd9fa236feead15f9fc0e8a157c3b78ae56f471d"
     contribution: "Adaptively assigns token budgets across images and supports diverse VLM architectures"
     placements:
       - stage: "Prefilling"
@@ -46,6 +52,8 @@ papers:
     year: 2026
     code_url: null
     code_type: null
+    added_on: "2026-09-21"
+    added_in: "fd9fa236feead15f9fc0e8a157c3b78ae56f471d"
     contribution: "Formulates pruning as query-weighted representational coverage maximization"
     placements:
       - stage: "Prefilling"
@@ -58,6 +66,8 @@ papers:
     year: 2026
     code_url: null
     code_type: null
+    added_on: "2026-09-21"
+    added_in: "fd9fa236feead15f9fc0e8a157c3b78ae56f471d"
     contribution: "Tracks decoding-stage relevant visual information shift to adapt token pruning during complex reasoning"
     placements:
       - stage: "Decoding"
@@ -70,6 +80,8 @@ papers:
     year: 2026
     code_url: null
     code_type: null
+    added_on: "2026-09-21"
+    added_in: "fd9fa236feead15f9fc0e8a157c3b78ae56f471d"
     contribution: "Learns a lightweight visual token compressor from semantic-guided evolutionary token labels"
     placements:
       - stage: "Encoding"
@@ -82,6 +94,8 @@ papers:
     year: 2026
     code_url: "https://github.com/sealost/Hi-Lo_Prune"
     code_type: "Code"
+    added_on: "2026-10-20"
+    added_in: "bf8daaed7993c2258fb8dc983ed32c4964e94ce9"
     contribution: "Hierarchically selects pruning candidates and transfers their information to retained tokens before early-layer removal"
     placements:
       - stage: "Prefilling"
@@ -94,6 +108,8 @@ papers:
     year: 2026
     code_url: null
     code_type: null
+    added_on: "2026-09-21"
+    added_in: "fd9fa236feead15f9fc0e8a157c3b78ae56f471d"
     contribution: "Classifies attention heads as static or dynamic and applies head-specific pruning or chunk retrieval"
     placements:
       - stage: "Decoding"
@@ -106,6 +122,8 @@ papers:
     year: 2026
     code_url: null
     code_type: null
+    added_on: "2026-09-21"
+    added_in: "fd9fa236feead15f9fc0e8a157c3b78ae56f471d"
     contribution: "Uses instruction noun anchors for cross-modal clustering and high-ratio token pruning"
     placements:
       - stage: "Prefilling"
@@ -118,6 +136,8 @@ papers:
     year: 2026
     code_url: "https://github.com/xyzzzh/Jag"
     code_type: "Code"
+    added_on: "2026-10-20"
+    added_in: "b91d7270a30bcc4659bbbfb7e9c30688af5b570a"
     contribution: "Adapts a compact multimodal model to predict a continuous bounding box from an existing input-token state in one forward pass, avoiding autoregressive coordinate generation."
     placements:
       - stage: "Decoding"
@@ -130,6 +150,8 @@ papers:
     year: 2026
     code_url: "https://mmspec-bench.github.io/"
     code_type: "Project page"
+    added_on: "2026-09-21"
+    added_in: "fd9fa236feead15f9fc0e8a157c3b78ae56f471d"
     contribution: "Benchmarks ten speculative decoding methods and introduces vision-adaptive ViSkip"
     placements:
       - stage: "Decoding"
@@ -142,6 +164,8 @@ papers:
     year: 2026
     code_url: null
     code_type: null
+    added_on: "2026-09-21"
+    added_in: "fd9fa236feead15f9fc0e8a157c3b78ae56f471d"
     contribution: "Uses register-anchored relative evidence tests for image- and query-adaptive pruning"
     placements:
       - stage: "Prefilling"
@@ -154,6 +178,8 @@ papers:
     year: 2026
     code_url: null
     code_type: null
+    added_on: "2026-09-21"
+    added_in: "fd9fa236feead15f9fc0e8a157c3b78ae56f471d"
     contribution: "Reuses similar attention queries across adjacent layers through a lightweight layer-shared cache"
     placements:
       - stage: "Decoding"
@@ -166,6 +192,8 @@ papers:
     year: 2026
     code_url: null
     code_type: null
+    added_on: "2026-09-21"
+    added_in: "83bb2d56348b3c0ba8a8c18c435389561cac1c10"
     contribution: "Semantic-guided slow-fast pruning of visual tokens for VLMs"
     placements:
       - stage: "Encoding"
@@ -178,6 +206,8 @@ papers:
     year: 2026
     code_url: null
     code_type: null
+    added_on: "2026-09-21"
+    added_in: "fd9fa236feead15f9fc0e8a157c3b78ae56f471d"
     contribution: "Retains visual information unexplained by the text subspace using cross-modal residual guidance"
     placements:
       - stage: "Prefilling"
@@ -190,6 +220,8 @@ papers:
     year: 2026
     code_url: "https://github.com/lern-to-write/STC"
     code_type: "Code"
+    added_on: "2026-09-21"
+    added_in: "fd9fa236feead15f9fc0e8a157c3b78ae56f471d"
     contribution: "Jointly accelerates ViT encoding through cross-frame feature caching and LLM prefilling through spatiotemporal token pruning"
     placements:
       - stage: "Encoding"
@@ -202,6 +234,8 @@ papers:
     year: 2026
     code_url: null
     code_type: null
+    added_on: "2026-09-21"
+    added_in: "fd9fa236feead15f9fc0e8a157c3b78ae56f471d"
     contribution: "Bypasses rather than permanently discards unselected tokens, enabling later-layer re-evaluation"
     placements:
       - stage: "Prefilling"
@@ -214,6 +248,8 @@ papers:
     year: 2026
     code_url: null
     code_type: null
+    added_on: "2026-09-21"
+    added_in: "fd9fa236feead15f9fc0e8a157c3b78ae56f471d"
     contribution: "Globally allocates a unified spatiotemporal token budget using contribution and redundancy signals"
     placements:
       - stage: "Prefilling"
@@ -226,6 +262,8 @@ papers:
     year: 2025
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Fast-slow reasoning framework routing simple queries to VideoLLM and complex ones to visual program workflow"
     placements:
       - stage: "Decoding"
@@ -238,6 +276,8 @@ papers:
     year: 2025
     code_url: null
     code_type: null
+    added_on: "2026-09-21"
+    added_in: "fd9fa236feead15f9fc0e8a157c3b78ae56f471d"
     contribution: "Models stable inter-modal relevance and adaptively allocates visual KV budgets across layers"
     placements:
       - stage: "Decoding"
@@ -250,6 +290,8 @@ papers:
     year: 2025
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Adaptive mixed-precision quantization with high bit-width for critical tokens and 2-bit for others"
     placements:
       - stage: "Decoding"
@@ -262,6 +304,8 @@ papers:
     year: 2025
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Learnable adaptive token pruning module computing importance score"
     placements:
       - stage: "Prefilling"
@@ -274,6 +318,8 @@ papers:
     year: 2025
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Selects informative tokens using visual attention (VisPruner)"
     placements:
       - stage: "Encoding"
@@ -286,6 +332,8 @@ papers:
     year: 2025
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Multi-stage pruning with diversity and attention ranking objectives"
     placements:
       - stage: "Prefilling"
@@ -298,6 +346,8 @@ papers:
     year: 2025
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Channel-wise 1-bit quantization with post-calibration for extreme values"
     placements:
       - stage: "Decoding"
@@ -310,6 +360,8 @@ papers:
     year: 2025
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Determinantal Point Processes (DPP) maximizing conditional diversity"
     placements:
       - stage: "Prefilling"
@@ -322,6 +374,8 @@ papers:
     year: 2025
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Pivot-based duplication pruning selecting tokens with low duplication"
     placements:
       - stage: "Prefilling"
@@ -334,6 +388,8 @@ papers:
     year: 2025
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Max-Min diversity optimization for token subset selection"
     placements:
       - stage: "Prefilling"
@@ -346,6 +402,8 @@ papers:
     year: 2025
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Plug-and-play temporal compression module minimizing temporal redundancy"
     placements:
       - stage: "Prefilling"
@@ -358,6 +416,8 @@ papers:
     year: 2025
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Lightweight modality-specific compressor learning compression patterns"
     placements:
       - stage: "Decoding"
@@ -370,6 +430,8 @@ papers:
     year: 2025
     code_url: "https://github.com/LunarShen/FastVID"
     code_type: "Code"
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Temporal segmentation and density spatiotemporal pruning"
     placements:
       - stage: "Prefilling"
@@ -382,6 +444,8 @@ papers:
     year: 2025
     code_url: "https://machinelearning.apple.com/research/fastvlm-efficient-vision-encoding"
     code_type: "Project page"
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Hybrid vision encoder outputting fewer tokens and reducing encoding time"
     placements:
       - stage: "Encoding"
@@ -394,6 +458,8 @@ papers:
     year: 2025
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Imitation-based draft model learning from deeper representations (self-speculative decoding)"
     placements:
       - stage: "Decoding"
@@ -406,6 +472,8 @@ papers:
     year: 2025
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Minimizes divergence of attention distributions before and after pruning"
     placements:
       - stage: "Prefilling"
@@ -418,6 +486,8 @@ papers:
     year: 2025
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Visual token compression mechanism and semi-autoregressive head for draft model optimization"
     placements:
       - stage: "Decoding"
@@ -430,6 +500,8 @@ papers:
     year: 2025
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Formulates keyframe selection as combinatorial pure-exploration"
     placements:
       - stage: "Encoding"
@@ -442,6 +514,8 @@ papers:
     year: 2025
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Plug-and-play module in final vision backbone blocks for merging operations"
     placements:
       - stage: "Encoding"
@@ -454,6 +528,8 @@ papers:
     year: 2025
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Similarity graph and information flow to retain representative tokens"
     placements:
       - stage: "Prefilling"
@@ -466,6 +542,8 @@ papers:
     year: 2025
     code_url: "https://github.com/thu-coai/Glyph"
     code_type: "Code"
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "DeepEncoder maintaining low activations under high-resolution input"
     placements:
       - stage: "Encoding"
@@ -481,6 +559,8 @@ papers:
     year: 2025
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Attention maps from middle encoder layers to estimate visual token importance"
     placements:
       - stage: "Encoding"
@@ -493,6 +573,8 @@ papers:
     year: 2025
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Global redundancy-aware segmentation followed by spatiotemporal merging"
     placements:
       - stage: "Prefilling"
@@ -505,6 +587,8 @@ papers:
     year: 2025
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Layer-wise adaptive pooling with varying kernel sizes to balance abstraction and detail"
     placements:
       - stage: "Decoding"
@@ -517,6 +601,8 @@ papers:
     year: 2025
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Dual-memory approach with short-term sliding window and compressed long-term memory"
     placements:
       - stage: "Decoding"
@@ -529,6 +615,8 @@ papers:
     year: 2025
     code_url: "https://github.com/42Shawn/LLaVA-PruMerge"
     code_type: "Code"
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Reduces visual tokens according to similarities between class and spatial tokens"
     placements:
       - stage: "Encoding"
@@ -541,6 +629,8 @@ papers:
     year: 2025
     code_url: "https://vision-cair.github.io/LongVU/"
     code_type: "Project page"
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Preserves full features for query-relevant frames"
     placements:
       - stage: "Encoding"
@@ -553,6 +643,8 @@ papers:
     year: 2025
     code_url: "https://vision-cair.github.io/LongVU/"
     code_type: "Project page"
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Preserves full features for query-relevant frames while applying spatial pooling"
     placements:
       - stage: "Encoding"
@@ -565,6 +657,8 @@ papers:
     year: 2025
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Uses spatial and temporal signals as supervision to train frame selector"
     placements:
       - stage: "Encoding"
@@ -577,6 +671,8 @@ papers:
     year: 2025
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Inter-layer compensation mechanism dynamically adjusting budgets"
     placements:
       - stage: "Decoding"
@@ -589,6 +685,8 @@ papers:
     year: 2025
     code_url: null
     code_type: null
+    added_on: "2026-09-21"
+    added_in: "fd9fa236feead15f9fc0e8a157c3b78ae56f471d"
     contribution: "Converts small language models into multimodal drafters using a vision projector and self-distillation"
     placements:
       - stage: "Decoding"
@@ -601,6 +699,8 @@ papers:
     year: 2025
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Cross-modal attention entropy guiding cache allocation to layers with complex interactions"
     placements:
       - stage: "Decoding"
@@ -613,6 +713,8 @@ papers:
     year: 2025
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Identifies three distinct attention patterns in LVLMs with modality-aware permutation"
     placements:
       - stage: "Prefilling"
@@ -625,6 +727,8 @@ papers:
     year: 2025
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Two-stage training enabling draft model to acquire language modeling and visual perception"
     placements:
       - stage: "Decoding"
@@ -637,6 +741,8 @@ papers:
     year: 2025
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Reinforcement learning to regulate reasoning chain length based on task difficulty and model confidence"
     placements:
       - stage: "Decoding"
@@ -649,6 +755,8 @@ papers:
     year: 2025
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Certainty-based routing triggering long thought chains only when initial answer exhibits high uncertainty"
     placements:
       - stage: "Decoding"
@@ -661,6 +769,8 @@ papers:
     year: 2025
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Spatiotemporal token merging before LLMs"
     placements:
       - stage: "Prefilling"
@@ -673,6 +783,8 @@ papers:
     year: 2025
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Text-image matching network with Gumbel-Max trick"
     placements:
       - stage: "Encoding"
@@ -688,6 +800,8 @@ papers:
     year: 2025
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Retrieval-based framework offloading video chunks to external memory"
     placements:
       - stage: "Decoding"
@@ -700,6 +814,8 @@ papers:
     year: 2025
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Two-stage online filter to skip unimportant regions in sparse attention"
     placements:
       - stage: "Prefilling"
@@ -712,6 +828,8 @@ papers:
     year: 2025
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Identifies vital visual heads and allocates asymmetric budgets based on visual relevance"
     placements:
       - stage: "Decoding"
@@ -724,6 +842,8 @@ papers:
     year: 2025
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Estimates token importance from visual encoder's self-attention maps"
     placements:
       - stage: "Encoding"
@@ -736,6 +856,8 @@ papers:
     year: 2025
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Compact distilled draft model paired with tree-based verification algorithm"
     placements:
       - stage: "Decoding"
@@ -748,6 +870,8 @@ papers:
     year: 2025
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Verifier-guided staged pruning removing up to 90% of vision tokens from draft model input"
     placements:
       - stage: "Decoding"
@@ -760,6 +884,8 @@ papers:
     year: 2025
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Elastic visual compressor adaptively selecting from multiple compression primitives"
     placements:
       - stage: "Decoding"
@@ -772,6 +898,8 @@ papers:
     year: 2025
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Progressive pruning of visual tokens in deeper layers based on decreasing visual importance"
     placements:
       - stage: "Decoding"
@@ -784,6 +912,8 @@ papers:
     year: 2025
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Causal temporal reduction with fixed per-frame budget"
     placements:
       - stage: "Prefilling"
@@ -796,6 +926,8 @@ papers:
     year: 2025
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Maintains compact token subset by reusing attention sinks and recent token windows"
     placements:
       - stage: "Prefilling"
@@ -808,6 +940,8 @@ papers:
     year: 2025
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Quadtree spatial transformation with directed pairwise merging"
     placements:
       - stage: "Prefilling"
@@ -820,6 +954,8 @@ papers:
     year: 2025
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Differential token drop module filtering redundant content in streaming videos"
     placements:
       - stage: "Prefilling"
@@ -832,6 +968,8 @@ papers:
     year: 2025
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Coarse-to-fine scheme injecting enriched characteristics"
     placements:
       - stage: "Encoding"
@@ -844,6 +982,8 @@ papers:
     year: 2025
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Token merging combining semantic and spatial awareness"
     placements:
       - stage: "Encoding"
@@ -856,6 +996,8 @@ papers:
     year: 2025
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Multiple MLP connectors with different compression ratios"
     placements:
       - stage: "Encoding"
@@ -868,6 +1010,8 @@ papers:
     year: 2025
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Dynamic compression based on frame uniqueness"
     placements:
       - stage: "Prefilling"
@@ -880,6 +1024,8 @@ papers:
     year: 2025
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Chunk-based attention with historical context for video processing"
     placements:
       - stage: "Prefilling"
@@ -892,6 +1038,8 @@ papers:
     year: 2025
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "End-to-end training with sparse attention preserving dense attention for text"
     placements:
       - stage: "Prefilling"
@@ -904,6 +1052,8 @@ papers:
     year: 2025
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Multi-granularity tree-based representation extracting query-relevant details"
     placements:
       - stage: "Encoding"
@@ -916,6 +1066,8 @@ papers:
     year: 2025
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Sub-2-bit quantization with differential treatment for K and V"
     placements:
       - stage: "Decoding"
@@ -928,6 +1080,8 @@ papers:
     year: 2025
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Dynamically processes distinct samples with different resolutions"
     placements:
       - stage: "Encoding"
@@ -940,6 +1094,8 @@ papers:
     year: 2025
     code_url: "https://github.com/dvlab-research/VisionZip"
     code_type: "Code"
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Selects informative tokens using visual attention from encoder"
     placements:
       - stage: "Encoding"
@@ -952,6 +1108,8 @@ papers:
     year: 2025
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Lightweight vision adaptor to compress image tokens for draft model"
     placements:
       - stage: "Decoding"
@@ -964,6 +1122,8 @@ papers:
     year: 2025
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Block sparse attention with antidiagonal scoring for efficient block estimation"
     placements:
       - stage: "Prefilling"
@@ -976,6 +1136,8 @@ papers:
     year: 2024
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Spatiotemporal token merging to reduce video redundancy"
     placements:
       - stage: "Prefilling"
@@ -988,6 +1150,8 @@ papers:
     year: 2024
     code_url: "https://github.com/alibaba/conv-llava"
     code_type: "Code"
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Compresses high-resolution images into information-rich visual features"
     placements:
       - stage: "Encoding"
@@ -1000,6 +1164,8 @@ papers:
     year: 2024
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Dynamic visual token compression architecture adapting to different lengths"
     placements:
       - stage: "Encoding"
@@ -1015,6 +1181,8 @@ papers:
     year: 2024
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Dynamic visual token compression architecture adapting to different lengths"
     placements:
       - stage: "Encoding"
@@ -1027,6 +1195,8 @@ papers:
     year: 2024
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Cache merging strategy fusing less important KVs guided by distinct metrics"
     placements:
       - stage: "Decoding"
@@ -1039,6 +1209,8 @@ papers:
     year: 2024
     code_url: "https://github.com/pkunlp-icler/FastV"
     code_type: "Code"
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Learns attention patterns in early layers to prune visual tokens in deeper layers"
     placements:
       - stage: "Prefilling"
@@ -1051,6 +1223,8 @@ papers:
     year: 2024
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Learns to query informative frame combinations"
     placements:
       - stage: "Encoding"
@@ -1063,6 +1237,8 @@ papers:
     year: 2024
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Merges tokens in shallow layers and prunes in deep layers"
     placements:
       - stage: "Prefilling"
@@ -1078,6 +1254,8 @@ papers:
     year: 2024
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Employs frozen models as plug-and-play selectors for keyframe localization"
     placements:
       - stage: "Encoding"
@@ -1090,6 +1268,8 @@ papers:
     year: 2024
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Token reduction using both CLIP metric and similarity (TRIM)"
     placements:
       - stage: "Encoding"
@@ -1102,6 +1282,8 @@ papers:
     year: 2024
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Vision encoder explicitly trained for long video scenarios"
     placements:
       - stage: "Encoding"
@@ -1114,6 +1296,8 @@ papers:
     year: 2024
     code_url: "https://github.com/ziplab/LongVLM"
     code_type: "Code"
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Vision encoder explicitly trained for long video scenarios"
     placements:
       - stage: "Encoding"
@@ -1126,6 +1310,8 @@ papers:
     year: 2024
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Text-prior compression policy prioritizing textual KVs while evicting visual tokens"
     placements:
       - stage: "Decoding"
@@ -1138,6 +1324,8 @@ papers:
     year: 2024
     code_url: "https://github.com/wenhaochai/MovieChat"
     code_type: "Code"
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Vision encoder explicitly trained for long video scenarios"
     placements:
       - stage: "Encoding"
@@ -1150,6 +1338,8 @@ papers:
     year: 2024
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Progressive compression strategy extending images as static videos"
     placements:
       - stage: "Encoding"
@@ -1162,6 +1352,8 @@ papers:
     year: 2024
     code_url: "https://github.com/Cooperx521/PyramidDrop"
     code_type: "Code"
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Multi-stage pruning using attention score ranking"
     placements:
       - stage: "Prefilling"
@@ -1174,6 +1366,8 @@ papers:
     year: 2024
     code_url: "https://github.com/QwenLM/Qwen2-VL"
     code_type: "Code"
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Native Dynamic Resolution framework enabling adaptive visual token generation"
     placements:
       - stage: "Encoding"
@@ -1186,6 +1380,8 @@ papers:
     year: 2024
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Sparsifies visual tokens based on question prompt through text-visual attention scores"
     placements:
       - stage: "Prefilling"
@@ -1198,6 +1394,8 @@ papers:
     year: 2024
     code_url: "https://github.com/mbzuai-oryx/Video-ChatGPT"
     code_type: "Code"
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Applies pooling over visual tokens to obtain compact visual representations"
     placements:
       - stage: "Encoding"
@@ -1210,6 +1408,8 @@ papers:
     year: 2024
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Text-guided Frame-Prompter learning to extract question-related frames"
     placements:
       - stage: "Encoding"
@@ -1222,6 +1422,8 @@ papers:
     year: 2024
     code_url: null
     code_type: null
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Dynamically sets each layer's cache size according to measured attention sparsity"
     placements:
       - stage: "Decoding"
@@ -1234,6 +1436,8 @@ papers:
     year: 2023
     code_url: "https://github.com/salesforce/LAVIS"
     code_type: "Code"
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Bridges modality gap with lightweight Querying Transformer (Q-Former)"
     placements:
       - stage: "Encoding"
@@ -1246,6 +1450,8 @@ papers:
     year: 2023
     code_url: "https://github.com/apple/ml-fastvit"
     code_type: "Code"
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Novel token mixing operators and structural reparameterization"
     placements:
       - stage: "Encoding"
@@ -1258,6 +1464,8 @@ papers:
     year: 2023
     code_url: "https://github.com/Yui010206/SeViLA"
     code_type: "Code"
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Uses frozen models as plug-and-play selectors for frame localization"
     placements:
       - stage: "Encoding"
@@ -1270,6 +1478,8 @@ papers:
     year: 2023
     code_url: "https://github.com/DAMO-NLP-SG/Video-LLaMA"
     code_type: "Code"
+    added_on: "2026-04-08"
+    added_in: "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
     contribution: "Proposes Video Q-Former for multi-modality video comprehension"
     placements:
       - stage: "Encoding"

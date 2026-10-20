@@ -1,0 +1,425 @@
+{
+  "schema_version": 1,
+  "papers": {
+    "3dzip-spatial-aware-feature-diversity-guided-token-compression-for-3d-question-answering": {
+      "added_on": "2026-10-20",
+      "added_in": "162519ad40579f9814e2a0f52443728ea11d6298"
+    },
+    "adaptive-fast-and-slow-visual-program-reasoning-for-long-form-videoqa": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "agilepruner-an-empirical-study-of-attention-and-diversity-for-adaptive-visual-token-pruning-in-large-vision-language-models": {
+      "added_on": "2026-10-20",
+      "added_in": "162519ad40579f9814e2a0f52443728ea11d6298"
+    },
+    "aim-adaptive-inference-of-multi-modal-llms": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "aircache-activating-inter-modal-relevancy-kv-cache-compression": {
+      "added_on": "2026-09-21",
+      "added_in": "fd9fa236feead15f9fc0e8a157c3b78ae56f471d"
+    },
+    "akvq-vl-attention-aware-kv-cache-adaptive-2-bit-quantization": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "atp-llava-adaptive-token-pruning-for-lvlms": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "avtp-multi-image-visual-token-pruning-in-large-visual-language-models": {
+      "added_on": "2026-09-21",
+      "added_in": "fd9fa236feead15f9fc0e8a157c3b78ae56f471d"
+    },
+    "beyond-text-visual-attention-exploiting-visual-cues-for-effective-token-pruning": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "blip-2-bootstrapping-language-image-pre-training": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "btp-balanced-token-pruning": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "calibquant-1-bit-kv-cache-quantization-for-multimodal-llms": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "cdpruner-maximizing-conditional-diversity-for-token-pruning": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "convllava-hierarchical-backbones-as-visual-encoder-for-large-multimodal-models": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "coverpruner-who-speaks-for-the-pruned-visual-token-pruning-as-coverage-optimization": {
+      "added_on": "2026-09-21",
+      "added_in": "fd9fa236feead15f9fc0e8a157c3b78ae56f471d"
+    },
+    "dart-stop-looking-for-important-tokens-duplication-matters-more": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "divprune-diversity-based-visual-token-pruning": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "dstp-why-and-when-visual-token-pruning-fails": {
+      "added_on": "2026-09-21",
+      "added_in": "fd9fa236feead15f9fc0e8a157c3b78ae56f471d"
+    },
+    "dycoke-dynamic-compression-of-tokens-for-fast-video-llms": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "dynamic-vlm-simple-dynamic-visual-token-compression": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "dynamic-vlm-simple-dynamic-visual-token-compression-for-videollm": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "elastic-cache-efficient-inference-of-vision-instruction-following-models": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "evocomp-learning-visual-token-compression-via-semantic-guided-evolutionary-labeling": {
+      "added_on": "2026-09-21",
+      "added_in": "fd9fa236feead15f9fc0e8a157c3b78ae56f471d"
+    },
+    "fastcache-optimizing-multimodal-llm-serving": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "fastv-an-image-is-worth-1-2-tokens-after-layer-2": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "fastvid-dynamic-density-pruning-for-fast-video-llms": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "fastvit-a-fast-hybrid-vision-transformer-using-structural-reparameterization": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "fastvlm-efficient-vision-encoding-for-vision-language-models": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "fastvlm-self-speculative-decoding-for-fast-vision-language-model-inference": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "fit-and-prune-fast-and-training-free-visual-token-pruning": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "flash-latent-aware-semi-autoregressive-speculative-decoding": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "focus-efficient-keyframe-selection-for-long-video-understanding": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "folder-accelerating-multi-modal-large-language-models": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "frame-voyager-learning-to-query-frames-for-video-llms": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "framefusion-combining-similarity-and-importance": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "g-prune-training-free-visual-token-pruning-from-graph-perspective": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "glyph-scaling-context-windows-via-visual-text-compression": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "hi-lo-prune-look-at-what-you-ll-lose-before-pruning-with-hierarchical-token-selection": {
+      "added_on": "2026-10-20",
+      "added_in": "bf8daaed7993c2258fb8dc983ed32c4964e94ce9"
+    },
+    "hivtp-hierarchical-visual-token-pruning": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "holitom-holistic-token-merging-for-fast-video-llms": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "hybridkv-hybrid-kv-cache-compression-for-efficient-multimodal-large-language-model-inference": {
+      "added_on": "2026-09-21",
+      "added_in": "fd9fa236feead15f9fc0e8a157c3b78ae56f471d"
+    },
+    "icctp-instruction-guided-cross-modal-clustering-for-training-free-visual-token-pruning": {
+      "added_on": "2026-09-21",
+      "added_in": "fd9fa236feead15f9fc0e8a157c3b78ae56f471d"
+    },
+    "infinipot-v-memory-constrained-kv-cache-compression": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "jag-direct-box-prediction-for-efficient-visual-grounding": {
+      "added_on": "2026-10-20",
+      "added_in": "b91d7270a30bcc4659bbbfb7e9c30688af5b570a"
+    },
+    "keyvideollm-towards-large-scale-video-keyframe-selection": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "less-is-more-a-simple-yet-effective-token-reduction-method": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "livevlm-efficient-online-video-understanding-via-streaming-oriented-kv-cache": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "llava-prumerge-adaptive-token-reduction": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "long-context-transfer-from-language-to-vision": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "longvlm-efficient-long-video-understanding-via-large-language-models": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "longvu-spatiotemporal-adaptive-compression": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "longvu-spatiotemporal-adaptive-compression-for-long-video-language-understanding": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "look-m-look-once-optimization-in-kv-cache": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "m-llm-based-video-frame-selection-for-efficient-video-understanding": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "madakv-adaptive-modality-perception-kv-cache-eviction": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "massv-multimodal-adaptation-and-self-data-distillation-for-speculative-decoding-of-vlms": {
+      "added_on": "2026-09-21",
+      "added_in": "fd9fa236feead15f9fc0e8a157c3b78ae56f471d"
+    },
+    "meda-dynamic-kv-cache-allocation-for-efficient-multimodal-inference": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "mminference-modality-aware-permutation-sparse-attention": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "mmspec-benchmarking-speculative-decoding-for-vision-language-models": {
+      "added_on": "2026-09-21",
+      "added_in": "fd9fa236feead15f9fc0e8a157c3b78ae56f471d"
+    },
+    "moviechat-from-dense-token-to-sparse-memory-for-long-video-understanding": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "msd-speculative-decoding-reimagined-for-multimodal-large-language-models": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "occamtoken-efficient-vlm-inference-with-training-free-and-budget-adaptive-token-pruning": {
+      "added_on": "2026-09-21",
+      "added_in": "fd9fa236feead15f9fc0e8a157c3b78ae56f471d"
+    },
+    "pixelthink-towards-efficient-chain-of-pixel-reasoning": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "prolonged-reasoning-is-not-all-you-need-certainty-based-adaptive-routing": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "prunevid-visual-token-pruning-for-efficient-video-llms": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "pvc-progressive-visual-token-compression": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "pyramiddrop-accelerating-via-pyramid-visual-redundancy-reduction": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "q-cache-visual-attention-is-valuable-in-less-than-half-of-decode-layers-for-multimodal-large-language-model": {
+      "added_on": "2026-09-21",
+      "added_in": "fd9fa236feead15f9fc0e8a157c3b78ae56f471d"
+    },
+    "q-frame-query-aware-frame-selection-and-multi-resolution-adaptation": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "qwen2-vl-enhancing-vision-language-model-s-perception-of-the-world-at-any-resolution": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "rekv-streaming-video-qa-with-in-context-video-kv-cache-retrieval": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "semantic-guided-slow-fast-pruning-of-visual-tokens-for-vision-language-models": {
+      "added_on": "2026-09-21",
+      "added_in": "83bb2d56348b3c0ba8a8c18c435389561cac1c10"
+    },
+    "sevila-self-chained-image-language-model-for-video-localization": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "sieve-when-vision-becomes-text": {
+      "added_on": "2026-09-21",
+      "added_in": "fd9fa236feead15f9fc0e8a157c3b78ae56f471d"
+    },
+    "spargeattn-accurate-sparse-attention-accelerating-any-model-inference": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "sparsemm-head-sparsity-emerges-from-visual-concept-responses": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "sparsevila-decoupling-visual-sparsity-for-efficient-vlm-inference": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "sparsevlm-visual-token-sparsification-for-efficient-inference": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "spec-llava-accelerating-vlms-with-dynamic-tree-based-speculative-decoding": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "specvlm-enhancing-speculative-decoding-via-verifier-guided-token-pruning": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "specvlm-fast-speculative-decoding-in-vision-language-models": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "st3-accelerating-mllm-by-spatial-temporal-visual-token-trimming": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "stc-accelerating-streaming-video-large-language-models-via-hierarchical-token-compression": {
+      "added_on": "2026-09-21",
+      "added_in": "fd9fa236feead15f9fc0e8a157c3b78ae56f471d"
+    },
+    "streamingtom-streaming-token-compression": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "streamingvlm-real-time-understanding-for-infinite-video-streams": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "sttm-multi-granular-spatio-temporal-token-merging": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "swiftvlm-efficient-vision-language-model-inference-via-cross-layer-token-bypass": {
+      "added_on": "2026-09-21",
+      "added_in": "fd9fa236feead15f9fc0e8a157c3b78ae56f471d"
+    },
+    "timechat-online-80-visual-tokens-are-naturally-redundant": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "tokenpacker-efficient-visual-projector-for-multimodal-llm": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "tosa-token-merging-with-spatial-awareness": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "unified-spatiotemporal-token-compression-for-video-llms-at-ultra-low-retention": {
+      "added_on": "2026-09-21",
+      "added_in": "fd9fa236feead15f9fc0e8a157c3b78ae56f471d"
+    },
+    "vico-a-training-strategy-towards-semantic-aware-dynamic-high-resolution": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "vidcom2-video-compression-commander": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "video-chatgpt-towards-detailed-video-understanding-via-large-vision-and-language-models": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "video-llama-an-instruction-tuned-audio-visual-language-model": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "video-xl-2-towards-very-long-video-understanding-through-task-aware-kv-sparsification": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "videonsa-native-sparse-attention-scales-video-understanding": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "videotree-adaptive-tree-based-video-representation": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "vidkv-plug-and-play-1-x-bit-kv-cache-quantization": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "vila-efficient-video-language-alignment-for-video-question-answering": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "visionthink-smart-and-efficient-vision-language-model-via-reinforcement-learning": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "visionzip-longer-is-better-but-not-necessary": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "vispec-accelerating-vlms-with-vision-aware-speculative-decoding": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "vl-cache-sparsity-and-modality-aware-kv-cache-compression": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    },
+    "xattention-block-sparse-attention-with-antidiagonal-scoring": {
+      "added_on": "2026-04-08",
+      "added_in": "b688cfc6aea84d46c54338853a8d3c2f00f753a3"
+    }
+  }
+}

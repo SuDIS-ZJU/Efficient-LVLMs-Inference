@@ -5,12 +5,18 @@ on:
     paths:
       - README.md
       - docs/data/**
+      - data/**
+      - docs/assets/**
+      - docs/index.html
       - scripts/**
   push:
     branches: [main]
     paths:
       - README.md
       - docs/data/**
+      - data/**
+      - docs/assets/**
+      - docs/index.html
       - scripts/**
   workflow_dispatch:
 
@@ -29,3 +35,7 @@ jobs:
           python-version: "3.12"
       - name: Validate catalog and generated exports
         run: python scripts/build_catalog.py --check
+      - name: Check catalog metadata and references
+        run: python scripts/test_catalog.py
+      - name: Check Hub JavaScript syntax
+        run: node --check docs/assets/app.js

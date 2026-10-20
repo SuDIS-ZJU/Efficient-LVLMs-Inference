@@ -30,7 +30,7 @@
     <div class="hero-content shell">
       <p class="eyebrow">Living research collection · ACL 2026 Findings</p>
       <h1>Find the right technique for<br><span>efficient LVLM inference.</span></h1>
-      <p class="hero-copy">Explore methods by inference stage, optimization mechanism, publication year, and code availability.</p>
+      <p class="hero-copy">Start with your bottleneck. Explore methods by inference stage, follow the taxonomy, and find implementations you can try.</p>
       <div class="hero-actions">
         <a class="primary-button" href="#catalog">Explore the catalog</a>
         <a class="secondary-button" href="data/papers.bib" download>Download BibTeX</a>
@@ -38,7 +38,7 @@
 
       <dl class="stats" aria-label="Catalog statistics">
         <div><dt id="paper-count">—</dt><dd>unique papers</dd></div>
-        <div><dt id="code-count">—</dt><dd>with code or project pages</dd></div>
+        <div><dt id="code-count">—</dt><dd>code repositories <span id="project-count"></span></dd></div>
         <div><dt>3</dt><dd>inference stages</dd></div>
         <div><dt id="updated-date">—</dt><dd>last updated</dd></div>
       </dl>
@@ -46,6 +46,23 @@
   </header>
 
   <main id="catalog" class="shell catalog">
+    <section class="bottlenecks" aria-labelledby="bottleneck-heading">
+      <p class="section-kicker">Start with your bottleneck</p>
+      <h2 id="bottleneck-heading">What is slowing you down?</h2>
+      <div class="bottleneck-grid">
+        <button type="button" data-preset="encoding" aria-pressed="false"><span class="shortcut-icon" aria-hidden="true">01</span><strong>Expensive visual encoding</strong><span>Encoders, resolution &amp; input compression</span></button>
+        <button type="button" data-preset="prefilling" aria-pressed="false"><span class="shortcut-icon" aria-hidden="true">02</span><strong>Long-context prefilling</strong><span>Token compression &amp; sparse attention</span></button>
+        <button type="button" data-preset="memory" aria-pressed="false"><span class="shortcut-icon" aria-hidden="true">03</span><strong>Too much KV-cache memory</strong><span>Token, layer, head &amp; bit-level compression</span></button>
+        <button type="button" data-preset="generation" aria-pressed="false"><span class="shortcut-icon" aria-hidden="true">04</span><strong>Slow token generation</strong><span>Speculative decoding &amp; verification</span></button>
+      </div>
+    </section>
+
+    <details class="taxonomy-browser">
+      <summary>Explore the full taxonomy <span>Browse categories and see where each method fits</span></summary>
+      <p class="helper-text">Select a category to browse its papers. Cross-listed papers can appear in more than one branch.</p>
+      <div id="taxonomy-tree" class="taxonomy-tree"></div>
+    </details>
+
     <section class="catalog-heading">
       <div>
         <p class="section-kicker">Paper explorer</p>
@@ -75,20 +92,33 @@
           <button type="button" data-stage="Decoding">Decoding</button>
         </div>
         <select id="category-filter" aria-label="Filter by category"><option value="all">All categories</option></select>
+        <select id="subcategory-filter" aria-label="Filter by subcategory"><option value="all">All subcategories</option></select>
         <select id="year-filter" aria-label="Filter by year"><option value="all">All years</option></select>
-        <label class="code-toggle"><input id="code-filter" type="checkbox"><span aria-hidden="true"></span>Code available</label>
+        <select id="resource-filter" aria-label="Filter by resource">
+          <option value="all">All resources</option>
+          <option value="code">Code repository</option>
+          <option value="project">Project page</option>
+          <option value="none">No resource linked</option>
+        </select>
       </div>
+      <p id="filter-summary" class="helper-text"></p>
     </section>
 
     <section class="result-toolbar" aria-live="polite">
       <p><strong id="result-count">0</strong> papers</p>
-      <label>Sort
-        <select id="sort-order">
-          <option value="newest">Newest first</option>
-          <option value="title">Title A–Z</option>
-        </select>
-      </label>
+      <div class="toolbar-actions">
+        <button id="reset-filters" class="text-button" type="button">Clear filters</button>
+        <button id="share-results" class="text-button" type="button">Share results ↗</button>
+        <label>Sort
+          <select id="sort-order">
+            <option value="added">Recently added</option>
+            <option value="year">Newest venue year</option>
+            <option value="title">Title A–Z</option>
+          </select>
+        </label>
+      </div>
     </section>
+    <p class="sort-note">“Added” is the first catalog inclusion date. “Venue year” follows the listed publication or preprint year.</p>
 
     <section id="paper-grid" class="paper-grid" aria-label="Paper results"></section>
     <section id="empty-state" class="empty-state" hidden>
@@ -117,13 +147,27 @@
       <div class="paper-meta"><span class="stage-badge"></span><span class="venue"></span></div>
       <h3><a class="paper-title"></a></h3>
       <p class="contribution"></p>
-      <p class="taxonomy"></p>
+      <div class="taxonomy" aria-label="Taxonomy paths"></div>
+      <p class="added-date"></p>
       <div class="paper-actions">
         <a class="paper-link">Read paper <span aria-hidden="true">↗</span></a>
         <a class="code-link">Code <span aria-hidden="true">↗</span></a>
+        <button class="cite-button" type="button">Cite / BibTeX</button>
+        <button class="permalink-button" type="button">Share ↗</button>
       </div>
     </article>
   </template>
+
+  <dialog id="citation-dialog" aria-labelledby="citation-title" aria-describedby="citation-note">
+    <div class="dialog-heading"><p class="section-kicker">Single-paper reference</p><button id="close-citation" class="text-button" type="button" aria-label="Close citation">Close ×</button></div>
+    <h2 id="citation-title"></h2>
+    <p id="citation-note" class="helper-text">This catalog BibTeX includes the title, venue, year and URL. For author-complete citations, use the publisher or arXiv citation export.</p>
+    <label for="citation-text" class="citation-label">BibTeX</label>
+    <textarea id="citation-text" readonly spellcheck="false"></textarea>
+    <div class="dialog-actions"><button id="copy-citation" class="primary-button" type="button">Copy BibTeX</button><a id="download-citation" class="text-button" download>Download .bib</a><a id="citation-source" target="_blank" rel="noopener noreferrer">Official source ↗</a></div>
+    <p id="citation-status" role="status" aria-live="polite"></p>
+  </dialog>
+  <p id="action-status" class="action-status" role="status" aria-live="polite"></p>
 
   <script src="assets/app.js" defer></script>
 </body>

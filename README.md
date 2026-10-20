@@ -25,19 +25,29 @@
 
 ## 📰 News
 
+> 🎉 Our survey is published in **Findings of ACL 2026**! [Read the proceedings paper](https://aclanthology.org/2026.findings-acl.1057/) · [Cite the survey](#-citation).
+
 ### ✨ October 2026 Highlights
 
 - 🧩 **New papers:** [3DZip](https://arxiv.org/abs/2608.01185) ([code](https://github.com/cvsp-lab/3DZip), [merged in #10](https://github.com/SuDIS-ZJU/Efficient-LVLMs-Inference/pull/10)) and [AgilePruner](https://arxiv.org/abs/2603.01236) ([code](https://github.com/cvsp-lab/AgilePruner), [merged in #10](https://github.com/SuDIS-ZJU/Efficient-LVLMs-Inference/pull/10)).
 - 🤝 **Community contributions:** [Hi-Lo Prune](https://openaccess.thecvf.com/content/CVPR2026/html/Sun_Hi-Lo_Prune_Look_at_What_Youll_Lose_before_Pruning_with_CVPR_2026_paper.html) ([PR #7](https://github.com/SuDIS-ZJU/Efficient-LVLMs-Inference/pull/7)) and [Jag](https://arxiv.org/abs/2610.13239) ([original PR #8](https://github.com/SuDIS-ZJU/Efficient-LVLMs-Inference/pull/8), [catalog update #9](https://github.com/SuDIS-ZJU/Efficient-LVLMs-Inference/pull/9)).
 - 📚 **Fresh catalog exports:** [JSON](docs/data/papers.json) · [YAML](docs/data/papers.yaml) · [CSV](docs/data/papers.csv) · [BibTeX](docs/data/papers.bib) · [searchable Research Hub](https://sudis-zju.github.io/Efficient-LVLMs-Inference/).
 
-
-### 🗓️ Earlier Milestones
+<details>
+<summary>🗓️ Earlier milestones · April–September 2026</summary>
 
 - **2026-09-21** · 🚀 Introduced the [interactive Research Hub](https://sudis-zju.github.io/Efficient-LVLMs-Inference/) with searchable paper filters and downloadable [JSON](docs/data/papers.json), [YAML](docs/data/papers.yaml), [CSV](docs/data/papers.csv), and [BibTeX](docs/data/papers.bib) catalogs.
 - **2026-07** · 📖 Our survey is published in **Findings of ACL 2026**! Read the [ACL Anthology paper](https://aclanthology.org/2026.findings-acl.1057/) or download the [proceedings PDF](https://aclanthology.org/2026.findings-acl.1057.pdf).
 - **2026-04** · 🎉 Our survey, [Efficient Inference for Large Vision-Language Models: Bottlenecks, Techniques, and Prospects](https://arxiv.org/abs/2604.05546), was accepted to **ACL 2026 Findings**!
 - **2026-04-07** · 📝 Released the [survey preprint on arXiv](https://arxiv.org/abs/2604.05546v1), presenting a taxonomy across encoding, prefilling, and decoding.
+
+</details>
+
+## 🧭 Start Here
+
+- **Understand the field:** read our [ACL 2026 Findings survey](https://aclanthology.org/2026.findings-acl.1057/) and follow the [stage-wise taxonomy](#taxonomy).
+- **Find a method for your bottleneck:** explore [visual encoding](https://sudis-zju.github.io/Efficient-LVLMs-Inference/?stage=Encoding#catalog), [long-context prefilling](https://sudis-zju.github.io/Efficient-LVLMs-Inference/?stage=Prefilling#catalog), [KV-cache memory](https://sudis-zju.github.io/Efficient-LVLMs-Inference/?stage=Decoding&category=KV+Cache+Compression#catalog), or [speculative decoding](https://sudis-zju.github.io/Efficient-LVLMs-Inference/?stage=Decoding&category=Speculative+Decoding#catalog).
+- **Prepare experiments:** browse [methods with code repositories](https://sudis-zju.github.io/Efficient-LVLMs-Inference/?resource=code#catalog), check the [benchmarks](#-benchmarks-and-datasets), and use each paper’s **Cite / BibTeX** button in the Hub.
 
 ## At a Glance
 
@@ -71,7 +81,7 @@ The taxonomy organizes representative methods by inference stage and optimizatio
 | [Adaptive Resolution](#adaptive-resolution) |  | [Efficient Reasoning](#efficient-reasoning) | [Contributing](#-contributing) |
 | [Encoding-side Compression](#encoding-oriented-token-compression) |  | [Direct Prediction](#direct-prediction) |  |
 
-> **Need faster lookup?** Use the [interactive Research Hub](https://sudis-zju.github.io/Efficient-LVLMs-Inference/) to search and filter the catalog, or download the machine-readable [JSON](docs/data/papers.json), [YAML](docs/data/papers.yaml), [CSV](docs/data/papers.csv), and [BibTeX](docs/data/papers.bib) exports.
+> **Need faster lookup?** The [Research Hub](https://sudis-zju.github.io/Efficient-LVLMs-Inference/) offers bottleneck shortcuts, clickable taxonomy paths, separate code/project filters, recent-addition sorting, and single-paper BibTeX and share links. Download the full catalog as [JSON](docs/data/papers.json), [YAML](docs/data/papers.yaml), [CSV](docs/data/papers.csv), or [BibTeX](docs/data/papers.bib).
 
 ### Reading Guide
 
@@ -348,7 +358,7 @@ The taxonomy organizes representative methods by inference stage and optimizatio
 
 ## 📝 Citation
 
-This repository accompanies our survey, **Efficient Inference for Large Vision-Language Models: Bottlenecks, Techniques, and Prospects**.
+This repository accompanies our survey, [**Efficient Inference for Large Vision-Language Models: Bottlenecks, Techniques, and Prospects**](https://aclanthology.org/2026.findings-acl.1057/), published in **Findings of ACL 2026**.
 
 <details>
 <summary><b>Authors and affiliations</b></summary>
@@ -363,14 +373,16 @@ Jun Zhang*, Yicheng Ji*, Feiyang Ren*, Yihang Li*, Bowen Zeng*, Zonghao Chen*, K
 If you find the survey or repository useful, please consider citing:
 
 ```bibtex
-@misc{zhang2026efficientinferencelargevisionlanguage,
-      title={Efficient Inference for Large Vision-Language Models: Bottlenecks, Techniques, and Prospects}, 
-      author={Jun Zhang and Yicheng Ji and Feiyang Ren and Yihang Li and Bowen Zeng and Zonghao Chen and Ke Chen and Lidan Shou and Gang Chen and Huan Li},
-      year={2026},
-      eprint={2604.05546},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2604.05546}, 
+@inproceedings{zhang-etal-2026-efficient,
+  title = {Efficient Inference for Large Vision-Language Models: Bottlenecks, Techniques, and Prospects},
+  author = {Zhang, Jun and Ji, Yicheng and Ren, Feiyang and Li, Yihang and Zeng, Bowen and Chen, Zonghao and Chen, Ke and Shou, Lidan and Chen, Gang and Li, Huan},
+  booktitle = {Findings of the Association for Computational Linguistics: ACL 2026},
+  month = jul,
+  year = {2026},
+  pages = {21036--21066},
+  publisher = {Association for Computational Linguistics},
+  doi = {10.18653/v1/2026.findings-acl.1057},
+  url = {https://aclanthology.org/2026.findings-acl.1057/}
 }
 
 ```

@@ -10,12 +10,14 @@ import json
 import re
 import sys
 from collections import Counter
+from datetime import date
 from pathlib import Path
 from urllib.parse import urlparse
 
 
 ROOT = Path(__file__).resolve().parents[1]
 README = ROOT / "README.md"
+METADATA = ROOT / "data" / "paper_metadata.json"
 OUTPUTS = {
     "json": ROOT / "docs" / "data" / "papers.json",
     "yaml": ROOT / "docs" / "data" / "papers.yaml",
@@ -130,11 +132,37 @@ def parse_catalog(markdown: str) -> dict:
         "repository": "https://github.com/SuDIS-ZJU/Efficient-LVLMs-Inference",
         "stats": {
             "papers": len(papers),
-            "with_code": sum(bool(paper["code_url"]) for paper in papers),
+            "with_code": sum(paper["code_type"] == "Code" for paper in papers),
+            "with_project_page": sum(paper["code_type"] == "Project page" for paper in papers),
+            "with_resources": sum(bool(paper["code_url"]) for paper in papers),
             "stages": dict(sorted(stage_counts.items())),
         },
         "papers": papers,
     }
+
+
+def enrich_catalog(catalog: dict, metadata: dict) -> list[str]:
+    errors = []
+    if not isinstance(metadata, dict) or metadata.get("schema_version") != 1 or not isinstance(metadata.get("papers"), dict):
+        return ["paper_metadata.json: expected schema_version 1 and a papers object"]
+    for paper in catalog["papers"]:
+        entry = metadata["papers"].get(paper["id"], {})
+        if not isinstance(entry, dict):
+            errors.append(f"{paper['id']}: metadata entry must be an object")
+            entry = {}
+        added_on = entry.get("added_on")
+        try:
+            if not isinstance(added_on, str) or date.fromisoformat(added_on).isoformat() != added_on:
+                raise ValueError
+        except ValueError:
+            errors.append(f"{paper['id']}: add a valid added_on date (YYYY-MM-DD) to {METADATA.relative_to(ROOT)}")
+        added_in = entry.get("added_in")
+        if added_in is not None and (not isinstance(added_in, str) or not re.fullmatch(r"[0-9a-f]{40}", added_in)):
+            errors.append(f"{paper['id']}: added_in must be a full commit SHA")
+        paper["added_on"] = added_on
+        paper["added_in"] = added_in
+        paper["bibtex"] = bibtex_record(paper)
+    return errors
 
 
 def validate(catalog: dict) -> list[str]:
@@ -184,6 +212,8 @@ def to_yaml(catalog: dict) -> str:
                 f"    year: {yaml_scalar(paper['year'])}",
                 f"    code_url: {yaml_scalar(paper['code_url'])}",
                 f"    code_type: {yaml_scalar(paper['code_type'])}",
+                f"    added_on: {yaml_scalar(paper['added_on'])}",
+                f"    added_in: {yaml_scalar(paper['added_in'])}",
                 f"    contribution: {yaml_scalar(paper['contribution'])}",
                 "    placements:",
             ]
@@ -201,7 +231,7 @@ def to_yaml(catalog: dict) -> str:
 
 def to_csv(catalog: dict) -> str:
     output = io.StringIO()
-    fields = ["id", "title", "paper_url", "venue", "year", "code_url", "stages", "categories", "contribution"]
+    fields = ["id", "title", "paper_url", "venue", "year", "code_url", "stages", "categories", "contribution", "code_type", "added_on"]
     writer = csv.DictWriter(output, fieldnames=fields, lineterminator="\n")
     writer.writeheader()
     for paper in catalog["papers"]:
@@ -216,6 +246,8 @@ def to_csv(catalog: dict) -> str:
                 "stages": "; ".join(paper["stages"]),
                 "categories": "; ".join(paper["categories"]),
                 "contribution": paper["contribution"],
+                "code_type": paper["code_type"] or "",
+                "added_on": paper["added_on"],
             }
         )
     return output.getvalue()
@@ -225,23 +257,20 @@ def bib_escape(value: str) -> str:
     return value.replace("&", r"\&").replace("%", r"\%").replace("_", r"\_")
 
 
+def bibtex_record(paper: dict) -> str:
+    key = re.sub(r"[^a-z0-9]", "", paper["id"])[:42] + str(paper["year"] or "")
+    return "\n".join([
+        f"@misc{{{key},",
+        f"  title = {{{bib_escape(paper['title'])}}},",
+        f"  year = {{{paper['year'] or ''}}},",
+        f"  howpublished = {{{bib_escape(paper['venue'])}}},",
+        f"  url = {{{paper['paper_url']}}}",
+        "}",
+    ])
+
+
 def to_bibtex(catalog: dict) -> str:
-    records = []
-    for paper in catalog["papers"]:
-        key = re.sub(r"[^a-z0-9]", "", paper["id"])[:42] + str(paper["year"] or "")
-        records.append(
-            "\n".join(
-                [
-                    f"@misc{{{key},",
-                    f"  title = {{{bib_escape(paper['title'])}}},",
-                    f"  year = {{{paper['year'] or ''}}},",
-                    f"  howpublished = {{{bib_escape(paper['venue'])}}},",
-                    f"  url = {{{paper['paper_url']}}}",
-                    "}",
-                ]
-            )
-        )
-    return "\n\n".join(records) + "\n"
+    return "\n\n".join(bibtex_record(paper) for paper in catalog["papers"]) + "\n"
 
 
 def rendered_outputs(catalog: dict) -> dict[str, str]:
@@ -260,6 +289,10 @@ def main() -> int:
 
     catalog = parse_catalog(README.read_text(encoding="utf-8"))
     errors = validate(catalog)
+    if METADATA.exists():
+        errors.extend(enrich_catalog(catalog, json.loads(METADATA.read_text(encoding="utf-8"))))
+    else:
+        errors.append(f"Missing {METADATA.relative_to(ROOT)}")
     if errors:
         print("Catalog validation failed:", file=sys.stderr)
         for error in errors:
@@ -283,7 +316,7 @@ def main() -> int:
             path.write_text(outputs[name], encoding="utf-8")
 
     stats = catalog["stats"]
-    print(f"Validated {stats['papers']} unique papers ({stats['with_code']} with code/project links).")
+    print(f"Validated {stats['papers']} unique papers ({stats['with_code']} code repositories; {stats['with_project_page']} project pages).")
     return 0
 
 
