@@ -20,7 +20,7 @@
 
 </div>
 
-> **September 2026 update** — Added recent work on adaptive visual-token pruning, hybrid KV-cache compression, attention reuse, multimodal speculative decoding, and dedicated efficiency benchmarks.
+> **October 2026 update** — Added 3DZip and AgilePruner, and incorporated the Hi-Lo Prune and Jag contributions with synchronized catalog exports.
 
 ## At a Glance
 
@@ -141,6 +141,7 @@ The taxonomy organizes representative methods by inference stage and optimizatio
 #### Attention-Aware
 | Paper | Venue | Code | Key Contribution |
 |:---|:---:|:---:|:---|
+| [**AgilePruner: An Empirical Study of Attention and Diversity for Adaptive Visual Token Pruning in Large Vision-Language Models**](https://arxiv.org/abs/2603.01236) | ICLR 2026 | [![GitHub](https://img.shields.io/badge/GitHub-black?logo=github)](https://github.com/cvsp-lab/AgilePruner) | Combines CLS-attention selection with erank-based diversity pruning, adapting the balance to image complexity |
 | [**Semantic-Guided Slow-Fast Pruning of Visual Tokens for Vision-Language Models**](https://ieeexplore.ieee.org/abstract/document/11460400) | ICASSP 2026 | - | Semantic-guided slow-fast pruning of visual tokens for VLMs |
 | [**VisionZip: Longer is Better but Not Necessary**](https://arxiv.org/abs/2412.04467) | CVPR 2025 | [![GitHub](https://img.shields.io/badge/GitHub-black?logo=github)](https://github.com/dvlab-research/VisionZip) | Selects informative tokens using visual attention from encoder |
 | [**HIVTP: Hierarchical Visual Token Pruning**](https://arxiv.org/abs/2509.23663) | arXiv 2025 | - | Attention maps from middle encoder layers to estimate visual token importance |
@@ -158,6 +159,7 @@ The taxonomy organizes representative methods by inference stage and optimizatio
 #### Diversity-Guided
 | Paper | Venue | Code | Key Contribution |
 |:---|:---:|:---:|:---|
+| [**3DZip: Spatial-Aware Feature Diversity-Guided Token Compression for 3D Question Answering**](https://arxiv.org/abs/2608.01185) | ECCV 2026 | [![GitHub](https://img.shields.io/badge/GitHub-black?logo=github)](https://github.com/cvsp-lab/3DZip) | Combines coarse voxelization, DPP-based feature-diverse anchor selection, and spatially constrained merging for 3D VLM tokens |
 | [**Unified Spatiotemporal Token Compression for Video-LLMs at Ultra-Low Retention**](https://arxiv.org/abs/2603.21957) | CVPR 2026 | - | Globally allocates a unified spatiotemporal token budget using contribution and redundancy signals |
 | [**CoverPruner: Who Speaks for the Pruned? Visual Token Pruning as Coverage Optimization**](https://arxiv.org/abs/2609.03158) | arXiv 2026 | - | Formulates pruning as query-weighted representational coverage maximization |
 | [**FrameFusion: Combining similarity and importance**](https://arxiv.org/abs/2501.01986) | arXiv 2024 | - | Merges tokens in shallow layers and prunes in deep layers |
@@ -372,4 +374,4 @@ For inclusion criteria and formatting conventions, see [CONTRIBUTING.md](CONTRIB
 
 **Disclaimer**: This is a living document and will be continuously updated. If you notice any missing papers or have suggestions for better categorization, feel free to open an issue or submit a pull request.
 
-*Last Updated: 2026-09-21*
+*Last Updated: 2026-10-20*
