@@ -87,6 +87,18 @@ papers:
       - stage: "Prefilling"
         category: "Token Compression"
         subcategory: "Attention-Guided"
+  - id: "jag-direct-box-prediction-for-efficient-visual-grounding"
+    title: "Jag: Direct Box Prediction for Efficient Visual Grounding"
+    paper_url: "https://arxiv.org/abs/2610.13239"
+    venue: "arXiv 2026"
+    year: 2026
+    code_url: "https://github.com/xyzzzh/Jag"
+    code_type: "Code"
+    contribution: "Adapts a compact multimodal model to predict a continuous bounding box from an existing input-token state in one forward pass, avoiding autoregressive coordinate generation."
+    placements:
+      - stage: "Decoding"
+        category: "Direct Prediction"
+        subcategory: null
   - id: "mmspec-benchmarking-speculative-decoding-for-vision-language-models"
     title: "MMSpec: Benchmarking Speculative Decoding for Vision-Language Models"
     paper_url: "https://arxiv.org/abs/2603.14989"
