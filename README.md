@@ -20,7 +20,11 @@
 
 </div>
 
-> **October 2026 update** — Added 3DZip and AgilePruner, and incorporated the Hi-Lo Prune and Jag contributions with synchronized catalog exports.
+## ✨ October 2026 Highlights
+
+- 🧩 **New papers:** [3DZip](https://arxiv.org/abs/2608.01185) ([code](https://github.com/cvsp-lab/3DZip), [merged in #10](https://github.com/SuDIS-ZJU/Efficient-LVLMs-Inference/pull/10)) and [AgilePruner](https://arxiv.org/abs/2603.01236) ([code](https://github.com/cvsp-lab/AgilePruner), [merged in #10](https://github.com/SuDIS-ZJU/Efficient-LVLMs-Inference/pull/10)).
+- 🤝 **Community contributions:** [Hi-Lo Prune](https://openaccess.thecvf.com/content/CVPR2026/html/Sun_Hi-Lo_Prune_Look_at_What_Youll_Lose_before_Pruning_with_CVPR_2026_paper.html) ([PR #7](https://github.com/SuDIS-ZJU/Efficient-LVLMs-Inference/pull/7)) and [Jag](https://arxiv.org/abs/2610.13239) ([original PR #8](https://github.com/SuDIS-ZJU/Efficient-LVLMs-Inference/pull/8), [catalog update #9](https://github.com/SuDIS-ZJU/Efficient-LVLMs-Inference/pull/9)).
+- 📚 **Fresh catalog exports:** [JSON](docs/data/papers.json) · [YAML](docs/data/papers.yaml) · [CSV](docs/data/papers.csv) · [BibTeX](docs/data/papers.bib) · [searchable Research Hub](https://sudis-zju.github.io/Efficient-LVLMs-Inference/).
 
 ## At a Glance
 
