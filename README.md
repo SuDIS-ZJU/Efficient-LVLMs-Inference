@@ -1,11 +1,7 @@
 <p align="center">
-  <img src="assets/guide-grand-tour.png" width="100%" alt="The universe is vast. Our pockets are small. A retro space-travel composition adapted from The Grand Tour.">
-</p>
-
-<p align="center">
   <picture>
-    <source media="(max-width: 640px)" srcset="assets/prologue-mobile.svg">
-    <img src="assets/prologue-desktop.svg" width="100%" alt="A literary prologue connecting The Hitchhiker’s Guide to the Galaxy and Borges to Large Vision-Language Models (LVLMs). Expand Read the prologue below for the complete text.">
+    <source media="(max-width: 640px)" srcset="assets/guide-prologue-mobile.svg">
+    <img src="assets/guide-prologue-desktop.svg" width="100%" alt="The universe is vast. Our pockets are small. A literary prologue connecting The Hitchhiker’s Guide to the Galaxy and Borges to Large Vision-Language Models (LVLMs). Expand Read the prologue below for the complete text.">
   </picture>
 </p>
 
